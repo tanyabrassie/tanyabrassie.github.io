@@ -62,19 +62,55 @@ table {
   border-spacing: 0;
 }
 
-/* line 6, scss/_timeline.scss */
-header {
-  text-align: center;
-  position: fixed;
-  z-index: -2000;
-  font-size: 30px;
-  font-family: 'Prata', serif;
-  padding: 50px;
-  background-color: black;
-  color: white;
+/* line 1, scss/_timeline.scss */
+body {
+  background: #dbdbdb;
 }
 
-/* line 19, scss/_timeline.scss */
+/* line 6, scss/_timeline.scss */
+header {
+  background: #F8F9F6;
+}
+/* line 10, scss/_timeline.scss */
+header div {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  color: #5c5A53;
+}
+/* line 18, scss/_timeline.scss */
+header h1 {
+  font-size: 80px;
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 900;
+  padding-top: 70px;
+  letter-spacing: 3px;
+}
+/* line 27, scss/_timeline.scss */
+header p {
+  font-size: 20px;
+  line-height: 3em;
+  font-weight: 700;
+  opacity: .6;
+}
+
+/* line 37, scss/_timeline.scss */
+.timeline {
+  background-color: #F8F9F6;
+  text-align: center;
+}
+/* line 53, scss/_reset.scss */
+.timeline:before, .timeline:after {
+  content: "";
+  display: table;
+}
+/* line 58, scss/_reset.scss */
+.timeline:after {
+  clear: both;
+}
+
+/* line 44, scss/_timeline.scss */
 .big-body {
   background-color: white;
   height: 100%;
@@ -91,19 +127,29 @@ header {
   clear: both;
 }
 
-/* line 27, scss/_timeline.scss */
+/* line 52, scss/_timeline.scss */
 .timeline-left, .timeline-right {
   width: 49%;
   float: left;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
-/* line 33, scss/_timeline.scss */
+/* line 58, scss/_timeline.scss */
 .timeline-left {
   border-right: 1px solid black;
 }
 
-/* line 39, scss/_timeline.scss */
+/* line 64, scss/_timeline.scss */
 section img {
-  width: 500px;
+  width: 85%;
+}
+
+/* line 69, scss/_timeline.scss */
+.flags {
+  background-image: url("images/flag2.png");
+  background-repeat: repeat-x;
+  height: 70px;
+  width: 100%;
+  border-top: 5px solid white;
+  position: fixed;
 }
