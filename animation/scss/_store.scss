@@ -1,0 +1,94 @@
+
+.store {
+	@include clearfix();
+	height: 100%;
+
+
+	&__promotion {
+		padding: 70px 0 10px 0;
+		background: #000;
+		font-family: 'PrintClearly';
+		text-align: center;
+		color: #fff;
+
+		strong {
+			font-size: 3.5em;
+		}
+	}
+
+	.promotion--tilted {
+		display:inline-block;
+		vertical-align:top;
+		padding: 15px 10px;
+		font-size: 1.2em;
+		-ms-transform: rotate(-20deg); /* IE 9 */
+		-webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+		transform: rotate(-20deg);
+		font-family: 'PrintDashed';
+		}
+
+
+	&__navigation {
+		text-align: center;
+		background: #bffeff;
+		padding: 20px 30px;
+
+
+		li {
+			display: inline-block;
+
+		}
+
+		&__link {
+			padding: 5px 10px;
+			margin: 0 20px;
+			font-size: 1.2em;
+
+		}	
+}
+
+	&__filters {
+		float:left;
+		width: 20%;
+		height: 100%;
+		background: #eaeaea;
+		font-size: 1.2em;
+
+		ul {
+			padding: 50px 0;
+		}
+
+		li {
+			padding: 10px;
+		}
+	}
+
+	&__main {
+		width: 75%;
+		float:left;
+		padding: 2.5%;
+	}
+
+	&__row {
+		@include clearfix();
+		width: 100%;
+	}
+
+	&__product {
+		display:inline-block;
+		float:left;
+		width: 27.33%;
+		padding:5% 3%;
+		text-align:center;
+
+
+		strong {
+			font-size: 1.2em;
+			display: block;
+			text-align: center;
+		}
+	}
+}
+
+
+
