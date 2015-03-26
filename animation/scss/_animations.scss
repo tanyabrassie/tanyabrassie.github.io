@@ -1,3 +1,37 @@
+.spin {
+	 -ms-transform: rotate(10deg); /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+    transform: rotate(10deg);
+    animation-name: spin;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+	@keyframes spin {
+		0% {transform: rotate(0deg);
+			}
+		60% {transform: rotate(180deg);
+			}
+		100% {transform: rotate(360deg);
+			}
+	}
+
+
+	@-webkit-keyframes spin {
+		0% {transform: rotate(0deg);
+			}
+		60% {transform: rotate(180deg);
+			}
+		100% {transform: rotate(360deg);
+			}
+	}
+
+
+
+
 .slide-up {
 	animation-name: slide-up;
 	-webkit-animation-name: slide-up;

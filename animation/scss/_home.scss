@@ -1,8 +1,7 @@
 .header {
 	height: 55px;
 	width: 100%;
-	border-bottom: 1px double #000000;
-	background:white;
+	border-bottom: 2px solid #333;
 	z-index: 2000;
 	position: fixed;
 
@@ -12,15 +11,12 @@
 		color: black;
 
 		h1 {
-			font-family: 'Ostrich_Sans';
-			font-size: 2.5em;
-			color: #839B9E;
+			font-size: 3em;
 			padding-top:10px;
-			text-align:center;
+
 		}
 
 		p {
-			font-family: 'PrintClearly';
 			font-size: 15px;
 		}
 	}
@@ -89,47 +85,23 @@
 .page {
 	height:100%;
 	@include clearfix();
-
-	&__messaging {
-		font-size: 4em;
-		text-align: center;;
-		padding: 90px 0 45px 0;
-		background:white;
-		width:100%;
-
-		strong {
-			font-family: 'Ostrich_Sans_Italic';
-		}
-		p {
-			font-family: 'PrintClearly';
-			font-size: 24px;
-		}
-		span {
-
-			font-family: 'Ostrich_Sans';
-			color: #839B9E;
-		}
-
-	}		
+		
 
 	&__home {
+		padding-top: 100px;
+		margin:0 100px;
 
 
-		&__belt {
-			border-bottom:10px solid black;
-			background:white;
-			padding-top:50px;
+		h1 {
+			font-size: 2em; 
+		}
 
-			li {
-				display:inline;
-				padding: 35px;
-			}
-			
-			img {
-				height: 180px;
-			}
+		ul {
+
+			margin: 20px 0 20px 50px;
 		}
 	}
+	
 
 	&__benefits {
 	
