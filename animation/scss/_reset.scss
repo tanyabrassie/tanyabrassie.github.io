@@ -19,11 +19,11 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-html * > svg {
--webkit-transform-origin-x: 0%;
--webkit-transform-origin-y: 0%;
--webkit-transform-origin-z: initial;
-}
+// html * > svg {
+// -webkit-transform-origin-x: 0%;
+// -webkit-transform-origin-y: 0%;
+// -webkit-transform-origin-z: initial;
+// }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
