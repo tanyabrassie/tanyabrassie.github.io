@@ -206,3 +206,16 @@
     0%   { text-indent: -150em }
     100% { text-indent: 0em }
 }
+
+
+
+.piggy-scoot {
+	width:50px;
+	opacity: 0;
+	transition: opacity .5s ease-in;
+}
+
+.piggy-scoot:hover {
+	opacity: .9;
+	}
+
