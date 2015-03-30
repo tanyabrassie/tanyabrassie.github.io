@@ -1,0 +1,389 @@
+@font-face {
+	font-family:'bebas';
+	src: url(fonts/BEBAS.ttf);
+}
+
+@font-face {
+	font-family:'swash';
+	src: url(fonts/swash.ttf);
+}
+
+@font-face {
+	font-family:'district-thin';
+	src: url(fonts/district-thin.otf);
+}
+
+@font-face {
+	font-family:'argh';
+	src: url(fonts/argh.ttf);
+}
+
+@font-face {
+	font-family:'le-havre';
+	src: url(fonts/le-havre.ttf);
+}
+
+@font-face {
+	font-family:'Sofia';
+	src:url(fonts/Sofia-Regular.otf);
+}
+
+@font-face {
+	font-family:'Learning';
+	src:url(fonts/Learning.otf);
+}
+
+@font-face {
+	font-family:'tondu';
+	src: url(fonts/tondu-beta.ttf);
+}
+
+@font-face {
+	font-family:'cac';
+	src: url(fonts/cac_champagne.ttf);
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END CSS RESET */
+
+body {
+	background-color:#CCFFFF;
+	animation: bodyload 2s;
+	overflow:hidden;
+}
+
+/*@keyframes bodyload {
+	0% {background:#ffffff;}
+	100% {background:#CCFFFF;}
+}*/
+
+.font-smoothing {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+h2, h1, h4, h5{
+	text-align:center;
+	font-family:'tondu';
+	display:block;
+}
+
+h1 {
+	font-size:10em;
+}
+
+h5 {
+	font-size:2.4em;
+	letter-spacing:1px;
+	margin-bottom:40px;
+	color:#fff;
+}
+
+
+.body-wrap {
+	width:100%;
+	height:100%;
+/*	position:relative;
+*/}
+
+
+nav {
+	height:50px;
+	position:absolute;
+	top:0;
+	background-color:black;
+	width:100%
+}
+
+
+.first-row {
+	width: 100%;
+	height: auto;
+	position: relative;
+	float:left;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+
+.first-row div {
+	height:auto;
+	padding:100px 0 0 0;
+	width:100%;
+	display:block;
+}
+
+.title {
+	opacity:0;
+	margin-top:5px;
+	color:white;
+	letter-spacing:10px;
+}	
+
+
+ul {
+	list-style-type:none;
+	text-align:center;
+}
+
+li {
+	display:inline;
+	padding: 0 15px;
+	font-family:"cac";
+	font-size:2.8em;
+	letter-spacing:1;
+}
+
+
+.slide-up {
+	animation-name: slide-up;
+	-webkit-animation-name: slide-up;
+
+	animation-duration:2s;
+	-webkit-animation-duration:2s;
+
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+
+	/*animation-delay:1s;
+	-webkit-animation-delay:1s;*/
+
+	animation-timing-function:ease;
+	-webkit-animation-timing-function:ease;
+
+	visibility:visible !important;
+}
+
+
+	@keyframes slide-up {
+		0% {opacity:1; color:black; transform: translateY(50%); letter-spacing:2em;
+			}
+		100% {opacity:1;color:black; transform:translateY(0%); letter-spacing:.5em;
+			}
+	}
+
+
+	@-webkit-keyframes slide-up {
+		0% {opacity:1; color: black; transform: translateY(100%); letter-spacing:2em;
+			}
+		100% {opacity: 1; color: black; transform:translateY(0%); letter-spacing:..5em;
+			}
+	}
+
+
+	.slide-down{
+	animation-name: slide-down;
+	-webkit-animation-name: slide-down;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	/*animation-delay:1s;
+	-webkit-animation-delay:1s;
+*/
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;
+
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;	
+
+	visibility: visible !important;						
+}
+
+@keyframes slide-down {
+	0% {
+		transform: translateY(-100%); opacity:1; background-color:none;
+	}	
+
+	100% {
+		transform: translateY(0%); opacity:1; background-color:black;
+	}		
+}
+
+@-webkit-keyframes slide-down {
+	0% {
+		transform: translateY(-100%); opacity:1; background-color:none;
+	}
+		
+	100% {
+		transform: translateY(0%); opacity:1; background-color:black;
+	}	
+}
+	
+.pulse {
+	animation-name: pulse;
+	-webkit-animation-name: pulse;
+
+	animation-duration:5s;
+	-webkit-animation-duration:5s;
+
+	animation-iteration-count:infinite;
+	-webkit-animation-iteration-count:infinite;
+
+	animation-delay:3.5s;
+	-webkit-animation-delay:3.5s;
+
+	animation-timing-function:ease;
+	-webkit-animation-timing-function:ease;
+}	
+
+@keyframes pulse {
+	0%		{opacity:1;}
+	50%		{opacity:.56;}
+	100% 	{opacity:1;}
+}
+
+@-webkit-keyframes pulse {
+	0%		{opacity:1;}
+	50%		{opacity:.56;}
+	100% 	{opacity:1;}
+
+}
+
+
+.belt {
+	background:url("images/nub-conveyor.jpg");
+	background-position:0px 0px;
+	height:236px;
+	width:100%;
+	display:block;
+	float:left;
+	margin-top:100px;
+	animation: belt 50s linear infinite;
+}
+
+
+	@keyframes belt{
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+.belt-bottom {
+	background:url("images/nub-conveyor-belt.jpg");
+	background-position:0px 0px;
+	height:5px;
+	width:100%;
+	margin-top:-6px;
+	display:block;
+	float:left;
+	animation: beltbottom 50s linear infinite;
+}
+
+	@keyframes beltbottom {
+	from { background-position: 100% 0; }
+	to { background-position: 0 0; }
+}
+
+.wheels  {
+	height:auto;
+	display:block;
+	float:left;
+	position:relative;
+	width:100%;
+	min-width:100%;
+}
+
+.wheels img {
+	padding-top:0;
+	width:35px;
+	margin:0;
+	position:absolute;
+}	
+
+.wheels ul {
+	width:100%
+}
+.wheels li {
+	padding:0  8.2%;
+	 -webkit-flex-wrap: nowrap;
+ 	 flex-wrap: nowrap;
+}
+
+
+.rotate {	
+	animation: rotate 4s infinite linear;
+	-webkit-animation: rotate 4s infinite linear;
+}
+
+@keyframes rotate {
+	0% {transform:rotate(0deg);}
+	100% {transform:rotate(360deg);}
+}
+
+@webkit-keyframes rotate {
+	0% {-webkit-transform: rotate(0deg);}
+  	100% {-webkit-transform: rotate(360deg);}
+  
+}
+
+.button {
+  display:block;
+  margin: auto;
+  text-align: center;
+  border-radius:4px;
+  text-decoration: none;
+  background: #69c773;
+  font-family:"cac";
+  background-color: rgb(105, 199, 115);
+  -webkit-box-shadow: 0 4px 0 0 #51a65f;
+  -moz-box-shadow: 0 4px 0 0 #51a65f;
+  box-shadow: 0 4px 0 0 #51a65f;
+  font-size: 25px !important;
+  padding: 15px 20px;
+  width: 250px;
+  color: #FFF;
+  letter-spacing:1px;
+}
+.button:hover {
+  color: #51A65F;
+  box-shadow: 0 0px 0 0 #51a65f;
+  margin-top:4px;
+
+}
+
+.ask {
+	background-color:#EDA303;
+	height:100%;
+}
