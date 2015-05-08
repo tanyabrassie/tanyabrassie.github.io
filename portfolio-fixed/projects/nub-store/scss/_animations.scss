@@ -1,0 +1,174 @@
+.slide-up {
+	animation-name: slide-up;
+	-webkit-animation-name: slide-up;
+
+	animation-duration:2s;
+	-webkit-animation-duration:2s;
+
+	animation-delay:.5s;
+	animation-delay:.5s;
+
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+
+	/*animation-delay:1s;
+	-webkit-animation-delay:1s;*/
+
+	animation-timing-function:ease;
+	-webkit-animation-timing-function:ease;
+
+	visibility:visible !important;
+}
+
+
+	@keyframes slide-up {
+		0% {opacity:1; color:black; transform: translateY(100%); letter-spacing:2em;
+			}
+		70% {opacity:1;color:black; transform:translateY(-5%); letter-spacing:.5em;
+			}
+		100% {opacity:1;color:black; transform:translateY(0%); letter-spacing:.5em;
+			}
+	}
+
+
+	@-webkit-keyframes slide-up {
+		0% {opacity:1; color: black; transform: translateY(100%); letter-spacing:2em;
+			}
+		70% {opacity: 1; color: black; transform:translateY(-5%); letter-spacing:.5em;
+			}
+		100% {opacity:1;color:black; transform:translateY(-0%); letter-spacing:.5em;
+			}
+	}
+
+
+	.slide-down{
+	animation-name: slide-down;
+	-webkit-animation-name: slide-down;	
+
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+
+	/*animation-delay:1s;
+	-webkit-animation-delay:1s;
+*/
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;
+
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;	
+
+	visibility: visible !important;						
+}
+
+@keyframes slide-down {
+	0% {
+		transform: translateY(-100%); opacity:1;
+	}	
+
+	100% {
+		transform: translateY(0%); opacity:1;
+	}		
+}
+
+@-webkit-keyframes slide-down {
+	0% {
+		transform: translateY(-100%); opacity:1;
+	}
+	70% {transform: translateY(10%); opacity:1;
+	}
+
+	100% {
+		transform: translateY(0%); opacity:1;
+	}	
+}
+	
+.pulse {
+	animation-name: pulse;
+	-webkit-animation-name: pulse;
+
+	animation-duration:5s;
+	-webkit-animation-duration:5s;
+
+	animation-iteration-count:infinite;
+	-webkit-animation-iteration-count:infinite;
+
+	animation-delay:0s;
+	-webkit-animation-delay:0s;
+
+	animation-timing-function:ease;
+	-webkit-animation-timing-function:ease;
+}	
+
+@keyframes pulse {
+	0%		{opacity:0.1;}
+	50%		{opacity:0.5;}
+	100% 	{opacity:.1;}
+}
+
+@-webkit-keyframes pulse {
+	0%		{opacity:0.1;}
+	50%		{opacity:0.5;}
+	100% 	{opacity:0.1;}
+}
+
+.pulse-slower {
+	animation-name: pulse-slower;
+	-webkit-animation-name: pulse-slower;
+
+	animation-duration:5s;
+	-webkit-animation-duration:5s;
+
+	animation-iteration-count:infinite;
+	-webkit-animation-iteration-count:infinite;
+
+	animation-delay:0s;
+	-webkit-animation-delay:0s;
+
+	animation-timing-function:ease;
+	-webkit-animation-timing-function:ease;
+}	
+
+@keyframes pulse-slower {
+	0%		{opacity:0.1;}
+	65% 	{opacity:0.5;}
+	100% 	{opacity:0.1;}
+}
+
+@-webkit-keyframes pulse-slower {
+	0%		{opacity:0.1;}
+	65% 	{opacity: 0.5;}
+	100% 	{opacity:0.1;}
+}
+
+.marquee {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation-name: marquee;
+    -webkit-animation-name:marquee;
+    animation-duration:55s;
+    -webkit-animation-duration:55s;
+    animation-timing-function:linear;
+	-webkit-animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	-webkit-animation-iteration-count:infinite;
+
+
+}
+
+.marquee:hover {
+    animation-play-state: paused
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { text-indent: -150em }
+    100% { text-indent: 0em }
+}
+
+@-webkit-keyframes marquee {
+    0%   { text-indent: -150em }
+    100% { text-indent: 0em }
+}

@@ -1,0 +1,34 @@
+.body--project {
+	
+}
+
+.project {
+	background: #fff;
+	padding: 0 100px;
+}
+
+.project__information, .project__images {
+	padding-top: 100px;
+	width: 30%;
+	float: left;
+}
+
+.project__information {
+	margin: 20px;	
+}
+
+.project__name {
+	font-size: 2em;
+}
+
+.project__role {
+	padding: 5px 0 10px;
+}
+
+.project__summary {
+	font-size: 12px;
+}
+
+.project__summary p {
+	margin-bottom: 5px;
+}
