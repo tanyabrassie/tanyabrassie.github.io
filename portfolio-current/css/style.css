@@ -102,46 +102,44 @@ background-color: #00FFE4;
 
 
 nav {
-position:fixed;
-top:0;
-z-index:2000;
-width:100%;
-background:#fff;
+  position:fixed;
+  top:0;
+  z-index:2000;
+  width:100%;
+  background:#fff;
 }
 
 nav ul{
-padding: 10px 20px;
-text-align: right;
-font-family:'SimploCaps';
+  padding: 10px 20px;
+  text-align: right;
+  font-family:'SimploCaps';
 
 }
 
 nav li {
-display:inline-block;
-padding: 0 10px;
-letter-spacing:1px;
+  display:inline-block;
+  padding: 0 10px;
+  letter-spacing:1px;
 }
 
 nav a {
-color:#383732;
-text-decoration: none;
+  color:#383732;
+  text-decoration: none;
 }
 
-a#fullname {
-font-family: 'GrandHotel';
-position:absolute;
-font-size:1.4em;
-top: 8px;
-left: 20px;
-letter-spacing:normal;
+.nav-name {
+  font-family: 'GrandHotel';
+  position: absolute;
+  font-size:1.4em;
+  top: 8px;
+  left: 20px;
+  letter-spacing: normal;
 }
 
 nav a:hover {
-/*color: #318494;*/
-/*color:#ff4e50; */
-color:#f95a6d;
-text-decoration:none;
-transition-duration:800ms;
+  color:#f95a6d;
+  text-decoration:none;
+  transition-duration:800ms;
 }
 
 a.nav-active {
@@ -156,7 +154,6 @@ margin-left: auto;
 min-height: 100%;
 width: 100%;
 margin-right: auto;
-margin-bottom: 15%;
 }
 
 .welcome-banner{
@@ -186,7 +183,7 @@ margin: -5px 0px 0px 20px;
 }
 
 .man {
-position:fixed;
+position:absolute;
 bottom:0px;
 left: 10px;
 z-index:-1000;
@@ -195,32 +192,39 @@ width:230px;
 
 
 .about {
-height:auto;
-margin: auto;
-position:relative;
-background: #00FFE4;
+  height:auto;
+  margin: auto;
+  position:relative;
+  background: #00FFE4;
 }
 
 .work { 
-margin: auto;
-position: relative;
-margin-top:1%;
+  margin: auto;
+  position: relative;
 }
 
+.work-title { 
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 1);
+    color: #000000;
+    font-size: 18px;
+    left: 0;
+    letter-spacing:1px;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    bottom:-30px;
+    font-family: 'SimploCaps';
+} 
 
-
-
-#container {
-max-width:100%;
-margin-left:auto;
-margin-right:auto;
-height:92%; 
-min-height:92%;
-width:100%;
-position:static;
-margin-bottom:15%;
+.work-container { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+   display:inline-block;
 }
 
+img.work-image:hover {
+  outline: 2px solid black;
+}
 
 
 img.about {
@@ -246,23 +250,6 @@ text-shadow:0px 0px 0.4px;
 }
 
 
-
-#work ul {
-list-style-type:none;
-}
-
-li.image {
-width:600px;
-margin-bottom:10%;
-position:relative;
-margin-left:auto;
-margin-right:auto;}
-
-li.image img {
- width:600px;
- outline: 2px solid #ededed;
-}
-
 .image p {
 background: rgba(0,0,0,.8);
 padding: 14px 0;
@@ -281,10 +268,6 @@ transition:display 2s;
 display:block;
 }
 
-.image:hover img {
-transition:outline 1s;
-outline:1px dashed black;
-}
 
 .type {
 font-size:.8em;
@@ -301,13 +284,10 @@ width:50px;
 }
 
 #og-grid.og-grid img {
-border: 10px white solid;
 width:100%;
 max-width:auto;
 }
 
-#og-grid.og-grid img:hover{
-}
 
 .container {
 background-color:#ffffff;
@@ -315,27 +295,6 @@ background-color:#ffffff;
 padding-bottom:5%;
 z-index: 300;
 }
-
-.rollwrapper { 
-   position: relative; 
-   width: 100%; /* for IE 6 */
-   display:inline-block;
-}
-
-
-
-p.hover { 
-    background: none repeat scroll 0 0 rgba(255, 255, 255, 1);
-    color: #000000;
-    font-size: 18px;
-    left: 0;
-    letter-spacing:1px;
-    padding: 15px;
-    text-align: center;
-    width: 100%;
-    bottom:-30px;
-    font-family: 'SimploCaps';
-} 
 
 
 .cool-facts {
@@ -358,18 +317,12 @@ a.resume-button {
 padding:5px 14px;
 display:inline;
 width:90px;
-font-size:px;
 font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B'; 
 font-weight: 200; 
 font-style: normal;
 color:white;
 margin:0 2px;
 background-color:#383732;
-}
-
-a.resume-button:hover {
-background-color: #FFC672;
-transition-duration: 600ms;
 }
 
 
@@ -404,10 +357,6 @@ color:white;
 }
 
 
-img.bw:hover {
-  filter: none;
-  -webkit-filter: grayscale(0%);
-}
 
 div.main li.mix{
     display: none;
@@ -451,24 +400,9 @@ padding-top:3%;
 img#eep {
 position:relative;
 float:right;
-z-index:8000;}
-
-
-
-#submit:hover {
-background: #FFC672;
-transition:800ms;
+z-index:8000;
 }
 
-#resume {
-  width:25;
-  margin-right:auto;
-  margin-left:auto;
-}
-
-#resume img {
-  width:250px;
-}
 
 .cool-facts-icons {
   display:block;
