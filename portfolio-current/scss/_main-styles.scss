@@ -1,0 +1,361 @@
+
+.big-body {
+  height:100%;
+  background-color: #00FFE4;
+}
+
+.navigation {
+    position:fixed;
+    top:0;
+    z-index:2000;
+    width:100%;
+    background:#fff;
+    padding: 10px 0;
+
+    &__list {
+      float: right;
+    }
+
+    &__item {
+      display: inline-block;
+      padding: 0 10px;
+      letter-spacing:1px;
+    } 
+
+    &__link, &__logo {
+      color:#383732;
+      text-decoration: none;
+    }
+
+    &__logo {
+      font-family: 'GrandHotel';
+      position: absolute;
+      font-size:1.4em;
+      top: 8px;
+      left: 20px;
+      letter-spacing: normal;
+   }  
+}
+
+
+
+nav a:hover {
+  color:#f95a6d;
+  text-decoration:none;
+  transition-duration:800ms;
+}
+
+a.nav-active {
+color:#FFC672;
+}
+
+
+.welcome {
+height: 100vh;
+margin-left: auto;
+width: 100%;
+margin-right: auto;
+
+    &__banner {
+        top:40%;
+        text-align: center;
+        position:fixed;
+        width:100%;
+        z-index:-1;
+    } 
+
+    &__banner__name {
+      font-size:9em;
+      font-family:'GrandHotel';
+      text-shadow:-1.8px -0.4px 0.5px #FFF;
+      color:#2F2F2F;
+    }
+
+    &__banner__title {
+      font-family:'SimploCaps';
+      color:#383732;
+      font-size:1.3em;
+      text-shadow:0px 0px 0.4px;
+      letter-spacing:2px;
+      margin: -5px 0px 0px 20px;
+    }
+}
+
+
+
+.man {
+position:absolute;
+bottom:0px;
+left: 10px;
+z-index:-1000;
+width:230px;
+}
+
+
+.about {
+  height:auto;
+  background: #00FFE4;
+}
+
+.work, .about { 
+  margin: auto;
+  position: relative;
+}
+
+
+.work {
+  background: #fff;
+
+    &__list {
+      @include clearfix;
+      position: relative;
+    }
+
+    &__container {
+      position: relative; 
+      width: 90%; /* for IE 6 */
+      margin: auto;
+    }
+    
+    &__item {
+      display: block;
+      float: left;
+      padding: 35px 40px;
+
+      a {
+        display: block;
+      }
+    }
+
+    &__image {
+      width: 450px;
+    }
+
+    &__title {
+    font-size: 18px;
+    letter-spacing:1px;
+    padding-top: 15px;
+    text-align: center;
+    font-family: 'SimploCaps';
+    }
+
+
+}
+
+
+
+img.work-image:hover {
+  outline: 2px solid black;
+}
+
+
+img.about {
+display:block;
+margin-left:auto;
+margin-top: 5%;
+margin-right:auto;
+}
+
+
+
+.section-title {
+font-size: 1.7em;
+color: #FCFEF5;
+font-family:'SimploCaps';
+background:#383732;
+text-transform:uppercase;
+text-align:center;
+padding: 35px 0;
+font-weight:500;
+letter-spacing:6px;
+text-shadow:0px 0px 0.4px;
+}
+
+
+.image p {
+background: rgba(0,0,0,.8);
+padding: 14px 0;
+color:white;
+font-family:'Bentham';
+width:70%;
+bottom:0;
+position:absolute;
+text-align: center;
+margin-bottom:3%;
+display:none;
+}
+
+.image:hover p {
+transition:display 2s;
+display:block;
+}
+
+
+.type {
+font-size:.8em;
+font-style:italic;
+}
+
+span#title {
+font-size: 1.2em;
+
+}
+
+#name a img {
+width:50px;
+}
+
+#og-grid.og-grid img {
+width:100%;
+max-width:auto;
+}
+
+
+.container {
+background-color:#ffffff;
+/*background-color:rgba(197, 224, 218, 0.8); */
+padding-bottom:5%;
+z-index: 300;
+}
+
+
+.cool-facts {
+background-color: white;
+width:75%;
+padding: 5% 1%;
+margin-top:5%;
+position:relative;
+margin:auto;
+}
+
+.cool-facts-message {
+padding: 20px; }
+
+#aboutme div {
+  float:left;
+}
+
+a.resume-button {
+padding:5px 14px;
+display:inline;
+width:90px;
+font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B'; 
+font-weight: 200; 
+font-style: normal;
+color:white;
+margin:0 2px;
+background-color:#383732;
+}
+
+
+p.hellotext {
+font-size:14px;
+line-height:2em;
+font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B'; 
+font-weight: 200; 
+font-style: normal; 
+}
+
+.big-hello {
+font-size:5.5em;
+font-family:"GrandHotel";
+text-align:center;
+}
+
+.cleaning-man {
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+}
+
+footer {
+position: relative;
+z-index: 2000;
+background: #383732;
+font-size:.5em;
+padding: 15px 0;
+text-align: center;
+color:white;
+}
+
+
+
+div.main li.mix{
+    display: none;
+}
+
+#buttons {
+text-align:center;
+}
+
+button {
+border:none;
+text-transform:uppercase;
+font-family:'SimploCaps';
+color:#383732;
+background:none;
+outline:none;
+letter-spacing:.8px;
+text-align:center;
+padding:5px 0px;
+margin:0 .8%;
+cursor: pointer;
+cursor: hand;
+font-size:.89em;
+border-radius:1px;
+}
+
+button:hover  {
+outline:none;
+color: #FFC672;
+transition-duration:600ms;
+}
+
+button.active {
+color:#FFC672;
+}
+
+.main {
+padding-top:3%;
+}
+
+img#eep {
+position:relative;
+float:right;
+z-index:8000;
+}
+
+
+.cool-facts-icons {
+  display:block;
+  margin:20px;
+  text-align: center;
+
+}
+
+.cool-facts-icon img {
+  width: 70%;
+
+}
+
+.cool-facts-icon  {
+  display: inline-block;
+  float: left;
+  width: 29%;
+  text-align: center;
+  margin: 10px;
+}
+
+.cool-facts-icon p {
+  padding: 0 10px;
+  width:100%;
+  font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B'; 
+  font-weight: 200; 
+  font-style: normal;
+  font-size:12px;
+  line-height: 15px;
+}
+
+.about-icons ul {
+  display:inline-block;
+  }

@@ -8,7 +8,7 @@
 
 .og-grid li {
 	display: inline-block;
-	margin: 0 30px;
+	margin: 20px 30px;
 	vertical-align: top;
 	height: 275px;
 }
@@ -54,7 +54,8 @@
 .og-expander-inner {
 	padding: 10px 30px;
 	height: 100%;
-	margin: 0 3%;
+	width: 60%;
+	margin: auto;
 }
 
 .og-expander-inner img {
@@ -115,42 +116,43 @@
 	margin-left:auto;
 }
 
-.project-image {
-	width: 75% !important;	
-	float:left;
+
+.og-details h3 {
+  	font-size: 28px;
+    letter-spacing: 3px;
+    font-family:'SimploCaps';
+    padding: 60px 0 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.project-role {
+	text-align:center;
+	font-size: 1em;
+	color: #FFC672;
+	letter-spacing:1px;
+	padding-bottom:20px;
+	border-bottom: 1px solid #333;
 }
 
 .project-text {
-	width: 30%; 
-	float: left;
-}
-
-.og-fullimg {
-	text-align: center;
-}
-
-.og-fullimg img {
-	display: inline-block;
-	max-width: 100%;
-	width:95%;
-	min-width:50%;
-	/*box-shadow:2px 2px 2px 2px #E0E0E0;*/
-}
-
-.og-details h3 {
-  	font-size: 2em;
-    letter-spacing: 3px;
-    font-family:'SimploCaps';
-    padding: 60px 0 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight:100;
-}
-
-.og-details p {
-	line-height: 22px;
+	line-height: 20px;
 	text-align:justify;
-	font-size: 13px;
+	font-size: 14px;
+	width: 60%;
+	margin:auto;
+}
+
+.project-image {
+	display: block;
+	width: 75%;
+	margin: 25px auto;
+
+}
+
+.project-image-caption {
+	text-align: center;
 }
 
 .og-details a {
@@ -169,24 +171,6 @@
 	border-color: #999;
 }
 
-div.og-details p figure {
-width: 65%;
-float: right;
-}
-
-div.og-details p figure img {
-/*box-shadow:  2px 2px 2px #E0E0E0;*/
-width:auto;
-
-}
-
-div.og-details p figure figcaption {
-font-size:.9em;
-color:black;
-padding-bottom:20px;
-text-align:center;
-
-}
 
 p.titlep {
 font-size:1.2em;
@@ -233,20 +217,6 @@ background-color: #494949;
 
 a.linkbox {
 display:block;
-}
-
-p.role {
-text-align:center;
-font-size: 1em;
-color: #FFC672;
-letter-spacing:1px;
-padding-bottom:20px;
-}
-
-.caption p {
-position:relative;
-text-align:center;
-font-style:italic;
 }
 
 img.txtimage {
