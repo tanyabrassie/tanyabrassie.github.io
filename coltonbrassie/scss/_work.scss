@@ -32,6 +32,11 @@
 	margin: auto;
 }
 
+.work__image:hover {
+	opacity: .5;
+	transition-duration:800ms;
+}
+
 .work__row {
 	@include clearfix;
 	padding: 40px 0;
