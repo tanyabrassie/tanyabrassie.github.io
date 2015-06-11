@@ -29,6 +29,10 @@ body {
 	overflow: hidden;
 }
 
+.grid--home {
+	width: 100%;
+}
+
 .grid:after {
 	content: "";
 	display: table;
