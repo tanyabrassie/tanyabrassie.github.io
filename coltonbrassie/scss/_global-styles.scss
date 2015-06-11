@@ -25,10 +25,9 @@ body {
 
     &__list {
       text-align: center;
+
           @media (max-width: 600px) {
-            float: left;
-            padding-top: 25px;
-            font-size: 12px;    
+            font-size: 14px;    
          }
     }
 
