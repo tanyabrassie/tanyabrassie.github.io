@@ -21,7 +21,8 @@ body {
     z-index:2000;
     width:100%;
     background: none;
-    padding: 10px 0;
+    padding: 10px 0 20px;
+    border-bottom: 1px solid #fff;
 
     &__list {
       text-align: center;

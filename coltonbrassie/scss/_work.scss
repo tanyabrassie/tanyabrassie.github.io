@@ -1,12 +1,12 @@
 .work-body {
-	background: $teal;
+	background: #000;
 }
 
 .work-details {
-	background: #fff;
 	text-align: center;
 	padding-top: 20px;
 	margin: 20px;
+	color: #fff;
 
 
 	&__role {
@@ -16,9 +16,6 @@
 
 	&__title {
 		font-size: 28px;
-		color: #FCFEF5;
-		font-family:'SimploCaps';
-		background:#383732;
 		text-transform:uppercase;
 		text-align:center;
 		padding: 25px 0;
