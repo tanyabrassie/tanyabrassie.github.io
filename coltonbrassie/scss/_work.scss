@@ -4,7 +4,7 @@
 
 .work-details {
 	text-align: center;
-	border-top: 1px solid rgba(255, 255, 255, 0.26);
+	// border-top: 1px solid rgba(255, 255, 255, 0.26);
 	padding-top: 20px;
 	margin: 20px;
 	color: #fff;
@@ -30,4 +30,9 @@
 .work__image {
 	width: 105%;
 	margin: auto;
+}
+
+.work__row {
+	@include clearfix;
+	padding: 40px 0;
 }
