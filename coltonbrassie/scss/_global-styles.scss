@@ -1,7 +1,8 @@
 
 body {
-  height:100%;
-  background-color: #fff;
+  height:1vh;
+  width: 100%;
+  background-color: #000;
 }
 
 .navigation {
@@ -9,7 +10,7 @@ body {
     top:0;
     z-index:2000;
     width:100%;
-    background:#fff;
+    background: none;
     padding: 25px 0;
 
     &__list {
@@ -23,7 +24,7 @@ body {
     } 
 
     &__link, &__logo {
-      color:#383732;
+      color:#fff;
       font-family: 'Montserrat', sans-serif;
       text-decoration: none;
     }
