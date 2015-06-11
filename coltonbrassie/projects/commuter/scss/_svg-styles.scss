@@ -1,0 +1,82 @@
+@font-face {
+	font-family:'League-Spartan';
+	src:url(fonts/LeagueSpartan-Bold.otf);
+}
+
+body {
+  border: 10px solid #fff;
+}
+
+svg {
+	width: 160px;
+}
+
+#train {
+	width: 200px;
+	padding-top: 45px;
+	margin-left: -5px;
+	}
+
+
+#bus {
+	width: 115px;
+	padding-top:30px;
+	margin-left: 15px;
+
+}	
+
+.frame {
+	width: 97%;
+	background-color:white;
+	z-index:30000;
+	position:relative;
+}
+
+.icon-grid {
+	padding-top:70px;
+	margin-bottom:50px;
+}
+header {
+	top: 0;
+	left: 0;
+	position:fixed;
+	background: white;
+	z-index: 3000;
+	border-bottom: 5px double #232323;
+
+	 :after {
+	 	padding:20px;
+	 }
+	
+	h1 {
+		text-align: center;
+		font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 700; font-style: normal;
+		text-transform: uppercase;
+		letter-spacing: 2.5px;
+		font-size: 18px;
+		color: #232323;
+	}
+}
+
+img {
+	width: 150px;
+}
+
+.train img {
+	padding-top: 35px;
+	width: 230px;
+}
+
+.clock {
+	width: 130px;
+	padding-top:10px;
+}
+
+
+.name {
+	padding-top: 75px;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Rochester', cursive;
+}
+
