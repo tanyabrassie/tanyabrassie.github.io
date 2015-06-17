@@ -12,10 +12,15 @@ height: 100vh;
 
     &__container {
       @include clearfix;
-      width: 60%;
-      margin: 0 20%;
+      min-width: 200px;
       padding-top: 120px;
-      position: fixed;
+      width:600px;
+      position: relative;
+      margin: auto;
+
+      @media (max-width: 650px) {
+        width: 290px;
+      }    
     }
 
     &__message {
@@ -25,21 +30,25 @@ height: 100vh;
     }
 
     &__image {
-      width: 200px;
+      width: 170px;
       display: block;
       margin: auto;
     }
 
     &__headline {
-      font-size: 4em;
+      font-size: 3em;
       text-shadow:-1.8px -0.4px 0.5px #FFF;
       color:#2F2F2F;
       text-align: center;
+      padding: 10px;
+
+       @media (max-width: 650px) {
+        font-size: 2em;
+      }    
     }
 
     &__paragraph {
       color:#383732;
-      padding: 10px 94px;
       font-size: 1em;
       letter-spacing: 1px;
       text-align: justify;
