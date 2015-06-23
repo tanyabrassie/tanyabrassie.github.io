@@ -92,7 +92,6 @@ width:230px;
     
     &__item {
       display: block;
-      float: left;
       padding: 30px;
 
       a {
@@ -102,6 +101,7 @@ width:230px;
 
     &__image {
       width: 100%;
+      max-width: 450px;
     }
 
     &__title {

@@ -16,6 +16,7 @@
 
 	&__title {
 		font-size: 28px;
+		margin-bottom: 40px;
 		color: #FCFEF5;
 		font-family:'SimploCaps';
 		background: #383732;
@@ -29,10 +30,14 @@
 
 .work__image--main {
 	width: 75%;
-	margin: auto;
-	padding: 20px;
+	margin: 20px auto;
 	min-width: 300px;
-	max-width: 550px;
+	max-width: 600px;
+
+	&--dwell {
+		max-width: 400px;
+		margin: 30px;
+	}
 
 }
 
@@ -45,15 +50,13 @@
 	width: 70%;
 	text-align: left;
 	line-height: 19.2px;
-	font-size: 15px;  
+	font-size: 16px;  
 	font-family: 'Vollkorn', serif;
-	margin: auto;
+	margin: 30px auto;
 	max-width: 630px;
 	min-width: 270px;
 
-	 // @media (max-width: 700px) {
-	 // 	width: 80%;
-	 // 	max-width: 650px;
-	 // }
-
+	p {
+		padding: 10px 0;
+	}
 }
