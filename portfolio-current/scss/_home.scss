@@ -95,7 +95,9 @@ width:230px;
       padding: 30px;
 
       a {
-        display: block;
+        display: inline-block;
+        text-decoration: none;
+        color: $gray;
       }
     }
 
@@ -105,14 +107,12 @@ width:230px;
     }
 
     &__title {
-    font-size: 18px;
-    letter-spacing:1px;
-    padding-top: 15px;
-    text-align: center;
-    font-family: 'SimploCaps';
+      font-size: 18px;
+      letter-spacing:1px;
+      padding-top: 15px;
+      text-align: center;
+      font-family: 'SimploCaps';
     }
-
-
 }
 
 
