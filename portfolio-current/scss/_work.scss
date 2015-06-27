@@ -29,8 +29,8 @@
 
 
 .work__image--main, .image__caption {
-	width: 75%;
-	margin: 20px auto 0;
+	width: 100%;
+	margin: 40px auto 0;
 	min-width: 300px;
 	max-width: 600px;
 
@@ -42,10 +42,12 @@
 }
 
 .image__caption {
-	font-size: 12px;
+	font-size: 13px;
 	color: $gray-2;
 	line-height: 14px;
+	margin: 20px auto 30px;
 	text-align: left;
+
 }
 
 
@@ -81,6 +83,7 @@
 .work__explanation__title {
 	font-weight: bold;
 	font-size: 18px;
+	padding-top: 20px;
 }
 
 .work__explanation__subtitle {
