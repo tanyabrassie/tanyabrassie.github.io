@@ -46,7 +46,13 @@
 
 				<li class="navigation__item"><a class="navigation__link" href="../index.html">Work</a></li> &#5159;
 				<li class="navigation__item"><a class="navigation__link" href="#work">About</a></li> &#5159;
-				<li class="navigation__item"><a class="navigation__link" href="#about">Contact</a></li>
+				<li class="navigation__item--icon"><a class="navigation__link" href="#about">Contact</a></li>
+				<li class="navigation__item--icon"><a class="navigation__link" href="#about">Contact</a></li>
+
+
+<li class="navigation__item"><a href="https://dribbble.com/tanyabrassie"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 216"><path d="M108 15.8c-50.8 0-92.2 41.3-92.2 92.2s41.3 92.2 92.2 92.2 92.2-41.3 92.2-92.2-41.4-92.2-92.2-92.2zm61 42.5c11 13.4 17.6 30.5 17.8 49-2.6-.5-28.6-5.8-54.8-2.5-.6-1.3-1.1-2.7-1.7-4.1-1.6-3.8-3.4-7.7-5.2-11.4 29-11.9 42.2-28.8 43.9-31zm-61-29c20 0 38.3 7.5 52.2 19.8-1.4 2-13.3 17.9-41.3 28.4-12.9-23.6-27.1-43.1-29.3-46 5.9-1.4 12.1-2.2 18.4-2.2zm-33.4 7.5c2.1 2.8 16.1 22.3 29.2 45.5C66.9 92.1 34.5 92 31 91.9c5.1-24.4 21.5-44.7 43.6-55.1zm-45.3 71.3v-2.4c3.4.1 41.6.6 80.9-11.2 2.3 4.4 4.4 8.9 6.4 13.4-1 .3-2.1.6-3.1.9-40.6 13.1-62.2 48.9-64 51.9-12.5-14-20.2-32.4-20.2-52.6zm78.7 78.7c-18.2 0-35-6.2-48.3-16.6 1.4-2.9 17.4-33.7 61.8-49.2.2-.1.3-.1.5-.2 11.1 28.7 15.6 52.8 16.8 59.7-9.5 4-19.9 6.3-30.8 6.3zm44-13.5c-.8-4.8-5-27.8-15.3-56.1 24.7-3.9 46.3 2.5 49 3.4-3.5 21.9-16 40.8-33.7 52.7z"/></svg></a></li>
+
+
 			</ul>
 		</nav>
 
@@ -63,36 +69,46 @@
 			</div>
 			<div class="col-1-1 mobile-col-1-1">
 				
-					<img class="work__image--main" src="../assets/images/pulp/menu-front.jpg">
+					<img class="work__image--main" src="../assets/images/pcln-styleguide/styleguide-homescreen.png">
 				
 			</div>
 			<div class="col-1-1 mobile-col-1-1">
 				<div class="work__explanation">
-					History of the Project
-					Up until its inception, Priceline had been operating without a front end styleguide. This created many problems for designers, developers and, most importantly, users: designers lacked a documented design system on which to base their designs leading to inconsistencies across the site, developers found themselves repeatedly writing the same HTML and CSS without any defined naming conventions and users were presented with a site replete with inconsistencies, leading to a subpar user experience. 
-					 
-					Styleguide to the rescue! The styleguide solves these problems by:
-					Defining a Priceline.com design system which designers can reference in a single place
-					Defining common UI styles in code to create modularized components, which developers can quickly grab and use
-					Creating a globally referenced base.css to reduce code bloat and make implementing global changes possible and painless
-					Establishing scalable CSS naming conventions and promote more consistently written HTML
-					Providing a sandbox to rapidly prototype designs and test them in code
+					<strong>Summary</strong>
+					<p>
+					The Priceline Styleguide is an ongoing project to create a living style guide and base.css for the Priceline.com desktop site that both designers and developers can reference. It’s a project I’ve been working on with Brian McCormack since my days as a wee intern at Priceline, and has taught me massive amounts about design systems, development, scalability, and workflows. Throughout the projects lifespan, I’ve been involved in many ways from conducting competitive analysis and site UI audits, to designing and coding (html and sass) modular components into the guide to helping define class naming conventions and writing documentation.  Currently, the styleguide is built on Brad Frost’s <a href="http://patternlab.io/">Patternlab</a> and contains a library of common UI components around across the site. These common components make up the base.css which developers can use as a project starter just like Foundation or Bootstrap. More about the entire project below.</p>
+
+
+					<strong>The Problem</strong>
+					<p>Priceline.com is a massive, multi-product site that has been in existence for more than a decade. During this time, Priceline expanded organically and operated without a definitive style guide; however, this created some inevitable problems for designers, developers and users. From a user perspective, the site’s lack inconsistent UI delivered a disjointed sometimes even jarring experience and undermined the site’s legitimacy. From a design perspective, there was no single reference as to what basic UI components should look like (during a button audit, my colleague Brian found at least 12 different button styles running amok on the site). Similarly, developers found themselves coding and recoding these common components repeatedly. Enter: the living styleguide! The living styleguide is an attempt to solve these issues by defining and documenting a design system that works across products.</p>
+
+
+					<strong>Styleguide Goals</strong>
+					<p>
+					   <ul>
+					   	<li>Create a consistent user experience</li>
+
+					   <li> Provide a visual reference for common UI components and brand assets for designers and developers</li>
+					   <li> Eliminate unnecessary development efforts by creating re-usable pieces of code</li>
+					   <li> Institute CSS class naming conventions, allow for easy identifying/updating of components</li>
+					   <li> Create one base.css for all projects to use as a starting point</li>
+					   <li> Create and catalog a priceline font icon set to be used instead of images to improve consistency and performance</li>
+
+					</ul>
+				</p>
+			
+					<strong>Future Styleguide</strong>
+					<p>When the styleguide project started, mobile and desktop teams worked mostly independent of each other. As Priceline.com begins to explore responsive design, the line between desktop and mobile is increasingly blurred. While the two paths will remain separate for the foreseeable future, we are working on expanding our design system to include responsive patterns that will help establish conventions for these “in-between” responsive pages to ensure they align with both desktop and mobile styles and create a seamless user experience.</p>
+
+
+
+
+
  
 
 				</div>
 			</div>
 
-			<div class="col-1-1 mobile-col-1-1">
-				
-					<img class="work__image--main" src="../assets/images/pulp/pulp-set.jpg">
-				
-			</div>
-
-			<div class="col-1-1 mobile-col-1-1">
-				
-					<img class="work__image--main" src="../assets/images/pulp/pulp-icon-vert.png">
-				
-			</div>
 			
 			<div class="col-1-2 mobile-col-1-1">
 				<div class="content">

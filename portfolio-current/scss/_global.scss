@@ -30,6 +30,13 @@
       text-transform: uppercase;
       font-family: 'SimploCaps';
       font-size: 16px;
+    }
+
+    &__item--icon {
+      width: 30px;
+      vertical-align: middle;
+      display: inline-block;
+      margin-left: 20px;
     } 
 
     &__link {

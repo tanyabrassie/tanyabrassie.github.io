@@ -56,7 +56,7 @@ body {
 
 
 
-.man {
+.nub {
 position:absolute;
 bottom:0px;
 left: 10px;
@@ -299,36 +299,3 @@ z-index:8000;
 }
 
 
-.cool-facts-icons {
-  display:block;
-  margin:20px;
-  text-align: center;
-
-}
-
-.cool-facts-icon img {
-  width: 70%;
-
-}
-
-.cool-facts-icon  {
-  display: inline-block;
-  float: left;
-  width: 29%;
-  text-align: center;
-  margin: 10px;
-}
-
-.cool-facts-icon p {
-  padding: 0 10px;
-  width:100%;
-  font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B'; 
-  font-weight: 200; 
-  font-style: normal;
-  font-size:12px;
-  line-height: 15px;
-}
-
-.about-icons ul {
-  display:inline-block;
-  }
