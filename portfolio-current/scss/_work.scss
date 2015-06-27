@@ -28,9 +28,9 @@
 }
 
 
-.work__image--main {
+.work__image--main, .image__caption {
 	width: 75%;
-	margin: 20px auto;
+	margin: 20px auto 0;
 	min-width: 300px;
 	max-width: 600px;
 
@@ -40,6 +40,14 @@
 	}
 
 }
+
+.image__caption {
+	font-size: 12px;
+	color: $gray-2;
+	line-height: 14px;
+	text-align: left;
+}
+
 
 .work__image:hover {
 	outline: 1px solid black;
@@ -68,4 +76,15 @@
 	strong {
 		font-weight: bold;
 	}
+}
+
+.work__explanation__title {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.work__explanation__subtitle {
+	font-weight: bold;
+	color: $gray-2;
+	font-size: 16px;
 }
