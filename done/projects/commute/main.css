@@ -1,0 +1,63 @@
+/* line 1, scss/_svg-styles.scss */
+body {
+  border: 20px solid #E6FBF5;
+}
+
+/* line 5, scss/_svg-styles.scss */
+.frame {
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 11, scss/_svg-styles.scss */
+.icon-grid {
+  padding-top: 50px;
+  border-bottom: 1px solid black;
+  margin-bottom: 50px;
+}
+
+/* line 16, scss/_svg-styles.scss */
+header {
+  padding: 50px;
+  border-bottom: 1px solid #232323;
+}
+/* line 21, scss/_svg-styles.scss */
+header h1 {
+  text-align: center;
+  font-family: 'Old Standard TT', serif;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+
+/* line 31, scss/_svg-styles.scss */
+img {
+  width: 150px;
+}
+
+/* line 35, scss/_svg-styles.scss */
+.train img {
+  padding-top: 35px;
+  width: 230px;
+}
+
+/* line 40, scss/_svg-styles.scss */
+.clock {
+  width: 130px;
+  padding-top: 10px;
+}
+
+/* line 45, scss/_svg-styles.scss */
+.satchel {
+  width: 200px;
+}
+
+/* line 49, scss/_svg-styles.scss */
+.name {
+  padding: 60px;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Old Standard TT', serif;
+}

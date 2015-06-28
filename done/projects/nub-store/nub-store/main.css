@@ -1,0 +1,474 @@
+@font-face {
+  font-family: 'bebas';
+  src: url(fonts/BEBAS.ttf);
+}
+@font-face {
+  font-family: 'Sofia';
+  src: url(fonts/Sofia-Regular.otf);
+}
+@font-face {
+  font-family: 'Learning';
+  src: url(fonts/Learning.otf);
+}
+@font-face {
+  font-family: 'tondu';
+  src: url(fonts/tondu-beta.ttf);
+}
+@font-face {
+  font-family: 'cac';
+  src: url(fonts/cac_champagne.ttf);
+}
+@font-face {
+  font-family: 'Ostrich_Sans';
+  src: url(fonts/Ostrich_Sans_Inline-regular.otf);
+}
+@font-face {
+  font-family: 'PrintClearly';
+  src: url(fonts/PrintClearly.otf);
+}
+@font-face {
+  font-family: 'Ostrich_Sans_Italic';
+  src: url(fonts/Ostrich_Sans_Inline-italic.otf);
+}
+/* line 1, scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 22, scss/_reset.scss */
+html * > svg {
+  -webkit-transform-origin-x: 0%;
+  -webkit-transform-origin-y: 0%;
+  -webkit-transform-origin-z: initial;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 32, scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 35, scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 38, scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 46, scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 4, scss/_nub-styles.scss */
+.navigation {
+  height: 75px;
+  width: 100%;
+  border-bottom: 1px double #000000;
+  background: white;
+  z-index: 2000;
+  position: fixed;
+}
+/* line 14, scss/_nub-styles.scss */
+.navigation__logo {
+  float: left;
+  padding-left: 38px;
+  width: 300;
+  color: black;
+}
+/* line 20, scss/_nub-styles.scss */
+.navigation__logo h1 {
+  font-family: 'Ostrich_Sans';
+  font-size: 4em;
+  color: #839B9E;
+  padding-top: 10px;
+}
+/* line 27, scss/_nub-styles.scss */
+.navigation__logo p {
+  font-family: 'PrintClearly';
+  font-size: 15px;
+}
+/* line 34, scss/_nub-styles.scss */
+.navigation__nub {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  position: relative;
+  width: 75px;
+}
+/* line 44, scss/_nub-styles.scss */
+.navigation__ad {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  padding: 20px 20px 0 0;
+}
+/* line 51, scss/_nub-styles.scss */
+.navigation__ad svg {
+  float: right;
+  width: 95px;
+  height: auto;
+  cursor: pointer;
+}
+/* line 58, scss/_nub-styles.scss */
+.navigation__ad polygon {
+  transition: fill 2s;
+}
+/* line 62, scss/_nub-styles.scss */
+.navigation__ad polygon:hover {
+  fill: #B22D29;
+}
+
+/* line 68, scss/_nub-styles.scss */
+.page {
+  padding-top: 75px;
+  height: 100%;
+}
+/* line 53, scss/_reset.scss */
+.page:before, .page:after {
+  content: "";
+  display: table;
+}
+/* line 58, scss/_reset.scss */
+.page:after {
+  clear: both;
+}
+/* line 73, scss/_nub-styles.scss */
+.page__messaging {
+  font-size: 4em;
+  text-align: center;
+  padding: 40px 0;
+  background: white;
+  width: 100%;
+}
+/* line 80, scss/_nub-styles.scss */
+.page__messaging strong {
+  font-family: 'Ostrich_Sans_Italic';
+}
+/* line 83, scss/_nub-styles.scss */
+.page__messaging p {
+  font-family: 'PrintClearly';
+  font-size: 24px;
+}
+/* line 93, scss/_nub-styles.scss */
+.page__home__message {
+  font-size: 6.5em;
+  text-align: center;
+  padding: 40px 0;
+  background: white;
+}
+/* line 99, scss/_nub-styles.scss */
+.page__home__message strong {
+  font-family: 'Ostrich_Sans_Italic';
+}
+/* line 103, scss/_nub-styles.scss */
+.page__home__message span {
+  font-family: 'Ostrich_Sans';
+  color: #839B9E;
+}
+/* line 110, scss/_nub-styles.scss */
+.page__home__message p {
+  font-family: 'PrintClearly';
+  font-size: 24px;
+}
+/* line 116, scss/_nub-styles.scss */
+.page__home__belt {
+  border-bottom: 10px solid black;
+  background: white;
+  padding-top: 50px;
+}
+/* line 121, scss/_nub-styles.scss */
+.page__home__belt li {
+  display: inline;
+  padding: 35px;
+}
+/* line 126, scss/_nub-styles.scss */
+.page__home__belt img {
+  height: 180px;
+}
+/* line 135, scss/_nub-styles.scss */
+.page__benefits__nub {
+  float: left;
+  width: 15%;
+  padding: 0 30px;
+  z-index: 3000;
+  margin-top: -70px;
+}
+/* line 146, scss/_nub-styles.scss */
+.page__benefits__diagram {
+  width: 100%;
+  text-align: center;
+}
+/* line 151, scss/_nub-styles.scss */
+.page__benefits__diagram svg {
+  width: 15%;
+  padding: 0 1.5em;
+}
+/* line 160, scss/_nub-styles.scss */
+.page__new-collection__roster {
+  text-align: center;
+}
+/* line 53, scss/_reset.scss */
+.page__new-collection__roster:before, .page__new-collection__roster:after {
+  content: "";
+  display: table;
+}
+/* line 58, scss/_reset.scss */
+.page__new-collection__roster:after {
+  clear: both;
+}
+/* line 164, scss/_nub-styles.scss */
+.page__new-collection__roster img {
+  width: 90px;
+  padding: 10px 20px;
+  transition: transform .5s;
+}
+/* line 170, scss/_nub-styles.scss */
+.page__new-collection__roster img:hover {
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
+}
+
+/* line 1, scss/_animations.scss */
+.slide-up {
+  animation-name: slide-up;
+  -webkit-animation-name: slide-up;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-delay: .5s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  /*animation-delay:1s;
+  -webkit-animation-delay:1s;*/
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important;
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 1;
+    color: black;
+    transform: translateY(100%);
+    letter-spacing: 2em;
+  }
+  70% {
+    opacity: 1;
+    color: black;
+    transform: translateY(-5%);
+    letter-spacing: .5em;
+  }
+  100% {
+    opacity: 1;
+    color: black;
+    transform: translateY(0%);
+    letter-spacing: .5em;
+  }
+}
+@-webkit-keyframes slide-up {
+  0% {
+    opacity: 1;
+    color: black;
+    transform: translateY(100%);
+    letter-spacing: 2em;
+  }
+  70% {
+    opacity: 1;
+    color: black;
+    transform: translateY(-5%);
+    letter-spacing: .5em;
+  }
+  100% {
+    opacity: 1;
+    color: black;
+    transform: translateY(0%);
+    letter-spacing: .5em;
+  }
+}
+/* line 44, scss/_animations.scss */
+.slide-down {
+  animation-name: slide-down;
+  -webkit-animation-name: slide-down;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  	/*animation-delay:1s;
+  	-webkit-animation-delay:1s;
+  */
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  visibility: visible !important;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(10%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+/* line 85, scss/_animations.scss */
+.pulse {
+  animation-name: pulse;
+  -webkit-animation-name: pulse;
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: .1;
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+/* line 114, scss/_animations.scss */
+.pulse-slower {
+  animation-name: pulse-slower;
+  -webkit-animation-name: pulse-slower;
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+}
+
+@keyframes pulse-slower {
+  0% {
+    opacity: 0.1;
+  }
+  65% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+@-webkit-keyframes pulse-slower {
+  0% {
+    opacity: 0.1;
+  }
+  65% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+/* line 143, scss/_animations.scss */
+.marquee {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  animation-name: marquee;
+  -webkit-animation-name: marquee;
+  animation-duration: 55s;
+  -webkit-animation-duration: 55s;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+/* line 161, scss/_animations.scss */
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Make it move */
+@keyframes marquee {
+  0% {
+    text-indent: -150em;
+  }
+  100% {
+    text-indent: 0em;
+  }
+}
+@-webkit-keyframes marquee {
+  0% {
+    text-indent: -150em;
+  }
+  100% {
+    text-indent: 0em;
+  }
+}
