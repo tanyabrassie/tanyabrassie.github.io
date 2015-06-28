@@ -75,17 +75,13 @@
 					<p>In addition to my work on the styleguide, I’m responsible for making iterative design enhancements to Priceline’s responsive post-booking experience. The overall goal for these enhancements is to create a more robust user experience by building out self-service functionality while still finding ways to increase conversion without detracting from the experience. These changes to the confirmation pages for the air, hotels, rental car, and vacation packages vary in nature, scope and complexity: some are slight modifications to the visual design and content hierarchy, while others are changes to the existing user flow; however, all decisions are driven by data gathered from several sources including customer service calls and A/B testing. In addition to creating the designs, I also protoype and build them in HTML and SCSS, writing production ready code which is then passed over to the developers. If the design change requires altering a pre-existing portion of the page, I directly edit the code base. This creates an efficient workflow and improves communication between developers and designers which ultimately leads to a better product. Below are a few examples of specific projects that I've worked on to improve the post booking experience.</p>
 
 
-					<h2 class="work__explanation__title">Special Requests</h2>
-					<h2 class="work__explanation__subtitle">Description</h2>
-					<h2 class="work__explanation__subtitle">Text to Download</h2>
-					<h2 class="work__explanation__subtitle">Book Again</h2>
+		
 
 
-
-					<h2 class="work__explanation__title">Cancellation Refinements</h2>
+					<h2 class="work__explanation__title">Post Booking Enhancement Project Example: Cancellation Refinements</h2>
 					<p> Recently, I've been working on making improvements to the cancellation experience for hotels and rental car. Currently, users who book a rental car can cancel at no charge. If a user has opted to add collision damage insurance to their reservation, this insurance is also fully refundable and cancelled automatically with the car reservation. 
 
-					<h3 class="work__explanation__title">Issues with the Existing Experience</h3>
+					<h3 class="work__explanation__subtitle">Issues with the Existing Experience</h3>
 					Based on call volume data from customer service, we realized that there were several issues with the current cancellation experience. For one, customers were not aware if their collision damage insurance was cancelled along with their rental car information. Adding to the confusion was the fact that they Collision Damage Insurance module was still displayed on the cancellation page (#6 below), with no explicity messaging stating it had also been cancelled. Users also weren't sure if an email had been automatically sent to them (#2), or if they needed to send themselves a cancellation email. The "Email Itinerary" button (#3) added to this confusion: was a cancellation confirmation email sent? Do I need to send one to myself? If I click "Email Itinerary" will that send me a copy of my interiary or a cancellation notice? And while the summary of charges module clearly indicated the customer owed nothing towards the rental car reservation, the CDI refund information was presented quietly and the module lacked a clear content hierarchy (#5). Lastly, even though the trip was canceled, the app download banner across the top, encouraging the user to take William Shatner and Kaley Cucoco with them to Pittsburgh still appeared making the experience seem neglected (i.e. I'm clearly not going to Pittsburgh anymore, why are they still asking to come along?").</p>
 
 					<p>Since the confirmation page is a responsive template, I had to consider solutions to these problems from a mobile-first perspective. Additionally, some issues (such as the lack of email notification) were common across all the products cancellation pages, so the solution needed to also incorporate both product scenarios while keeping consistency in mind. I also wanted to add some subtle personality to the page, to make it seem less austere and robotic. </p>
@@ -100,28 +96,51 @@
 					<img class="work__image--main" src="../assets/images/confirmation-page/cancellation-rc.png">
 					<div class="image__caption"> The old rental car cancellation experience highlighted to show problem areas.</div>
 			</div>
-
-
+			
 			<div class="col-1-1 mobile-col-1-1">
 				<div class="work__explanation">
 
+					<h3 class="work__explanation__subtitle">Creating Solutions</h3>		
+
+
+					Although the issue was the same across products, each product had slight differences that needed to be taken into consideration when designing. For instance, rental car cancellation numbers can be significantly longer than hotel cancellation numbers, an important fact to note when considering how content will appear across layouts.</p>
+
+					<h4>Post-Booking Functionality Enhancements</h4>
+					<p>After eliminating the unhelpful links to "print receipt" and "email iterinary" there was room to explore post-cancellation steps. What if this page could make it easier for the user to launch into another search? Data showed that most users who cancel do book again, but just what they booked was a mystery. After the success of a past "book again" test, I decided to include the "book again" option for hotels. Initially, I thought including another option to book another hotel in the same city would be a good second option. What if the user still needed a room in the same city? With the click of a button they could launch a search already populated with that city data. However, considering the lack of data regarding just what users book after cancellation, I thought it best to include a broad "book another hotel" button from which we could then figure out what users were booking and offer them the more specific option to book again in the same city if that's what they were searching for. </p>
+
+					<p>One limitation I had to keep in mind was that the rental car confirmation page did not have two book again options after cancellation. Unlike hotels, users who cancel a rental car booking cannot choose to book that car again albiet for a different date since the reservation is not tied to the car itself. From a visual standpoint, this meant that the design would need to still stand out with only two options.</p>
+
+					<h4>Content Hierachy and Visual Enhancements</h4>
+					<p>In terms of content hierachy, I decided to add messaging informing the user that a cancellation email had been sent. To highlight this message and give it visual reinforcement admist all the text, I added a zooming email icon to accompany the message that also helped give the page some personality. As the date and time of cancellation is not immediately important, I relegated this time-stamp messaging to the main module, which helps to emphasize the cancelled status of the reservation throughout the page; previously, content within the main module remained the same from confirmation to cancellation page with all messages of cancellation nature being confined to the top of the page.
+
+					To emphasize the nature of the cancellation time stamp, I gave it an alert style (red, bold text on a light red background). Accompanying the message is a cancellation icon in consideration for both the users who are colorblind and cannot distinguish between red and green (another color we use for messaging) and the print-friendly styles page which strip all color from the design. I also edited the messaging copy to read more human-friendly and to include mention that the insurance has also been cancelled in an effort to alleviate some customer confusion. According to customer service, many users call unsure of whether or not their collision insurance was cancelled with their reservation.
+
+					<p>
+					I also made slight tweaks to the summary of charges module in an effort to more clearly present the information and indicate to users what they owe. The new module, emphasizes the collision damage refund and eliminates repetitve wording. "Estimated Total", has also been changed to the more direct and definite "You Owe" supported by the totals above. Since collision coverage is always fully refundable, the two variations only demonstrate a case in which there is a partial refund.</p>
+
+					
 
 
 
-
-
-
-			</div> 
-
-			
-			<div class="col-1-2 mobile-col-1-1">
-				<div class="content">
-				</div>
 			</div>
-			<div class="col-1-2 mobile-col-1-2 hide-on-mobile">
-				<div class="content">
-				</div>
+
+			<div class="col-1-1 mobile-col-1-1">
+					<img class="work__image--main" src="../assets/images/confirmation-page/cancellation-round1.png">
+					<div class="image__caption"> Some potential solutions and how they would appear in the RC and Hotel confirmation pages. Slight differences in content made it neccesary to test out solutions across products.</div>
 			</div>
+
+			<div class="col-1-1 mobile-col-1-1">
+
+					<img class="work__image--main" src="../assets/images/confirmation-page/cancellation-charges.png">
+					<div class="image__caption"> Original summary of charges module to the left. Updated module and content variations shown right. </div>
+			</div>
+
+			<div class="col-1-1 mobile-col-1-1">
+					<h3 class="work__explanation__subtitle">Final Solution</h3>
+					<img class="work__image--main" src="../assets/images/confirmation-page/rc-cancellation-final.png">
+					<div class="image__caption"> Newest iteration of the cancellation page.  </div>
+			</div>
+
 		</div>
 
 
