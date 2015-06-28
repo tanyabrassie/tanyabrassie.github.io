@@ -51,12 +51,16 @@
 	line-height: 14px;
 	margin: 20px auto 30px;
 	text-align: left;
+}
+
+.work__image {
+	outline: 5px solid $white;;
+	transition: outline .5s;
 
 }
 
-
 .work__image:hover {
-	outline: 1px solid black;
+	outline: 10px solid $gray;
 }
 
 
