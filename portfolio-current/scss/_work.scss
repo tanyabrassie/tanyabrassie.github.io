@@ -78,9 +78,20 @@
 		padding: 10px 0;
 	}
 
+	ol, ul {
+		padding-left: 30px;
+	}
+
+	li  {
+		padding: 3px;
+	}
+
 	ul {
 		list-style-type:disc;
-		padding-left: 15px;
+	}
+
+	em {
+		font-style: italic;
 	}
 
 	strong {
