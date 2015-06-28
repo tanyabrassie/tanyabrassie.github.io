@@ -54,6 +54,8 @@ body {
       text-align: center;
       padding: 10px 0;
       font-weight: bold;
+      font-family: 'SimploCaps';
+
 
        @media (max-width: 650px) {
         font-size: 2em;
@@ -102,6 +104,7 @@ width:230px;
       position: relative; 
       width: 100%; /* for IE 6 */
       margin: auto;
+      background: $white;
     }
     
     &__item {

@@ -104,13 +104,13 @@
 
 			<div class="col-1-1 mobile-col-1-1">
 
-				<img  class="work__image--main" src="../assets/images/pcln-styleguide/pagination-inventory.png">
+				<img  class="work__image--main" src="../assets/images/pcln-styleguide/styleguide-pagination-inventory.png">
 				<div class="image__caption"> Pagination Inventory. We decided to use Google events to create shareable collections that the design team could view and comment upon. While this wasn't the best solution, we had yet to begin using InVision, which would have been a better tool.  </div>
 
 			</div>	
 
 			<div class="col-1-1 mobile-col-1-1">
-				<img  class="work__image--main" src="../assets/images/pcln-styleguide/early-pagination-2.png">
+				<img  class="work__image--main" src="../assets/images/pcln-styleguide/styleguide-early-pagination.png">
 				<div class="image__caption"> Some initial design exploration for the pagination and some iterations. In hindsight, most of these were too complicated and cramped. </div>
 
 			</div>
@@ -121,11 +121,11 @@
 
 				 	<p>Once a design was settled on, in this pagination, it was ready to code! I'm a firm believer that all designers should learn how to code. For me, creating a visual design is only part of the design process; without being involved in making it "real" the process seems incomplete. Knowing how my design will be constructed also helps me make more informed visual design decisions especially those regarding development effort and performance. Writing the HTML and SCSS for these compoments not only gave me the satisfaction of seeing them come to life, but helped me really refine my code writing. Since this code would be used in the base.css it was important to write all SCSS efficiently and modularly, abstracting patterns and using variables as much as possible.</p>
 
-				 	<p>This was the basic workflow followed to build the styleguide. As more and more of these UI compoments continued to be defined and cataloged, the rest of the design team began to use them in their designs. Their feedback was immensely helpful in pointing out situations where a pattern needed to be expanded or altered. For instance, what if a secondary button is needed on a blue background? Initially, our catalog of buttons did not accomodate for this situation so we went back and defined a new style. Overtime we also developed a better understanding of what components should go into the base.css and which should be left out with our main goal being to keep the base as lean as possible to increase site performance and eliminate code bloat.</p>
+				 	<p>This was the basic workflow followed to build the styleguide. As more and more of these UI compoments continued to be defined and cataloged, the rest of the design team began to use them in their designs. Their feedback was immensely helpful in pointing out situations where a pattern needed to be expanded or altered. For instance, what if a secondary button is needed on a blue background? Initially, our catalog of buttons did not accomodate for this situation so we went back and defined a new style. Over time, we also developed a better understanding of what components should go into the base.css and which should be left out in order to keep the base as lean as possible to increase site performance and eliminate code bloat.</p>
 
 
 				 	<h2 class="work__explanation__title">The Styleguide Splits - Prototypes</h2>
-				 	<p>Initially the architecture of the styleguide reflected the atomic design paradigm. Interface compoments were classified as atoms, compoments and pages with the atoms section containing very basic styles like font, font size and colors. The compoment section included things like the pagination mentioned above or buttons, elements built of several types of atoms. This organization system meant that styles found in the base.css were scattered throughout these various categories, making it difficult to understand just what was included in the base. Additionally, Brian and I had also started using the styleguide to build prottoypes in code as the styleguide environment makes it very easy to include chunks of pre-defined code into a larger design. With the distinction between the base.css and prototypes becoming blurred, it became clear we needed to separate the two.
+				 	<p>Initially the architecture of the styleguide reflected the atomic design paradigm. Interface compoments were classified as atoms, components and pages. The atoms section contained very basic styles like font, font size and colors and the compoment section included elements built from several atoms such as pagination or buttons. This organization system meant that styles found in the base.css were scattered throughout these various categories, making it difficult to understand just what was included in the base. Additionally, Brian and I had also started using the styleguide to build prottoypes in code as the styleguide environment makes it very easy to include chunks of pre-defined code into a larger design. With the distinction between the base.css and prototypes becoming blurred, it became clear we needed to separate the two.
 
 				 	<p>To create a distinction between the base styles and prototypes, we cloned the styleguide, named the clone prototypes and moved it to another repository. All prototypes, or experimental styles not included in the base.css were stripped from the styleguide, making the styleguide strictly a reference for base.css. The cloned styleguide, or prototypes tool was re-architectured to include only two categories, "Parts and Pages." Designers and developers can pull this project, reference the base.css and begin rapidly prototyping in code. </p>
 			
