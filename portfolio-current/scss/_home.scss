@@ -4,18 +4,14 @@ body {
   background-color: $white;
 }
 
-
-
 .welcome {
-  height: 100vh;
+  height: 100%;
 
     &__container {
       @include clearfix;
       width: 100%;
       height: inherit;
       position: relative;
-      // left: 60%;
-      // margin: 0 0 0 -43%;
       padding: 100px 20px 0;
 
       @media (max-width: 650px) {
@@ -27,12 +23,7 @@ body {
     &__message {
       @include clearfix;
       max-width: 600px;
-      margin: auto;
-    
-    }
-
-    &__first {
-      font-size: 28px;
+      margin: auto; 
     }
 
     &__image-container {
@@ -45,7 +36,7 @@ body {
       width: 80%;
       margin: auto;
       max-width:300px;
-      min-width:280px;
+      min-width:200px;
       display: block;
     }
 
@@ -59,19 +50,16 @@ body {
       padding: 10px 0 5px;
 
        @media (max-width: 650px) {
-        font-size: 2em;
+        font-size: 1.6em;
       }    
     }
 
     &__paragraph {
-      color:#383732;
       font-size: 1em;
-      letter-spacing: 1px;
       text-align: justify;
-      font-family: 'Whitney SSm A', 'Whitney SSm B';
-      font-weight: 400;
-      font-style: normal;
-   }
+font-family: 'Surveyor SSm A', 'Surveyor SSm B';
+font-weight: 400;
+font-style: normal;   }
  }
 
 
@@ -84,6 +72,11 @@ body {
   border-radius: 1px;
   margin: auto;
   max-width: 700px;
+
+  @media (max-width: 650px) {
+        padding: 30px;
+        font-size: 14px;
+      }    
 }
 
 .nub {
