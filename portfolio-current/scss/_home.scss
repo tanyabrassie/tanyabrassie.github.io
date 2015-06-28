@@ -11,13 +11,15 @@ body {
 
     &__container {
       @include clearfix;
-      width: 65%;
+      width: 100%;
       position: fixed;
-      left: 60%;
-      margin: 0 0 0 -43%;
-      padding-top: 120px;
+      // left: 60%;
+      // margin: 0 0 0 -43%;
+      padding: 80px 20px 0;
 
       @media (max-width: 650px) {
+        padding-top: 130px;
+        font-size: 12px;
       }    
     }
 
@@ -28,10 +30,14 @@ body {
     
     }
 
+    &__image-container {
+      width: 100%;
+    }
+
     &__image {
-      width: 75%;
-      max-width:1000px;
-      min-width:300px;
+      width: 50%;
+      max-width:500px;
+      min-width:280px;
       display: block;
       margin: auto;
     }
