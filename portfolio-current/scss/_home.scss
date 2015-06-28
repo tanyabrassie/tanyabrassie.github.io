@@ -12,6 +12,7 @@ body {
     &__container {
       @include clearfix;
       width: 100%;
+      height: inherit;
       position: relative;
       // left: 60%;
       // margin: 0 0 0 -43%;
@@ -25,7 +26,7 @@ body {
 
     &__message {
       @include clearfix;
-      max-width: 700px;
+      max-width: 600px;
       margin: auto;
     
     }
@@ -35,28 +36,27 @@ body {
     }
 
     &__image-container {
-      width: 100%;
-       @include clearfix;
+      width: auto;
+      margin: auto;
+      @include clearfix;
     }
 
     &__image {
-      width: 50%;
+      width: 80%;
+      margin: auto;
       max-width:300px;
       min-width:280px;
       display: block;
-      margin: auto;
     }
 
     &__headline {
       font-size: 1.8em;
-      text-shadow:-1.8px -0.4px 0.5px #FFF;
       color:#2F2F2F;
       text-align: center;
-      padding: 10px 0;
       font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
-font-weight: 700;
-font-style: italic;
-
+      font-weight: 700;
+      font-style: italic;
+      padding: 10px 0 5px;
 
        @media (max-width: 650px) {
         font-size: 2em;
@@ -69,13 +69,22 @@ font-style: italic;
       letter-spacing: 1px;
       text-align: justify;
       font-family: 'Whitney SSm A', 'Whitney SSm B';
-font-weight: 400;
-font-style: normal;
+      font-weight: 400;
+      font-style: normal;
+   }
+ }
 
-    }
+
+.welcome__background-container {
+  width: 100%;
+  height: auto;
+  padding: 80px 80px;
+  border: 10px double $gray;
+  background-color: $white;; 
+  border-radius: 1px;
+  margin: auto;
+  max-width: 700px;
 }
-
-
 
 .nub {
 position:absolute;
