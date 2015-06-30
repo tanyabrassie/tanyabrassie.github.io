@@ -37,23 +37,31 @@
 	}
 }
 
+.work__image--main {
+	padding: 40px 0 0 0;
+}
+
+.image__caption {
+	padding-bottom: 20px;
+}
 
 .work__image--main, .image__caption {
 	width: 100%;
-	margin: 40px auto 0;
+	margin: auto;
 	min-width: 270px;
 	max-width: 600px;
-
-	&--dwell {
-		max-width: 400px;
-		margin: 30px;
-	}
 
 	&--icon {
 		width: 150px;
 	}
 
 }
+
+.dwell {
+	max-width: 400px;
+	margin: auto;
+}
+
 
 .image__caption {
 	font-size: 13px;
@@ -79,7 +87,7 @@
 	line-height: 19.2px;
 	font-size: 16px;  
 	font-family: 'Vollkorn', serif;
-	margin: 30px auto;
+	margin: 20px auto;
 	max-width: 630px;
 	min-width: 270px;
 
@@ -109,7 +117,7 @@
 }
 
 .work__explanation__title {
-	font-size: 18px;
+	font-size: 24px;
 }
 
 .work__explanation__subtitle {
