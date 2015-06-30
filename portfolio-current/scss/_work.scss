@@ -109,13 +109,16 @@
 }
 
 .work__explanation__title {
-	font-weight: bold;
 	font-size: 18px;
-	padding-top: 20px;
 }
 
 .work__explanation__subtitle {
 	font-size: 14px;
+}
+
+.work__explanation__subtitle, 
+.work__explanation__title  {
 	padding-top: 20px;
+	font-family:'SimploCaps';
 	font-weight: bold;
 }
