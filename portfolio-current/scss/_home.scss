@@ -42,7 +42,7 @@ body {
     }
 
     &__headline {
-      font-size: 1.8em;
+      font-size: 1.6em;
       color:#2F2F2F;
       text-align: center;
       padding: 10px 0 5px;
@@ -51,7 +51,7 @@ body {
       font-style: normal;
 
        @media (max-width: 650px) {
-        font-size: 1.6em;
+        font-size: 1.3em;
       }    
     }
 
@@ -60,7 +60,11 @@ body {
         font-weight: 300;
         font-style: normal;
         line-height: normal;
-        font-size: 14px; 
+        font-size: 12px; 
+
+        @media (max-width: 650px) {
+          font-size: 10px;
+      }    
       }
     }
 
