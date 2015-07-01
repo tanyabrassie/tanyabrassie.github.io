@@ -7,6 +7,9 @@
 	text-align: center;
 	padding: 20px 0 60px;
 	margin: 20px;
+    font-family: 'Surveyor SSm A', 'Surveyor SSm B';
+	font-weight: 300;
+	font-style: normal;
 
 
 	&__role {
@@ -119,17 +122,19 @@
 	}
 }
 
-.work__explanation__title {
-	font-size: 24px;
-}
+// .work__explanation__title {
+// 	font-size: 24px;
+// }
 
-.work__explanation__subtitle {
-	font-size: 14px;
-}
+// .work__explanation__subtitle {
+// 	font-size: 14px;
+// }
 
 .work__explanation__subtitle, 
 .work__explanation__title  {
 	padding-top: 20px;
 	font-family:'SimploCaps';
-	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 1px;
+	
 }
