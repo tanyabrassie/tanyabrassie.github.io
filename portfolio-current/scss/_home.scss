@@ -46,9 +46,9 @@ body {
       color:#2F2F2F;
       text-align: center;
       padding: 10px 0 5px;
-    font-family: 'Whitney SSm A', 'Whitney SSm B';
-font-weight: 700;
-font-style: normal;
+      font-family: 'Surveyor SSm A', 'Surveyor SSm B';
+      font-weight: 700;
+      font-style: normal;
 
        @media (max-width: 650px) {
         font-size: 1.3em;
@@ -56,11 +56,11 @@ font-style: normal;
     }
 
     &__paragraph {
-font-family: 'Whitney SSm A', 'Whitney SSm B';
-font-weight: 300;
-font-style: normal;
+        font-family: 'Surveyor SSm A', 'Surveyor SSm B';
+        font-weight: 300;
+        font-style: normal;
         line-height: normal;
-        font-size: 12px; 
+        font-size: 12.5px; 
 
         @media (max-width: 650px) {
           font-size: 10px;

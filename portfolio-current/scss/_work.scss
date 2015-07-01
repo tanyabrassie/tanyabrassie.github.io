@@ -7,10 +7,6 @@
 	text-align: center;
 	padding: 20px 0 60px;
 	margin: 20px;
-    font-family: 'Whitney SSm A', 'Whitney SSm B';
-font-weight: 300;
-font-style: normal;
-	font-style: normal;
 
 
 	&__role {
@@ -92,10 +88,12 @@ font-style: normal;
 	width: 70%;
 	text-align: left;
 	line-height: 19.2px;
-	font-size: 14px;  
+	font-size: 13px;  
 	margin: 20px auto;
 	max-width: 630px;
 	min-width: 270px;
+	font-family: 'Surveyor SSm A', 'Surveyor SSm B';
+	font-weight: 300;
 
 	p {
 		padding: 10px 0;
