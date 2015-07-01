@@ -87,7 +87,6 @@
 .work__explanation {
 	width: 70%;
 	text-align: left;
-	line-height: 19.2px;
 	font-size: 13px;  
 	margin: 20px auto;
 	max-width: 630px;
@@ -132,7 +131,8 @@
 .work__explanation__title  {
 	padding-top: 20px;
 	font-family:'SimploCaps';
-	font-size: 20px;
+	font-size: 22px;
 	letter-spacing: 1px;
+	line-height: normal;
 
 }
