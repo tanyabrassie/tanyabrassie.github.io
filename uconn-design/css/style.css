@@ -1,0 +1,111 @@
+body {
+	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #0d223f;
+	margin: 0;
+	background: white;
+}
+
+a,
+a:visited,
+a:focus {
+	color: #ec1c2c;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 1px solid #ec1c2c;
+}
+
+.anchor {
+	position: relative;
+	top: -60px;
+	display: block;
+}
+
+/* LISTS */
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+li {
+	padding-bottom: 10px;
+}
+
+/* NAV */
+.nav {
+	margin: 0 auto;
+	padding: 20px 20px 14px;	
+	border-bottom: 1px solid #0d223f;
+	text-align: center;
+}
+
+.nav__list {
+	list-style-type: none;
+	margin: 0;
+}
+
+.nav__item {
+	display: inline-block;
+	margin-right: 3.75%;
+}
+
+.nav__item:last-child {
+	margin-right: 0;
+}
+
+a.is-active,
+a.is-active:hover {
+	color: #0d223f;
+	border-bottom: 0 none;
+	cursor: default;
+}
+
+/* NAV HOME */
+
+
+
+
+/* Home Link */
+
+.home-link {
+	display: inline-block;
+	margin-bottom: 20px;
+	border-bottom: 1px solid white;
+}
+
+
+/* MAIN */
+
+.main {
+	max-width: 550px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.main__headline {
+	text-align: center;
+	margin: 0;
+}
+
+.main__intro {
+	padding-bottom: 30px;
+}
+
+
+/* Syllabus */
+
+.syllabus__last-p,
+.projects__last-p {
+	margin-bottom: 30px;
+}
+
+/* Log */
+.log__date {
+	margin-top: 2em;
+}
+
+.skip {
+	text-decoration: line-through;
+}
