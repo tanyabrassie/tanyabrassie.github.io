@@ -106,6 +106,21 @@ a.is-active:hover {
 	margin-top: 2em;
 }
 
+.log__week-list {
+	list-style-type:none;
+	padding:0px;
+}
+
+.log__divider {
+	text-align: center;
+	font-size: 36px;
+}
+
+.log__homework-divider {
+	padding: 0 10px;
+	color: rgba(255, 255, 255, 0.35);
+}
+
 .skip {
 	text-decoration: line-through;
 }
