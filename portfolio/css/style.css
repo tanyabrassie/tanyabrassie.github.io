@@ -1,0 +1,51 @@
+body {
+	background-color: #fdf7f5;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.headline {
+	text-align: center;
+	color: #333;
+}
+
+/*This div contains the imagee.*/
+.image-container {
+	background: white;
+	border: 10px solid #fdf7f5;
+}
+
+.main-image {
+	display: block;  /*The img element by default displays inline. By telling it to display as block, it now takes up the entire width of the page.*/
+	margin-right: auto;  /*Setting the right and left margins to "auto" makes them equal.*/
+	margin-left: auto;
+	background-color: #f2f2f2;
+}
+
+.paragraph-container {
+	width: 500px;
+	margin-left: 50px;
+	float: left;
+}
+
+
+.facts-container {
+	width: auto;
+	float: left;
+	margin: 0 40px;
+}
+
+h2 {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+
+ul, ol {
+	float: left;
+	margin-top: 0;
+}
+
+
+
+
+

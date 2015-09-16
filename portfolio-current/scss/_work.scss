@@ -75,6 +75,15 @@
 .work__image {
 	outline: 5px solid $white;;
 	transition: outline .3s;
+
+	&__caption {
+		text-align: center;
+		padding: 10px 0;
+	}
+}
+
+.work__image-container {
+	padding: 10px 0;
 }
 
 .work__image:hover {
@@ -94,8 +103,8 @@
 	font-style: normal;
 	line-height: 1.4em;
 
-	p {
-		padding: 10px 0;
+	&__paragraph {
+		padding: 5px 0;
 	}
 
 	ol, ul {
@@ -119,20 +128,18 @@
 	}
 }
 
-// .work__explanation__title {
-// 	font-size: 24px;
-// }
 
-// .work__explanation__subtitle {
-// 	font-size: 14px;
-// }
-
-.work__explanation__subtitle, 
 .work__explanation__title  {
-	padding-top: 20px;
+	padding-top: 40px;
 	font-family:'SimploCaps';
-	font-size: 22px;
+	font-size: 24px;
 	letter-spacing: 1px;
 	line-height: normal;
+}
+
+.work__explanation__sub-title {
+	font-size: 18px;
+	padding-top: 10px;
+	font-style: italic;
 
 }

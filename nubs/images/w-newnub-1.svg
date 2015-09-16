@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 500 491" enable-background="new 0 0 500 491" xml:space="preserve">
-<path fill="#FFFFFF" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M414.7,142c0-74.3-60-134.5-134-134.5
-	s-134,60.2-134,134.5v-1.6v357v1.6h267.9v-3.8V140.4"/>
-<ellipse cx="153.4" cy="129.8" rx="17.9" ry="17.8"/>
-<ellipse cx="410" cy="129.8" rx="17.9" ry="17.8"/>
+	 viewBox="-149 55 500 491" style="enable-background:new -149 55 500 491;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#D9D7D7;}
+	.st1{fill:#FFFFFF;stroke:#7DFF6A;stroke-miterlimit:10;}
+	.st2{fill:#8C8888;}
+</style>
+<path class="st0" d="M265.7,197c0-74.3-60-134.5-134-134.5S-2.3,122.7-2.3,197v-1.6v357v1.6h267.9v-3.8V195.4"/>
+<ellipse cx="4.4" cy="184.8" rx="17.9" ry="17.8"/>
+<ellipse cx="261" cy="184.8" rx="17.9" ry="17.8"/>
 <g>
 	<g>
-		<path fill="#FFFFFF" d="M212.2,318.1c-50.9,0-93.9-25.5-93.9-55.7c0-30.2,43-55.7,93.9-55.7s93.9,25.5,93.9,55.7
-			C306,292.6,263.1,318.1,212.2,318.1z"/>
-		<path fill="#CC3429" d="M212.2,225.2c22.5,0,44,5.7,59,15.5c10.2,6.7,16.4,14.9,16.4,21.7c0,6.9-6.1,15-16.4,21.7
+		<path class="st1" d="M63.2,373.1c-50.9,0-93.9-25.5-93.9-55.7c0-30.2,43-55.7,93.9-55.7s93.9,25.5,93.9,55.7
+			C157,347.6,114.1,373.1,63.2,373.1z"/>
+		<path class="st2" d="M63.2,280.2c22.5,0,44,5.7,59,15.5c10.2,6.7,16.4,14.9,16.4,21.7c0,6.9-6.1,15-16.4,21.7
 			c-15,9.9-36.5,15.5-59,15.5s-44-5.7-59-15.5c-10.2-6.7-16.4-14.9-16.4-21.7c0-6.9,6.1-15,16.4-21.7
-			C168.2,230.9,189.7,225.2,212.2,225.2 M212.2,188.4c-62.1,0-112.4,33.2-112.4,74.1s50.3,74.1,112.4,74.1
-			c62.1,0,112.4-33.2,112.4-74.1S274.3,188.4,212.2,188.4L212.2,188.4z"/>
+			C19.2,285.9,40.7,280.2,63.2,280.2 M63.2,243.4c-62.1,0-112.4,33.2-112.4,74.1s50.3,74.1,112.4,74.1s112.4-33.2,112.4-74.1
+			S125.3,243.4,63.2,243.4L63.2,243.4z"/>
 	</g>
-	<polyline fill="#CC3429" points="103.4,246 80.9,259.4 101.3,270.7 	"/>
-	<polyline fill="#CC3429" points="318.9,246 341.5,259.4 321,270.7 	"/>
+	<polyline class="st2" points="-44.6,301 -67.1,314.4 -46.7,325.7 	"/>
+	<polyline class="st2" points="170.9,301 193.5,314.4 173,325.7 	"/>
 </g>
 </svg>
