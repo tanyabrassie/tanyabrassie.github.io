@@ -19,11 +19,12 @@ body {
 	display: block;  /*The img element by default displays inline. By telling it to display as block, it now takes up the entire width of the page.*/
 	margin-right: auto;  /*Setting the right and left margins to "auto" makes them equal.*/
 	margin-left: auto;
+	height: 300px;
 	background-color: #f2f2f2;
 }
 
 .paragraph-container {
-	width: 500px;
+	width: 475px;
 	margin-left: 50px;
 	float: left;
 }
