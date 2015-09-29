@@ -1,0 +1,16 @@
+body {
+	background-color: #D6FFF2;
+}
+
+
+.container-resume {
+	background-color: white;
+	width: 800px;
+	margin: auto;
+	padding: 50px;
+}
+
+hr {
+	color: #d6fff2;
+	opacity: .6;
+}
