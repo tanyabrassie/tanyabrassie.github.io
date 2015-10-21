@@ -7,7 +7,7 @@
 body {
 	background-color: #D6FFF2;
 	font-family: 'Josefin Sans', sans-serif;
-
+	line-height: 1em;
 }
 
 
@@ -20,14 +20,18 @@ body {
 
 hr {
 	color: red;
-	margin: 50px 0;
-	height: 10px;
 	opacity: .6;
 }
 
 .headline-main {
 	font-size: 36px;
 	font-weight: 700;
+	padding: 20px 0px;
+}
+
+.headline-section {
+	padding: 5px 0;
+
 }
 
 .contact-link {
@@ -45,8 +49,6 @@ hr {
 	border-bottom:2px solid #d2d2d2;
 }
 
-
-Pseudo-selectors
 
 
 
