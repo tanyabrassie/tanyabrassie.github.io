@@ -1,0 +1,78 @@
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+	background-color: #ffffff;
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: 1em;
+}
+
+
+/*Code for navigation*/
+
+.navigation-resume {
+	background-color: #f2f2f2;
+	height: 50px;
+	text-align: center;
+
+}
+
+.navigation-resume li {
+	display: inline-block;
+	padding: 17px;
+
+}
+
+/*Code for page title*/
+
+.headline-main {
+	font-size: 22px;
+	margin: 20px;
+	text-align: center;
+}
+
+/*Code for grid of images */
+
+.project-grid {
+	padding: 20px;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.project-container {
+	text-align: center;
+	display: block;
+	margin-bottom: 20px;
+}
+
+/*Media query telling what stuff should happen when the screen is at least 768px wide.*/
+
+@media screen and (min-width: 768px) {
+	.project-container {
+		width: 45%;
+		max-width: 550px;
+		float: left;
+		margin: 20px;
+	}
+
+	.headline-main {
+		font-size: 36px;
+		margin: 50px 0 0 40px;
+
+	}
+}
+
+.project-image {
+	width: 100%;
+	outline: 4px solid #efb9c0;
+	margin: auto;
+}
+
+.project-image:hover {
+	outline: 4px solid #333333;
+}
+
+
