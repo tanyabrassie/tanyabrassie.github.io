@@ -1,0 +1,119 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.page-body {
+	background-image: url("hullabaloo-bg.png");
+	background-repeat: repeat;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+
+}
+
+.page-content {
+	text-align: center;
+	padding: 20px;
+	/*display: flex;
+	flex-direction: column;
+	justify-content: center;*/
+}
+
+.page-logo {
+	width: 420px;
+	padding: 40px 0;
+	margin:auto;
+}
+
+.arrow-container {
+	width: 100%;
+}
+
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	margin: auto;
+	border-left: 45vw solid transparent;
+	border-right: 45vw solid transparent;	
+	border-bottom: 40vw solid black;
+	z-index: -3;
+	top: -140px;
+	position: relative;
+}
+
+.coming-soon {
+	text-transform: uppercase;
+	padding: 0px 0 20px 0; 
+	color: #fff;
+	font-size: 2em;
+	z-index: 300;
+}
+
+
+
+@media screen and (max-width: 420px) {
+    
+    .coming-soon {
+        font-size: 2em;
+    }
+
+    .page-logo {
+	width: 280px;
+	padding: 40px 0;
+	margin:auto;
+}
+
+    .arrow-up {
+	width: 0; 
+	height: 0; 
+	margin: auto;
+	border-left: 32vw solid transparent;
+	border-right: 32vw solid transparent;	
+	border-bottom: 100vw solid black;
+	z-index: -3;
+	top: -290px;
+	position: relative;
+	overflow: hidden;
+}
+
+
