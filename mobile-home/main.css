@@ -84,18 +84,10 @@ body {
   font-size: 100%;
   font-family: 'Rubik', sans-serif;
   font-weight: 300;
-  border-right: 30px solid #09dfff;
-  border-left: 30px solid #09dfff;
-}
-@media (min-width: 500px) {
-  /* line 23, scss/_styles.scss */
-  body {
-    border-right: 75px solid #09dfff;
-    border-left: 75px solid #09dfff;
-  }
+  background-color: #09dfff;
 }
 
-/* line 36, scss/_styles.scss */
+/* line 31, scss/_styles.scss */
 .headline {
   font-weight: 900;
   font-size: 1.8em;
@@ -106,13 +98,13 @@ body {
   line-height: 1.1;
 }
 @media (min-width: 500px) {
-  /* line 36, scss/_styles.scss */
+  /* line 31, scss/_styles.scss */
   .headline {
     font-size: 2.25em;
     letter-spacing: 10px;
   }
 }
-/* line 50, scss/_styles.scss */
+/* line 45, scss/_styles.scss */
 .headline__slogan {
   font-family: "nickainley";
   text-align: center;
@@ -120,18 +112,18 @@ body {
   font-size: 1em;
 }
 
-/* line 58, scss/_styles.scss */
+/* line 53, scss/_styles.scss */
 .sub-text {
   margin: auto;
   width: 80%;
 }
-/* line 62, scss/_styles.scss */
+/* line 57, scss/_styles.scss */
 .sub-text__cta {
   text-align: center;
   font-family: "nickainley";
   font-size: 2em;
 }
-/* line 68, scss/_styles.scss */
+/* line 63, scss/_styles.scss */
 .sub-text__copy {
   line-height: 1.4em;
   padding: 30px 0 20px 0;
@@ -139,70 +131,72 @@ body {
   text-align: center;
 }
 
-/* line 76, scss/_styles.scss */
+/* line 71, scss/_styles.scss */
 .main-container {
   margin: auto;
   max-width: 1280px;
-}
-@media (min-width: 500px) {
-  /* line 76, scss/_styles.scss */
-  .main-container {
-    width: 80%;
-  }
+  width: 85%;
+  background: #fff;
 }
 
-/* line 85, scss/_styles.scss */
+/* line 83, scss/_styles.scss */
+.inside-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* line 88, scss/_styles.scss */
 .header {
   background: #09dfff;
   text-align: center;
   height: 35px;
 }
 @media (min-width: 500px) {
-  /* line 85, scss/_styles.scss */
+  /* line 88, scss/_styles.scss */
   .header {
     height: 75px;
   }
 }
-/* line 94, scss/_styles.scss */
+/* line 97, scss/_styles.scss */
 .header__logo {
   width: 125px;
   margin-top: 13px;
 }
 @media (min-width: 500px) {
-  /* line 94, scss/_styles.scss */
+  /* line 97, scss/_styles.scss */
   .header__logo {
     width: 145px;
     margin-top: 48px;
   }
 }
 
-/* line 108, scss/_styles.scss */
+/* line 111, scss/_styles.scss */
 .divider {
   margin: 30px 0;
   border-top: 1px dashed #000;
 }
 
-/* line 113, scss/_styles.scss */
+/* line 116, scss/_styles.scss */
 .form {
   width: 70%;
   background-color: #e3fdff;
   margin: auto;
   padding: 30px;
 }
-/* line 119, scss/_styles.scss */
+/* line 122, scss/_styles.scss */
 .form input[type="radio"] {
   display: none;
 }
-/* line 123, scss/_styles.scss */
+/* line 126, scss/_styles.scss */
 .form input[type="radio"]:checked + label {
   outline: 2px solid #000;
 }
-/* line 128, scss/_styles.scss */
+/* line 131, scss/_styles.scss */
 .form__label {
   display: block;
   font-size: .8em;
 }
-/* line 133, scss/_styles.scss */
+/* line 136, scss/_styles.scss */
 .form__title {
   font-size: 1em;
   font-weight: 700;
@@ -211,12 +205,12 @@ body {
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
-/* line 142, scss/_styles.scss */
+/* line 145, scss/_styles.scss */
 .form__colors, .form__add-ons {
   margin: 15px 0;
 }
 
-/* line 149, scss/_styles.scss */
+/* line 152, scss/_styles.scss */
 .form__swatch, .swatch--yellow, .swatch--seafoam, .swatch--teal, .swatch--red, .swatch--pink, .swatch--black {
   height: 25px;
   width: 70px;
@@ -224,48 +218,48 @@ body {
   display: inline-block;
   margin: 5px;
 }
-/* line 156, scss/_styles.scss */
+/* line 159, scss/_styles.scss */
 .form__swatch:hover, .swatch--yellow:hover, .swatch--seafoam:hover, .swatch--teal:hover, .swatch--red:hover, .swatch--pink:hover, .swatch--black:hover {
   outline: 2px solid #000;
 }
 
-/* line 161, scss/_styles.scss */
+/* line 164, scss/_styles.scss */
 .swatch--yellow {
   background-color: #d3d400;
 }
 
-/* line 166, scss/_styles.scss */
+/* line 169, scss/_styles.scss */
 .swatch--seafoam {
   background-color: #aafffd;
 }
 
-/* line 171, scss/_styles.scss */
+/* line 174, scss/_styles.scss */
 .swatch--teal {
   background-color: #09dfff;
 }
 
-/* line 176, scss/_styles.scss */
+/* line 179, scss/_styles.scss */
 .swatch--red {
   background-color: #ff0000;
 }
 
-/* line 181, scss/_styles.scss */
+/* line 184, scss/_styles.scss */
 .swatch--pink {
   background-color: #ffc6ae;
 }
 
-/* line 186, scss/_styles.scss */
+/* line 189, scss/_styles.scss */
 .swatch--black {
   background-color: #000;
 }
 
-/* line 195, scss/_styles.scss */
+/* line 198, scss/_styles.scss */
 .footer {
   height: 45px;
   background: #0f0803;
   color: #fff;
 }
-/* line 200, scss/_styles.scss */
+/* line 203, scss/_styles.scss */
 .footer__text {
   color: #A9A29D;
   text-align: center;
@@ -414,56 +408,64 @@ body {
   width: 85%;
   margin: auto;
   display: block;
+  position: initial;
 }
 
-/* line 50, scss/_mobile-home.scss */
+/* line 51, scss/_mobile-home.scss */
+.svg-container {
+  background-color: #fff;
+  margin: auto;
+  max-width: 800px;
+}
+
+/* line 56, scss/_mobile-home.scss */
 .body-stripe-top {
   fill: #d3d400;
 }
 
-/* line 54, scss/_mobile-home.scss */
+/* line 60, scss/_mobile-home.scss */
 .body-stripe {
   fill: #aafffd;
 }
 
-/* line 58, scss/_mobile-home.scss */
+/* line 64, scss/_mobile-home.scss */
 .window {
   fill: #000;
 }
 
-/* line 62, scss/_mobile-home.scss */
+/* line 68, scss/_mobile-home.scss */
 .awning {
   fill: #09dfff;
 }
 
-/* line 67, scss/_mobile-home.scss */
+/* line 73, scss/_mobile-home.scss */
 .satellite {
   display: initial;
 }
 
-/* line 71, scss/_mobile-home.scss */
+/* line 77, scss/_mobile-home.scss */
 .flood-light {
   display: initial;
 }
 
-/* line 75, scss/_mobile-home.scss */
+/* line 81, scss/_mobile-home.scss */
 .door {
   fill: #09dfff;
 }
 
-/* line 79, scss/_mobile-home.scss */
+/* line 85, scss/_mobile-home.scss */
 .body-stripe-bottom {
   fill: black;
   stroke: black;
   stroke-width: 3px;
 }
 
-/* line 85, scss/_mobile-home.scss */
+/* line 91, scss/_mobile-home.scss */
 .bottom-lines {
   stroke: #09dfff;
 }
 
-/* line 89, scss/_mobile-home.scss */
+/* line 95, scss/_mobile-home.scss */
 .window-lg, .side-window {
   fill: #ffe7d8;
 }

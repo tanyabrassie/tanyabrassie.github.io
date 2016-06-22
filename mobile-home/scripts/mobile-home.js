@@ -23,7 +23,17 @@ swatchOptions.change(function () {
 });
 
 
+var $mobileHomeContainer = $($(".svg-container")[0]);
+var $mobileHome = $($(".body-elements")[0]);
 
+$(window).on("scroll", function(e) {
+	if ($(this).scrollTop() > 200) {
+		$mobileHomeContainer.css( {"position": "fixed", "top": 0, "padding-bottom": "20px", "width": "85%"});
+
+	} else {
+		$mobileHomeContainer.css({"position": "initial", "padding-bottom": "0px", "width": "inherit"});
+	}
+});
 
 
 

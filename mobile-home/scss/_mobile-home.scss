@@ -45,7 +45,13 @@
 	width: 85%;
 	margin: auto;
 	display: block;
-}					
+	position: initial;
+}	
+
+.svg-container {
+	background-color: #fff;
+	margin: auto;
+	max-width: 800px;}				
 
 .body-stripe-top {
 	fill: #d3d400;
