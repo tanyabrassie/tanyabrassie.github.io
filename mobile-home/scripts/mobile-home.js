@@ -28,7 +28,7 @@ var $mobileHome = $($(".body-elements")[0]);
 
 $(window).on("scroll", function(e) {
 	if ($(this).scrollTop() > 198) {
-		$mobileHomeContainer.css( {"position": "fixed", "top": 0, "padding-bottom": "20px", "width": "85%"});
+		$mobileHomeContainer.css( {"position": "fixed", "top": 0, "padding": "20px 0", "width": "85%"});
 
 	} else {
 		$mobileHomeContainer.css({"position": "initial", "padding-bottom": "0px", "width": "inherit"});

@@ -415,57 +415,58 @@ body {
 .svg-container {
   background-color: #fff;
   margin: auto;
+  padding: 10px 0;
   max-width: 800px;
 }
 
-/* line 56, scss/_mobile-home.scss */
+/* line 57, scss/_mobile-home.scss */
 .body-stripe-top {
   fill: #d3d400;
 }
 
-/* line 60, scss/_mobile-home.scss */
+/* line 61, scss/_mobile-home.scss */
 .body-stripe {
   fill: #aafffd;
 }
 
-/* line 64, scss/_mobile-home.scss */
+/* line 65, scss/_mobile-home.scss */
 .window {
   fill: #000;
 }
 
-/* line 68, scss/_mobile-home.scss */
+/* line 69, scss/_mobile-home.scss */
 .awning {
   fill: #09dfff;
 }
 
-/* line 73, scss/_mobile-home.scss */
+/* line 74, scss/_mobile-home.scss */
 .satellite {
   display: initial;
 }
 
-/* line 77, scss/_mobile-home.scss */
+/* line 78, scss/_mobile-home.scss */
 .flood-light {
   display: initial;
 }
 
-/* line 81, scss/_mobile-home.scss */
+/* line 82, scss/_mobile-home.scss */
 .door {
   fill: #09dfff;
 }
 
-/* line 85, scss/_mobile-home.scss */
+/* line 86, scss/_mobile-home.scss */
 .body-stripe-bottom {
   fill: black;
   stroke: black;
   stroke-width: 3px;
 }
 
-/* line 91, scss/_mobile-home.scss */
+/* line 92, scss/_mobile-home.scss */
 .bottom-lines {
   stroke: #09dfff;
 }
 
-/* line 95, scss/_mobile-home.scss */
+/* line 96, scss/_mobile-home.scss */
 .window-lg, .side-window {
   fill: #ffe7d8;
 }
