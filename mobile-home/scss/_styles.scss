@@ -1,0 +1,197 @@
+$peach: #ffe4cc;
+$black: #0f0803;
+
+
+@font-face {
+	font-family:'nickainley';
+	src: url(fonts/nickainley.otf);
+}
+
+
+a {
+	text-decoration: none;
+	color: $black;
+	font-weight: bold;
+	font-size: 14px;
+
+	&:hover {
+		text-decoration: none;
+		opacity: .6;
+  		transition-duration: 800ms;
+	}
+}
+
+body  {
+		border-right: 30px solid #09dfff;
+		border-left: 30px solid #09dfff;
+
+		@media (min-width: 500px) {
+			border-right: 75px solid #09dfff;
+			border-left: 75px solid #09dfff;
+		}
+
+     * {
+		font-family: monospace;
+		font-weight: 300;
+		font-size: 16px;
+	}	
+}
+
+.headline {
+	font-weight: bold;
+	text-align: center;
+	padding: 65px 0 0 0;
+	letter-spacing: 15px;
+	line-height: 1.1;
+	font-size: 2.5em;
+
+	&__slogan {
+		font-family: "nickainley";
+		text-align: center;
+		padding-top: 20px;
+		font-size: 1.2em;
+	}
+}	
+
+.sub-text {
+	margin: auto;
+	width: 80%;
+
+	&__cta {
+		text-align: center;
+		font-family: "nickainley";
+		font-size: 2.5em;
+		padding: 20px 0 0 0;
+	}
+
+	&__copy {
+		line-height: 1.2em;
+		padding: 30px 0;
+	}
+}
+
+.main-container {
+	margin: auto;
+	max-width: 1280px;
+
+	@media (min-width: 500px) {
+		width: 80%;
+	}
+}
+
+.header {
+	background: #09dfff;
+	text-align: center;
+	height: 35px;
+
+	@media (min-width: 500px) {
+		height: 75px;
+	}	
+	
+	&__logo {
+		width: 225px;
+		margin-top: 13px;
+
+		@media (min-width: 500px) {
+			width: 300px;
+			margin-top: 45px;
+		}
+	
+	}	
+}
+
+
+
+.divider {
+	margin: 40px 0;
+	border-top: 1px dashed #000;
+}
+
+.form {
+	width: 70%;
+	background-color: #e3fdff;
+	margin: auto;
+	padding: 30px;
+
+	input[type="radio"] {
+		display: none;
+	}
+
+	input[type="radio"]:checked + label {
+		outline: 2px solid #000;	
+	}
+
+	
+	&__label {
+		margin: 10px 0 5px 0;
+		display: block;
+	}
+
+	&__title {
+		font-size: 1.5em;	
+		margin-bottom: 20px;
+		border-bottom: 1px solid #000;
+	}
+
+	&__colors, &__add-ons {
+		margin: 15px 0;
+	}
+
+
+}
+
+.form__swatch {
+	height: 25px;
+	width: 70px;
+	border: 2px solid #fff;;
+	display: inline-block;
+	margin: 5px;
+
+	&:hover {
+		outline: 2px solid #000;
+	}
+}
+
+.swatch--yellow {
+	@extend .form__swatch;
+	background-color: #d3d400;
+}
+
+.swatch--seafoam {
+	@extend .form__swatch;
+	background-color: #aafffd;
+}
+
+.swatch--teal{
+	@extend .form__swatch;
+	background-color: #09dfff;
+}
+
+.swatch--red {
+	@extend .form__swatch;
+	background-color: #ff0000;
+}
+
+.swatch--black {
+	@extend .form__swatch;
+	background-color: #000;
+}
+
+
+
+
+.footer {
+	height: 45px;
+	background: $black;
+	color: #fff;
+
+	&__text {
+		color: #A9A29D;
+		text-align: center;
+		padding: 15px;
+		font-size: 12px;
+		vertical-align: middle;
+		display: block;
+		margin: auto;
+	}
+}
