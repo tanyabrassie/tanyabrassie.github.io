@@ -116,14 +116,15 @@ body {
 .sub-text {
   margin: auto;
   width: 80%;
+  max-width: 500px;
 }
-/* line 57, scss/_styles.scss */
+/* line 58, scss/_styles.scss */
 .sub-text__cta {
   text-align: center;
   font-family: "nickainley";
   font-size: 2em;
 }
-/* line 63, scss/_styles.scss */
+/* line 64, scss/_styles.scss */
 .sub-text__copy {
   line-height: 1.4em;
   padding: 30px 0 20px 0;
@@ -131,7 +132,7 @@ body {
   text-align: center;
 }
 
-/* line 71, scss/_styles.scss */
+/* line 72, scss/_styles.scss */
 .main-container {
   margin: auto;
   max-width: 1280px;
@@ -139,64 +140,65 @@ body {
   background: #fff;
 }
 
-/* line 83, scss/_styles.scss */
+/* line 84, scss/_styles.scss */
 .inside-container {
   max-width: 800px;
   margin: auto;
 }
 
-/* line 88, scss/_styles.scss */
+/* line 89, scss/_styles.scss */
 .header {
   background: #09dfff;
   text-align: center;
   height: 35px;
 }
 @media (min-width: 500px) {
-  /* line 88, scss/_styles.scss */
+  /* line 89, scss/_styles.scss */
   .header {
     height: 75px;
   }
 }
-/* line 97, scss/_styles.scss */
+/* line 98, scss/_styles.scss */
 .header__logo {
   width: 125px;
   margin-top: 13px;
 }
 @media (min-width: 500px) {
-  /* line 97, scss/_styles.scss */
+  /* line 98, scss/_styles.scss */
   .header__logo {
     width: 145px;
     margin-top: 48px;
   }
 }
 
-/* line 111, scss/_styles.scss */
+/* line 112, scss/_styles.scss */
 .divider {
   margin: 30px 0;
   border-top: 1px dashed #000;
 }
 
-/* line 116, scss/_styles.scss */
+/* line 117, scss/_styles.scss */
 .form {
   width: 70%;
   background-color: #e3fdff;
   margin: auto;
   padding: 30px;
 }
-/* line 122, scss/_styles.scss */
+/* line 123, scss/_styles.scss */
 .form input[type="radio"] {
   display: none;
 }
-/* line 126, scss/_styles.scss */
+/* line 127, scss/_styles.scss */
 .form input[type="radio"]:checked + label {
   outline: 2px solid #000;
 }
-/* line 131, scss/_styles.scss */
+/* line 132, scss/_styles.scss */
 .form__label {
   display: block;
+  padding: 5px;
   font-size: .8em;
 }
-/* line 136, scss/_styles.scss */
+/* line 138, scss/_styles.scss */
 .form__title {
   font-size: 1em;
   font-weight: 700;
@@ -205,15 +207,15 @@ body {
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
-/* line 145, scss/_styles.scss */
+/* line 147, scss/_styles.scss */
 .form__colors, .form__add-ons {
   margin: 15px 0;
 }
 
 /* line 152, scss/_styles.scss */
 .form__swatch, .swatch--yellow, .swatch--seafoam, .swatch--teal, .swatch--red, .swatch--pink, .swatch--black {
-  height: 25px;
-  width: 70px;
+  height: 30px;
+  width: 62px;
   border: 2px solid #fff;
   display: inline-block;
   margin: 5px;
@@ -409,9 +411,10 @@ body {
   margin: auto;
   display: block;
   position: initial;
+  max-width: 500px;
 }
 
-/* line 51, scss/_mobile-home.scss */
+/* line 52, scss/_mobile-home.scss */
 .svg-container {
   background-color: #fff;
   margin: auto;
@@ -419,54 +422,54 @@ body {
   max-width: 800px;
 }
 
-/* line 57, scss/_mobile-home.scss */
+/* line 58, scss/_mobile-home.scss */
 .body-stripe-top {
   fill: #d3d400;
 }
 
-/* line 61, scss/_mobile-home.scss */
+/* line 62, scss/_mobile-home.scss */
 .body-stripe {
   fill: #aafffd;
 }
 
-/* line 65, scss/_mobile-home.scss */
+/* line 66, scss/_mobile-home.scss */
 .window {
   fill: #000;
 }
 
-/* line 69, scss/_mobile-home.scss */
+/* line 70, scss/_mobile-home.scss */
 .awning {
   fill: #09dfff;
 }
 
-/* line 74, scss/_mobile-home.scss */
+/* line 75, scss/_mobile-home.scss */
 .satellite {
   display: initial;
 }
 
-/* line 78, scss/_mobile-home.scss */
+/* line 79, scss/_mobile-home.scss */
 .flood-light {
   display: initial;
 }
 
-/* line 82, scss/_mobile-home.scss */
+/* line 83, scss/_mobile-home.scss */
 .door {
   fill: #09dfff;
 }
 
-/* line 86, scss/_mobile-home.scss */
+/* line 87, scss/_mobile-home.scss */
 .body-stripe-bottom {
   fill: black;
   stroke: black;
   stroke-width: 3px;
 }
 
-/* line 92, scss/_mobile-home.scss */
+/* line 93, scss/_mobile-home.scss */
 .bottom-lines {
   stroke: #09dfff;
 }
 
-/* line 96, scss/_mobile-home.scss */
+/* line 97, scss/_mobile-home.scss */
 .window-lg, .side-window {
   fill: #ffe7d8;
 }

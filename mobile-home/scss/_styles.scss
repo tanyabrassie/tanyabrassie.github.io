@@ -53,6 +53,7 @@ body  {
 .sub-text {
 	margin: auto;
 	width: 80%;
+	max-width: 500px;
 
 	&__cta {
 		text-align: center;
@@ -130,6 +131,7 @@ body  {
 	
 	&__label {
 		display: block;
+		padding: 5px;
 		font-size: .8em;
 	}
 
@@ -145,13 +147,11 @@ body  {
 	&__colors, &__add-ons {
 		margin: 15px 0;
 	}
-
-
 }
 
 .form__swatch {
-	height: 25px;
-	width: 70px;
+	height: 30px;
+	width: 62px;
 	border: 2px solid #fff;;
 	display: inline-block;
 	margin: 5px;
