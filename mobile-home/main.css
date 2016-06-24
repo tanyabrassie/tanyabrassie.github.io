@@ -255,13 +255,14 @@ body {
   background-color: #000;
 }
 
-/* line 198, scss/_styles.scss */
+/* line 195, scss/_styles.scss */
 .footer {
+  margin-top: 100px;
   height: 45px;
   background: #0f0803;
   color: #fff;
 }
-/* line 203, scss/_styles.scss */
+/* line 201, scss/_styles.scss */
 .footer__text {
   color: #A9A29D;
   text-align: center;

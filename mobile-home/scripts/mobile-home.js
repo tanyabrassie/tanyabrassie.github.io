@@ -1,26 +1,29 @@
 
 var swatchOptions = $("input");
 
-function updateColorSwatch (swatchType, swatchClass, newColor) {
-	var $swatch = $($("." + swatchClass));
+function updateColorSwatch (swatchType, $swatchClass, newColor) {
 
 	if (swatchType == "radio") {
-		$swatch.css("fill", newColor);
+		$swatchClass.css("fill", newColor);
 	
 	} else {
-		$swatch.toggle();
+		$swatchClass.toggle();
 	}
 }	
 
 swatchOptions.change(function () {
-	var swatchChecked = $(this);
-	var swatchClass = swatchChecked.attr("swatch-class");
-	var swatchType = swatchChecked.attr("type");
-	var newColor = swatchChecked.val();
+	//var swatchId = $(this).attr("id");
+	var swatchObject = allSwatches[$(this).attr("id")];
 
-	updateColorSwatch(swatchType, swatchClass, newColor);
+	var $swatchClass = $("." + swatchObject["swatch-class"]);
+	var newColor = swatchObject.value;
+	var swatchType = $(this).attr("type");
+
+	updateColorSwatch(swatchType, $swatchClass, newColor);
 
 });
+
+
 
 
 var $mobileHomeContainer = $($(".svg-container")[0]);
@@ -36,53 +39,28 @@ $(window).on("scroll", function(e) {
 });
 
 
-var topSwatchChoices = {
+
+
+
+
+
+
+
+
+
+
+
+// swatchOptions.change(function () {
+// 	var swatchChecked = $(this);
+// 	var swatchId = swatchChecked.attr("id");
+// 	var swatchClass = swatchChecked.attr("swatch-class");
 	
-	yellow: {
-		name: "topstripe",
-		swatchName: "yellow",
-		"swatch-class": "body-stripe-top",
-		value: "#d3d400",
-		id: "top-color-a"
-	},	
-	seafoam: {
-		name: "topstripe",
-		swatchName: "seafoam",
-		"swatch-class": "body-stripe-top",
-		value: "#aafffd",
-		id: "top-color-b"
-	},
-	teal: {
-		name: "topstripe",
-		swatchName: "teal",
-		"swatch-class": "body-stripe-top",
-		value: "#09dfff",
-		id: "top-color-c"
-	},
-	red: {
-		name: "topstripe",
-		swatchName: "red",
-		"swatch-class": "body-stripe-top",
-		value: "#ff000",
-		id: "top-color-d"
-	}, 
-	pink: {
-		name: "topstripe",
-		swatchName: "pink",
-		"swatch-class": "body-stripe-top",
-		value: "#ffc6ae",
-		id: "top-color-e"
-	}, 
-	black: {
-		name: "topstripe",
-		swatchName: "black",
-		"swatch-class": "body-stripe-top",
-		value: "#000",
-		id: "top-color-f"
-	}
-};
+// 	var swatchType = swatchChecked.attr("type");
+// 	var newColor = swatchChecked.val();
 
+// 	updateColorSwatch(swatchType, swatchClass, newColor);
 
+// });
 
 
 
