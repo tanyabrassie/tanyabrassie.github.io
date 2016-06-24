@@ -115,7 +115,7 @@
 
 			<hr class="divider">
 
-			<form class="form" id="order-form" method="post" formaction="/test">
+			<form class="form" id="order-form">
 				<h2 class="form__title">
 					Customize Your Home
 				</h2>
@@ -263,7 +263,7 @@
 					<input type="text" id="customername" name="customername">
 				</div>	
 			</section>	
-			<button type="submit">Place Order</button>
+			<button type="submit" form="order-form" name="formbutton" formmethod="post" formaction="" formtarget="_self" value="Place Order">Place Order</button>
 			</form>
 		</div>
 		</div>	
