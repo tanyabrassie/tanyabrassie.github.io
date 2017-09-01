@@ -1,0 +1,44 @@
+.snake-grid {
+	margin: 15px auto 0;
+
+	&__card {
+		margin: 20px auto;
+		width: 60%;
+		min-width: 270px;
+		padding: 30px;
+		background: #f2f2f2;
+		vertical-align: top;
+		border: 14px double #313C44;
+		border-radius: 2px;
+		text-align: center;
+	}
+
+	&__desc {
+		width: 75%;
+		min-width: 280px;
+		display: inline-block;
+		padding: 15px 20px;
+		box-sizing: border-box;
+		text-align: left;
+		letter-spacing: -2px;
+		line-height: 16px;
+		font-size: 14px;
+	}
+
+	&__name {
+		text-align: left;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-size: 20px;
+		padding-bottom: 10px;
+
+	}
+
+	&__image {
+		width: 15%;
+		padding: 15px 0px;
+		min-width: 150px;
+		display: inline-block;
+		vertical-align: top;
+	}
+}

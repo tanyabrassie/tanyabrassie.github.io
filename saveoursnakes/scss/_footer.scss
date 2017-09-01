@@ -1,0 +1,13 @@
+.footer {
+	background: $mainGrey;
+	color: #EFECF5;
+	padding: 30px 20px;
+	
+
+	&__section {
+		width: 46%;
+		padding: 10px;
+		float: left;
+		font-size: 12px;
+	}
+}

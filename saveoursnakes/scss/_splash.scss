@@ -1,0 +1,63 @@
+.splash {
+	text-align: center;
+	margin-top: 5%;
+
+	&__logo {
+		width: 300px;
+		margin: auto;
+		@media (max-width: 600px) {
+			width: 150px;
+			margin-top: 20%;
+		}	
+	}
+
+	&__headline {
+		font-size: 32px;
+		letter-spacing: 3px;
+		font-family: 'Fredoka One', cursive;
+		margin-top: 3%;
+		color: #404D56;
+
+		@media (max-width: 600px) {
+			font-size: 18px;
+			margin-top: 13%;
+		}	
+	}
+}
+
+
+
+.floating{
+	animation-name: floating;
+	-webkit-animation-name: floating;
+
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 25px.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0%);	
+	}
+	50% {
+		transform: translateY(2%);	
+	}	
+	100% {
+		transform: translateY(0%);
+	}			
+}
+
+@-webkit-keyframes floating {
+	0% {
+		-webkit-transform: translateY(0%);	
+	}
+	50% {
+		-webkit-transform: translateY(2%);	
+	}	
+	100% {
+		-webkit-transform: translateY(0%);
+	}			
+}

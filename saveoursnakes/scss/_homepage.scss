@@ -1,0 +1,45 @@
+.homepage {
+	
+	&__headline {
+		font-size: 3em;
+		text-align: center;
+		color: $mainGrey;
+	}
+
+	&__ampersand-snake {
+		width: 140px;
+		margin: 20px auto;
+		display: block;
+		padding-left: 60px;
+	}
+
+	&__wiggling-snake {
+		width: 65%;
+		max-width: 580px;
+		display: block;
+		margin: 10px auto;
+
+
+	}
+}
+
+.learn-more {
+	z-index: 2000;
+	height: 80px;
+	width: 80px;
+	margin: 30px auto;
+	border-radius: 65px;
+	border: 5px solid #fff;
+	background-color: $mainGrey;
+
+	&__text {
+		text-align: center;
+		padding-top: 25px;
+		font-family: 'Fredoka One', sans-serif;
+		font-size: 10px;
+		color: #fff;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		line-height: 18px;
+	}
+}

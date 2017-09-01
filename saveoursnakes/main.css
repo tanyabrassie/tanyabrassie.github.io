@@ -1,0 +1,490 @@
+/* line 1, scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 22, scss/_reset.scss */
+html * > svg {
+  -webkit-transform-origin-x: 0%;
+  -webkit-transform-origin-y: 0%;
+  -webkit-transform-origin-z: initial;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 32, scss/_reset.scss */
+body {
+  line-height: 1;
+  margin: 0;
+  background: #f8fcff;
+}
+
+/* line 37, scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 40, scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 43, scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 48, scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 53, scss/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 7, scss/_base.scss */
+.group {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 14, scss/_base.scss */
+h1, h2, h3, h4 {
+  font-family: 'Fredoka One', sans-serif;
+  color: #313C44;
+}
+
+/* line 19, scss/_base.scss */
+p {
+  font-family: "Source Code Pro";
+  color: #313C44;
+}
+
+/* line 25, scss/_base.scss */
+.main-container {
+  position: relative;
+  height: 100%;
+  margin-top: 40px;
+}
+
+@-webkit-keyframes colorchange {
+  0%, 100% {
+    border: 5px solid #fff;
+    border-radius: 64px;
+  }
+  60% {
+    border: 5px solid #a68ae6;
+  }
+}
+@-moz-keyframes colorchange {
+  0%, 100% {
+    border: 5px solid #fff;
+    border-radius: 64px;
+  }
+  60% {
+    border: 5px solid #a68ae6;
+  }
+}
+@-o-keyframes colorchange {
+  0%, 100% {
+    border: 5px solid #fff;
+    border-radius: 64px;
+  }
+  60% {
+    border: 5px solid #a68ae6;
+  }
+}
+@keyframes colorchange {
+  0%, 100% {
+    border: 5px solid #fff;
+    border-radius: 64px;
+  }
+  60% {
+    border: 5px solid #a68ae6;
+  }
+}
+/* line 21, scss/_animations.scss */
+.color-change {
+  -webkit-animation: colorchange 4s infinite;
+  /* Safari 4+ */
+  -moz-animation: colorchange 4s infinite;
+  /* Fx 5+ */
+  -o-animation: colorchange 4s infinite;
+  /* Opera 12+ */
+  animation: colorchange 4s infinite;
+  /* IE 10+, Fx 29+ */
+}
+
+/* line 1, scss/_navigation.scss */
+.donate-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  bottom: 10px;
+  z-index: 2000;
+  height: 80px;
+  width: 80px;
+  border-radius: 65px;
+  border: 5px solid #fff;
+  background-color: #404D56;
+}
+/* line 13, scss/_navigation.scss */
+.donate-button__text {
+  text-align: center;
+  padding-top: 25px;
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 10px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+/* line 27, scss/_navigation.scss */
+.global-nav__item {
+  display: inline-block;
+  vertical-align: top;
+  padding: 40px 0px;
+  font-size: 14px;
+}
+
+/* line 34, scss/_navigation.scss */
+.sos-logo {
+  display: inline-block;
+  padding-top: 10px;
+}
+
+/* line 39, scss/_navigation.scss */
+.global-nav__link {
+  font-weight: 300;
+  padding: 10px 0;
+  margin: 0 10px;
+  color: #404D56;
+  border-bottom: 0;
+  transition: border .3s ease-in-out;
+}
+/* line 46, scss/_navigation.scss */
+.sos-logo .global-nav__link {
+  display: block;
+}
+
+/* line 51, scss/_navigation.scss */
+.selected-link {
+  font-weight: 400;
+}
+
+/* line 56, scss/_navigation.scss */
+.global-nav__link:hover {
+  font-weight: 400;
+}
+
+/* line 60, scss/_navigation.scss */
+.global-nav__logo, .global-nav__logo--mobile {
+  position: relative;
+  margin: auto;
+  width: 80px;
+  display: inline-block;
+}
+
+/* line 67, scss/_navigation.scss */
+.global-nav__logo--mobile {
+  display: block;
+  width: 70px;
+  padding: 5px 0;
+  margin-top: -50px;
+  z-index: 3;
+}
+
+/*-------------------------------------------*/
+/* line 78, scss/_navigation.scss */
+.global-nav {
+  background: #EFECF5;
+  word-spacing: -3px;
+  height: 85px;
+  width: 100%;
+  text-align: center;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  font-family: "Source Code Pro";
+  text-transform: uppercase;
+}
+
+/* line 99, scss/_navigation.scss */
+.menu-icon {
+  position: absolute;
+  right: 10px;
+  color: #313C4;
+  cursor: pointer;
+  font-size: 34px;
+  top: 10;
+}
+
+/* line 108, scss/_navigation.scss */
+#menuToggle {
+  display: none;
+}
+
+/*-------------------------------------------*/
+@media screen and (max-width: 900px) {
+  /* line 115, scss/_navigation.scss */
+  .global-nav__list {
+    display: block;
+  }
+
+  /* line 119, scss/_navigation.scss */
+  .global-nav__item {
+    display: block;
+    background: #EFECF5;
+    padding: 15px 0;
+    border-bottom: .5px dotted #313C44;
+  }
+
+  /* line 126, scss/_navigation.scss */
+  .global-nav__item:hover {
+    background: #DDD9E8;
+  }
+
+  /* line 130, scss/_navigation.scss */
+  .global-nav {
+    top: -450px;
+    position: relative;
+    height: auto;
+  }
+
+  /* line 136, scss/_navigation.scss */
+  .logo--mobile__container {
+    background: #EFECF5;
+  }
+
+  /* line 140, scss/_navigation.scss */
+  .mobile-nav {
+    background: #EFECF5;
+    height: 60px;
+    border-bottom: 1px solid #313C44;
+  }
+
+  /* line 146, scss/_navigation.scss */
+  .sos-logo {
+    display: none;
+  }
+
+  /* line 150, scss/_navigation.scss */
+  .hamburger__container {
+    background-color: #EFECF5;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 157, scss/_navigation.scss */
+  .menu-icon {
+    display: none;
+  }
+
+  /* line 161, scss/_navigation.scss */
+  .hamburger__container {
+    display: none;
+  }
+
+  /* line 165, scss/_navigation.scss */
+  .global-nav__logo--mobile {
+    display: none;
+  }
+}
+/* line 3, scss/_homepage.scss */
+.homepage__headline {
+  font-size: 3em;
+  text-align: center;
+  color: #404D56;
+}
+/* line 9, scss/_homepage.scss */
+.homepage__ampersand-snake {
+  width: 140px;
+  margin: 20px auto;
+  display: block;
+  padding-left: 60px;
+}
+/* line 16, scss/_homepage.scss */
+.homepage__wiggling-snake {
+  width: 65%;
+  max-width: 580px;
+  display: block;
+  margin: 10px auto;
+}
+
+/* line 26, scss/_homepage.scss */
+.learn-more {
+  z-index: 2000;
+  height: 80px;
+  width: 80px;
+  margin: 30px auto;
+  border-radius: 65px;
+  border: 5px solid #fff;
+  background-color: #404D56;
+}
+/* line 35, scss/_homepage.scss */
+.learn-more__text {
+  text-align: center;
+  padding-top: 25px;
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 10px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+/* line 1, scss/_meetsnakes.scss */
+.snake-grid {
+  margin: 15px auto 0;
+}
+/* line 4, scss/_meetsnakes.scss */
+.snake-grid__card {
+  margin: 20px auto;
+  width: 60%;
+  min-width: 270px;
+  padding: 30px;
+  background: #f2f2f2;
+  vertical-align: top;
+  border: 14px double #313C44;
+  border-radius: 2px;
+  text-align: center;
+}
+/* line 16, scss/_meetsnakes.scss */
+.snake-grid__desc {
+  width: 75%;
+  min-width: 280px;
+  display: inline-block;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  text-align: left;
+  letter-spacing: -2px;
+  line-height: 16px;
+  font-size: 14px;
+}
+/* line 28, scss/_meetsnakes.scss */
+.snake-grid__name {
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+/* line 37, scss/_meetsnakes.scss */
+.snake-grid__image {
+  width: 15%;
+  padding: 15px 0px;
+  min-width: 150px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 1, scss/_footer.scss */
+.footer {
+  background: #404D56;
+  color: #EFECF5;
+  padding: 30px 20px;
+}
+/* line 7, scss/_footer.scss */
+.footer__section {
+  width: 46%;
+  padding: 10px;
+  float: left;
+  font-size: 12px;
+}
+
+/* line 1, scss/_splash.scss */
+.splash {
+  text-align: center;
+  margin-top: 5%;
+}
+/* line 5, scss/_splash.scss */
+.splash__logo {
+  width: 300px;
+  margin: auto;
+}
+@media (max-width: 600px) {
+  /* line 5, scss/_splash.scss */
+  .splash__logo {
+    width: 150px;
+    margin-top: 20%;
+  }
+}
+/* line 14, scss/_splash.scss */
+.splash__headline {
+  font-size: 32px;
+  letter-spacing: 3px;
+  font-family: 'Fredoka One', cursive;
+  margin-top: 3%;
+  color: #404D56;
+}
+@media (max-width: 600px) {
+  /* line 14, scss/_splash.scss */
+  .splash__headline {
+    font-size: 18px;
+    margin-top: 13%;
+  }
+}
+
+/* line 30, scss/_splash.scss */
+.floating {
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 25px 0.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(2%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(2%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}

@@ -1,0 +1,26 @@
+@-webkit-keyframes colorchange {
+  0%, 100%   { border: 5px solid #fff; border-radius: 64px;}
+  60%  { border: 5px solid #a68ae6; }
+}
+
+@-moz-keyframes colorchange {
+   0%, 100%   { border: 5px solid #fff; border-radius: 64px;}
+  60%  { border: 5px solid #a68ae6; }
+}
+
+@-o-keyframes colorchange {
+  0%, 100%  { border: 5px solid #fff; border-radius: 64px; }
+  60%  { border: 5px solid #a68ae6; }
+}
+
+@keyframes colorchange{
+   0%, 100%   { border: 5px solid #fff; border-radius: 64px; }
+  60%  { border: 5px solid #a68ae6; }
+}
+
+.color-change {
+  -webkit-animation: colorchange 4s infinite; /* Safari 4+ */
+  -moz-animation:    colorchange 4s infinite; /* Fx 5+ */
+  -o-animation:      colorchange 4s infinite; /* Opera 12+ */
+  animation:         colorchange 4s infinite; /* IE 10+, Fx 29+ */
+}

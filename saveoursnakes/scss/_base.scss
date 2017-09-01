@@ -1,0 +1,29 @@
+// Colors
+
+$mainGrey: #404D56;
+$mainPurple: #EFECF5;
+
+
+.group {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+h1, h2, h3, h4 {
+	font-family: 'Fredoka One', sans-serif;
+	color: #313C44;
+}
+
+p {
+	font-family: 'Source Code Pro',;
+	color: #313C44;
+}
+
+
+.main-container {
+	position: relative;
+	height: 100%;
+	margin-top: 40px;
+}
