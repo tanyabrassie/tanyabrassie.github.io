@@ -1,0 +1,40 @@
+%vertical-tag {
+  transform: rotate(-90deg);
+  font-size: 13px;
+  font-family: 'VT323', monospace;
+  position: absolute;
+}
+
+%pink-tag {
+  background-color: #ee77e3;
+  color: #fff;
+  padding: 5px 15px;
+}
+
+.left-tag {
+  @extend %vertical-tag;
+  color: #ee77e3;
+  left: -105px;
+  top: 92px;
+}
+
+.fill-tag {
+  @extend %vertical-tag;
+  @extend %pink-tag;
+  top: 30px;
+  left: 0;
+}
+
+.horizontal-tag {
+  @extend %pink-tag;
+  position: absolute;
+  right: 0;
+  letter-spacing: 1px;
+}
+
+.right-vertical-tag {
+  @extend %vertical-tag;
+  top: -104px;
+  color: #ee77e3;
+  right: -73px;
+}
