@@ -23,6 +23,11 @@
   @extend %pink-tag;
   top: 30px;
   left: 0;
+  display: none;
+
+  @media screen and (min-width: 680px) {
+    display: block;
+  }
 }
 
 .horizontal-tag {
@@ -30,11 +35,16 @@
   position: absolute;
   right: 0;
   letter-spacing: 1px;
+  display: none;
+
+  @media screen and (min-width: 680px) {
+    display: block;
+  }
 }
 
 .right-vertical-tag {
   @extend %vertical-tag;
-  top: -104px;
+  top: -118px;
   color: #ee77e3;
-  right: -73px;
+  right: -88px;
 }
