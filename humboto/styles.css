@@ -170,13 +170,14 @@ body {
 
 .calculator__inside {
   display: flex;
-  flex-direction: row;
   align-items: center;
   width: 250px;
-  margin: auto; }
+  margin: auto;
+  flex-direction: column; }
   @media screen and (min-width: 480px) {
     .calculator__inside {
-      width: 100%; } }
+      width: 100%;
+      flex-direction: row; } }
 
 .report-container {
   margin: 30px 0;
@@ -210,9 +211,9 @@ body {
 .upload-box {
   border: 2px dotted white;
   position: relative;
-  width: 100%;
+  width: 90%;
   padding: 10px;
-  min-height: 250px;
+  min-height: 200px;
   height: auto; }
   @media screen and (min-width: 480px) {
     .upload-box {
