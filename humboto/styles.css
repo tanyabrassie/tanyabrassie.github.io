@@ -92,6 +92,9 @@ body {
 .old-fashioned {
   filter: contrast(90%) brightness(100%) saturate(0%) hue-rotate(-419deg); }
 
+.is-invisible {
+  visibility: hidden; }
+
 .container-outer {
   background-color: #ffc7c2;
   min-height: 100vh;

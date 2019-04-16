@@ -9,6 +9,7 @@ var clearButton = document.getElementById('clearButton');
 var uploadBox = document.getElementById('uploadBox');
 var numericRating = document.getElementById('numeric-rating');
 var ratingText = document.getElementById('rating-text');
+var uploadPrompt = document.getElementById('upload-prompt');
 
 //create the image preview
 var imagePreview = document.createElement("img");
@@ -24,7 +25,7 @@ clearButton.disabled = true;
 function handleFileSelect(e) {
   
   if (imagePreview) {
-    imagePreview.src = null;
+    imagePreview.remove();
   }
   
   numericRating.innerHTML = '';
@@ -33,22 +34,32 @@ function handleFileSelect(e) {
   for (var i = 0; i < circleArray.length; i++) {
     circleArray[i].classList.remove('solid');
   }
+
   var file = e.target.files[0];   // gets first file stored on event
-  //create new file reader
-  const reader = new FileReader();
 
-  //when the reader loads the file set the source
-  reader.addEventListener("load", function () {
-    imagePreview.src = reader.result;
+  console.log('files');
+  console.log(e.target.files[0]);
   
-    uploadBox.appendChild(imagePreview);
+  //create new file reader
+
+  if (!!file) {
+    const reader = new FileReader();
+
+    //when the reader loads the file set the source
+    reader.addEventListener("load", function () {
+      imagePreview.src = reader.result;
+  
+      uploadBox.appendChild(imagePreview);
     // filePicker.replaceWith(imagePreview);
-  }, false);
-
-  reader.readAsDataURL(file);
-
-  submitButton.disabled = false;
-  clearButton.disabled = false;
+    }, false);
+  
+    reader.readAsDataURL(file);
+    uploadPrompt.classList.add('is-invisible');
+    submitButton.disabled = false;
+    clearButton.disabled = false;
+  } else {
+    uploadPrompt.classList.remove('is-invisible');
+  }
 }
 
 //humor analysis generates a random number and fills in the appropriate dots
@@ -81,7 +92,10 @@ function clearAnalysis() {
   for (var i = 0; i < circleArray.length; i++) {
     circleArray[i].classList.remove('solid');
   }
+
   clearButton.disabled = true;
+  submitButton.disabled = true;
+  uploadPrompt.classList.remove('is-invisible');
 }
 
 clearButton.addEventListener('click', clearAnalysis);
