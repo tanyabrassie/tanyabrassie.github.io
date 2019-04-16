@@ -164,12 +164,13 @@ body {
 }
 
 .upload-box {
-  border: 2px dotted white;
+  border: 4px dotted white;
   position: relative;
   width: 90%;
   padding: 10px;
   min-height: 200px;
   height: auto;
+  transition: opacity 1s;
 
   @media screen and (min-width: 480px) {
     width: 50%;
@@ -201,10 +202,11 @@ body {
     height: 100%;
     cursor: pointer;
     pointer-events: none;
+  }
 
-    &:hover {
-      opacity: .7;
-    }
+  &:hover {
+    opacity: .7;
+    border: 5px dotted white;
   }
 
   &__icon {
@@ -216,6 +218,7 @@ body {
     text-align: center;
     padding-top: 10px;
     color: #3a04ff;
+    text-decoration: underline;
   }
 
   &__image {
@@ -280,9 +283,11 @@ body {
 
 .bottom {
   position: absolute;
-  bottom: -27px;
+  bottom: -59px;
+  line-height: 1.5;
   justify-content: center;
   width: 100%;
+  text-align: center;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -325,6 +330,7 @@ body {
   &:disabled {
     opacity: .4;
     cursor: default;
+    box-shadow: none;
   }
 }
 

@@ -10,6 +10,8 @@ var uploadBox = document.getElementById('uploadBox');
 var numericRating = document.getElementById('numeric-rating');
 var ratingText = document.getElementById('rating-text');
 var uploadPrompt = document.getElementById('upload-prompt');
+var yearTag = document.getElementById('year-tag');
+
 
 //create the image preview
 var imagePreview = document.createElement("img");
@@ -36,13 +38,10 @@ function handleFileSelect(e) {
   }
 
   var file = e.target.files[0];   // gets first file stored on event
-
-  console.log('files');
-  console.log(e.target.files[0]);
   
-  //create new file reader
 
   if (!!file) {
+    //create new file reader
     const reader = new FileReader();
 
     //when the reader loads the file set the source
@@ -117,13 +116,14 @@ colorToggle.addEventListener('click', function(){
     toggleLabel.innerText = '🤪Next Gen';
     toggleLabel.classList.remove('old-label');
     toggleLabel.classList.add('modern-label');
+    yearTag.innerHTML = '1952';
   
   } else {
     document.getElementsByClassName("container-outer")[0].classList.remove('old-fashioned');
     toggleLabel.innerText = '👀Old Fashioned';
     toggleLabel.classList.remove('modern-label');
     toggleLabel.classList.add('old-label');
-
+    yearTag.innerHTML = '2019';
   } 
 })
 
