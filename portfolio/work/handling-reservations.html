@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	
+	<a id="home"> </a>
+	<title> Tanya Brassie UI/UX Designer</title>
+	<meta name="description" content="Portfolio of Tanya Brassie, UI/UX Designer living in New York City.">
+	<meta name="viewport" content="width=device-width">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="icon" type="image/ico" href="http://www.tanyabrassie.com/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="../main.css" />
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
+
+
+	<script type="text/javascript">
+		// Google stuff
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-46245222-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+	 	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	  	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  	})();
+
+	</script>
+
+</head>
+
+
+<body class="work-body">
+		<nav class="navigation">
+			<a class="navigation__logo__link group" href="../index.html#home"><img class="navigation__logo" src="../assets/images/general/mini-tanya.svg"/><div class="navigation__logo__text">Tanya Brassie</div></a>
+			<ul class="navigation__list">
+				<li class="navigation__item"><a class="navigation__link" href="../index.html#work">See Work</a></li> &#5159;
+	 			<li class="navigation__item"><a class="navigation__link" href="mailto:tanya.brassie@utexas.edu">Say Hi</a></li>&#5159;
+				<li class="navigation__item--icon"><a href="https://dribbble.com/tanyabrassie"><img src="../assets/images/general/dribbble.svg"></a></li>
+			<li class="navigation__item--icon"><a href="https://github.com/tanyabrassie"><img src="../assets/images/general/github.svg"></a></li>
+			<li class="navigation__item--icon"><a href="https://www.linkedin.com/pub/tanya-brassie/32/b22/a24"><img src="../assets/images/general/linkedin.svg"></a></li>
+			</ul>
+		</nav>
+
+		<div class="grid grid-pad work-details">
+			<div class="col-1-1 mobile-col-1-1">
+				<h1 class="work-details__title">
+					Priceline Post-Booking Experience
+					<div class="work-details__role">
+					Role: Design & Development
+				</div>
+				<!-- <a href="" class="nav-arrow-right"><img src="../assets/images/general/right-arrow.svg"/></a> -->
+				</h1>
+				
+			</div>
+			<div class="col-1-1 mobile-col-1-1">
+
+				<div class="work__explanation">
+
+					<img class="work__image--main" src="../assets/images/confirmation-page/confirmation-main-update.png">
+					<div class="image__caption"> The first iteration of the new confirmation page for a rental car booking in desktop and mobile form. Built to be adaptive and mobile first, the page was also designed as a template to accommodate all the unique bits reservation information present across products (flights, cars, hotels). Creating a flexible design system eliminated the need to have multiple (at least nine(!) unique confirmation pages) and therefore decreased design and development time.</div>
+
+					<h2 class="work__explanation__title">Overview</h2>
+					<p class="work__explanation__paragraph">In addition to my work on the styleguide, I’m responsible for making iterative design enhancements to Priceline’s responsive post-booking experience. The overall goal for these enhancements is to build out self-service functionality while still finding ways to increase post-booking sales without detracting from the experience. These changes to the confirmation pages for air, hotels, rental car, and vacation packages vary in nature, scope and complexity: some are slight modifications to the visual design and content hierarchy, while others are changes to the existing user flow; however, all decisions are driven by data gathered from several sources including customer service calls and A/B testing. In addition to creating the visual designs, I also prototype and build them in HTML and SCSS, writing production ready code which is then passed over to the developers. If the design change requires altering a pre-existing portion of the page, I directly edit the code base. This creates an efficient workflow and improves communication between developers and designers which ultimately leads to a better product. Below are a few examples of specific projects that I've worked on to improve the post booking experience.</p>
+
+
+					<h2 class="work__explanation__title"> &#9872;  Project Example: Refining the Cancellation Page</h2>
+					<p class="work__explanation__paragraph"> Recently, I've been working on improvements to the cancellation experience for rental car customers. Currently, users who book a rental car can cancel at no charge. If a user has opted to add collision damage insurance to their reservation, this insurance is also fully refundable and automatically canceled alongside the car reservation. </p>
+
+					<h3 class="work__explanation__subtitle">Issues with the Existing Experience</h3>
+
+					<p class="work__explanation__paragraph">Based on call volume data from customer service, we realized that there were several issues with the current cancellation experience. Numbers in parenthesis correspond to the image below. 
+
+					<ul>
+						<li><em>Customers weren’t sure if a cancellation confirmation email was sent automatically.</em> The current template did not mention anything in regards to an email. (#2) Furthermore, the “Email Itinerary” button (#3) added to this confusion: Was an email sent? If this button is here, does it mean I need to send the email myself? Does this “Email Itinerary” button even send a cancellation confirmation or just the old itinerary?</li>
+
+						<li><em>Customers were not aware if their collision damage insurance was canceled along with their rental car reservation.</em> Contributing to this uncertainty was the collision insurance module, still displayed on the cancellation page (#6 below), with no explicit messaging indicating it been canceled.</li> 
+
+						<li><em> Customers also weren’t sure if they owed anything towards the insurance after cancelling the car reservation.</em> And while the summary of charges module clearly indicated the customer owed nothing towards the rental car reservation, the CDI refund information was presented quietly and the module lacked a clear content hierarchy (#4).</li>
+
+						<li><em>Lastly, even though the trip was canceled, the old app banner still displayed across the top.</em> This banner, encouraging the user to take William Shatner and Kaley Cucoco along, remained (#1) making the experience seem neglected (i.e. I'm clearly not going to Pittsburgh anymore, why are they still asking to come along?").</li>
+						</ul>
+
+					</p>
+
+				</div>
+			</div>
+			
+			<div class="col-1-1 mobile-col-1-1">
+				<div class="work__explanation">
+
+					<img class="work__image--main" src="../assets/images/confirmation-page/cancellation-rc.png">
+					<div class="image__caption"> The old rental car cancellation experience highlighted to show problem areas.</div>
+
+					<h3 class="work__explanation__subtitle">The Solutions!</h3>	
+
+					<p class="work__explanation__paragraph">Where to start? I began by modifying the content hierarchy. A clear first step was adding a message to inform the user that a cancellation confirmation email been sent. Since having proof that the reservation was actually canceled is one of the most important things to the user--aside from being told the reservation was canceled--I placed this message directly under the main message. To highlight this message and give it visual reinforcement amidst all the text, I increased its font size and added a zooming email icon to accompany the message. This also gave the page some life and personality.</p>
+
+					<p class="work__explanation__paragraph">As the date and time of cancellation is not immediately important, I relegated this time-stamp messaging to the main module, which also served to distribute cancellation messaging throughout the body of the page; previously, content within the main module remained the same from confirmation to cancellation page and contained no hint that the reservation had been canceled.</p>
+
+					<p class="work__explanation__paragraph">To emphasize the nature of the cancellation time stamp, I gave it an alert style (red, bold text on a light red background). Accompanying the message is a cancellation icon in consideration for both users who are colorblind and cannot distinguish between red and green (another color used for messaging), and those looking at a print-out (the print-friendly version strips all color from the design). I also changed the copy to read more human-friendly and to include mention that the insurance has also been canceled in an effort to alleviate some customer confusion.</p>
+
+					<h3 class="work__explanation__subtitle">Hierarchy and Messaging Updates</h3>	
+					<img class="work__image--main" src="../assets/images/confirmation-page/rc-header-edits.png">
+					<div class="image__caption"> The cancellation page main messaging area. Above, the old design and below, the new design. Email confirmation messaging has been included along with the icon. The timestamp moved to the main module (see below) and the cancellation confirmation number has been highlighted in red to visually separate it from the rest of the content and to reinforce the connection between red and cancel. </div>
+
+					<h3 class="work__explanation__subtitle">Main Module Tweaks</h3>	
+					<img class="work__image--main" src="../assets/images/confirmation-page/rc-cancellation-main-module.png">
+					<div class="image__caption"> The main module on the rental car confirmation page, modified to include the cancellation time stamp messaging. </div>
+
+					<p class="work__explanation__paragraph">
+					I also made slight tweaks to the summary of charges module in an effort to present the information more clearly and to highlight what is owed. The new module emphasizes the collision damage refund and eliminates repetitive wording of "collision damage coverage". "Estimated Total", has also been changed to the more direct and definite "You Owe" supported by the totals printed directly above. The two variations below demonstrate two content variations: a full refund and partial refund (collision damage is always refundable).</p>
+
+					<h3 class="work__explanation__subtitle">Summary of Charges Structure</h3>	
+					<img class="work__image--main" src="../assets/images/confirmation-page/cancellation-charges.png">
+					<div class="image__caption"> Original summary of charges module to the left. Updated module and content variations shown right. </div>
+
+		
+
+					<h3 class="work__explanation__subtitle">Functionality Enhancements</h3>	
+					<p class="work__explanation__paragraph">After eliminating the unhelpful and vague "email itinerary" button there was room to explore post-cancellation steps. What if this page could make it easier for the user to launch into another search? The current page made canceling a dead end. Hotel data showed that most users who cancel do book again, but just what they booked was a mystery. After the success of a past "book again" test for hotels, I decided to include the "book again" option on the hotel cancellation pages. But what about the user who wanted to book again, but a totally new reservation? A more generic option was needed so I added the "search for a hotel/car" option to each page. Tracking how users interact with this feature will also give us more insight into what they're booking, useful data for future iterations. </p>
+
+					<p class="work__explanation__paragraph">Below, I explored some visual options across products to see how they would translate in various contexts.</p>
+			
+					<h3 class="work__explanation__subtitle">Some Explorations</h3>
+					<img class="work__image--main" src="../assets/images/confirmation-page/cancellation-round1.png">
+					<div class="image__caption"> Some potential solutions and how they would appear in the RC and Hotel confirmation pages. Slight differences in content and functionality made it necessary to test out solutions across products.</div>
+			
+
+					<h3 class="work__explanation__subtitle">Interval Design</h3>
+					<img class="work__image--main" src="../assets/images/confirmation-page/rc-cancellation-final.png">
+					<div class="image__caption"> An intermediary design incorporating all changes except those to the existing green buttons. Despite their unsavory appearance, the green buttons perform well in A/B testing, making it difficult to find an alternative solution that is subtle yet still noticeable.  </div>
+		
+
+					<h3 class="work__explanation__subtitle">Interval Design #2</h3>
+					<img class="work__image--main" src="../assets/images/confirmation-page/rc-cancellation-final-final.png">
+					<div class="image__caption"> The eventual design after testing out of the green buttons. Instead of introducing a new pattern to the site, one for buttons that are not necessarily prominent calls to action, I decided to go with subtle links. These changes will need to be tested into to ensure the change doesn't impact post-cancellation rental car bookings.</div>
+
+					<h3 class="work__explanation__subtitle">Final Design</h3>
+					<img class="work__image--main" src="../assets/images/confirmation-page/confirmation-main-update.png">
+					<div class="image__caption"> The eventual design after testing out of the green buttons and modifying the content hierarchy a bit. The background color was lightened to a light gray to give the page a more modern aesthetic. The text size of the confirmation greeting has been reduced and left-aligned for easy scanning of the information.</div>
+
+					<h3 class="work__explanation__subtitle">Next Steps</h3>	
+					<p class="work__explanation__paragraph">The next phase of the cancellation refinements will involve updating the user flow including the intermediary page where users confirm their cancellation. The existing experience allows users to cancel without giving an explanation, making it difficult to understand why users are canceling beyond what customer service calls can tell us. By incorporating a short, one question survey, we can use the response to route users to customized cancellation page experiences.</p>
+
+					<div class="arrows"><a href="incahoots.html" class="back-arrow">&#8701; Previous</a><a href="making-icons.html" class="next-arrow">Next &#8702;</a>
+
+				</div>
+			</div>
+		</div>
+	</body>		
+</html>
+
