@@ -130,7 +130,7 @@ body {
 
 .welcome {
   height: 100%;
-  min-height: 100vh; }
+  min-height: 50vh; }
   .welcome__container {
     width: 100%;
     position: relative;
@@ -234,6 +234,9 @@ body {
       display: table; }
     .work__list:after {
       clear: both; }
+  .work__group {
+    display: flex;
+    flex-wrap: wrap; }
   .work__container {
     position: relative;
     width: 100%;
@@ -244,9 +247,10 @@ body {
     display: block;
     text-align: center;
     padding: 10px 20px;
-    min-height: 325px; }
+    width: calc(100%/3); }
     @media (max-width: 640px) {
       .work__item {
+        width: 80%;
         min-height: 100px;
         padding: 15px; } }
     .work__item a {
