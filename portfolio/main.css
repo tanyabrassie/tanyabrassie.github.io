@@ -69,11 +69,11 @@ table {
   justify-content: space-between; }
   @media (max-width: 650px) {
     .navigation {
-      padding: 10px 20px 7px;
+      padding: 15px 20px;
       flex-direction: column; } }
   @media (max-width: 650px) {
     .navigation__list, .navigation__list--icon {
-      padding-top: 10px; } }
+      padding-top: 15px; } }
   .navigation__item {
     display: inline-block;
     padding: 0 10px;
