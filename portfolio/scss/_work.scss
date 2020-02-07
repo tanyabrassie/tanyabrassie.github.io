@@ -42,7 +42,7 @@
 	width: 100%;
 	margin: auto;
 	min-width: 270px;
-	max-width: 700px;
+	max-width: 650px;
 
 	&--icon {
 		width: 150px;
@@ -87,8 +87,11 @@
 }
 
 .work__image {
-	outline: 7px double $white;;
-	transition: outline .3s;
+	transition: transform .3s;
+	&:hover {
+		
+		transform: rotate(3deg);
+	}
 
 	&__caption {
 		text-align: center;
@@ -99,15 +102,6 @@
 .work__image-container {
 	padding: 10px 0;
 }
-
-.work__image:hover {
-	outline: 7px double $gray;
-}
-
-.work__image:hover .work__title {
-	color: #ff6569;
-}
-
 
 .work__explanation {
 	width: 70%;
