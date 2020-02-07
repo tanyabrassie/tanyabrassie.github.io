@@ -191,7 +191,8 @@ body {
     text-align: center;
     padding: 15px 0 10px;
     font-family: monospace;
-    font-style: normal; }
+    font-style: normal;
+    line-height: 1.5; }
     @media (max-width: 650px) {
       .welcome__headline {
         font-size: 15px; } }
