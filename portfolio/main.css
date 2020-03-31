@@ -236,7 +236,8 @@ body {
       clear: both; }
   .work__group {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: center; }
   .work__container {
     position: relative;
     width: 100%;
