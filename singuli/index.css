@@ -305,6 +305,36 @@ template {
 
 .perfume {
   background-color: #AFCEEE;
-  border: 1px solid red; }
+  position: relative; }
+
+.perfume__images {
+  max-width: 50%;
+  margin: auto;
+  position: relative;
+  padding-top: 5%; }
+  @media screen and (min-width: 480px) {
+    .perfume__images {
+      max-width: 280px; } }
+
+.perfume__bottle, .perfume__shadow {
+  display: block;
+  width: 100%; }
+
+.perfume__animation {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: -14px;
+  padding-top: 5%; }
+  @media screen and (min-width: 480px) {
+    .perfume__animation {
+      left: 47px;
+      max-width: 528px; } }
+
+.perfume__animation-image {
+  max-width: 680px;
+  margin: auto;
+  padding-top: 5%; }
 
 /*# sourceMappingURL=index.css.map */
