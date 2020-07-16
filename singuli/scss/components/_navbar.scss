@@ -1,7 +1,11 @@
 .navbar {
-  padding: 30px 40px 30px 80px;
+  padding: 30px 15px;
   display: flex;
   width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    padding: 30px 40px 30px 80px;
+  }
 
   &__demo {
     @extend .largeButton;
@@ -9,7 +13,7 @@
     width: 100%;
     display: none;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: $tablet) {
       display: block;
       margin-left: 30px;
     }

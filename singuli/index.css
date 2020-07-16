@@ -388,20 +388,31 @@ template {
   position: absolute;
   top: 80px;
   left: 80px;
-  z-index: 10; }
-
-.perfume__bottom-text {
+  z-index: 10;
   width: 100%;
   max-width: 1000px;
   position: absolute;
+  top: 0;
+  left: 0;
+  padding: 35px 15px;
+  z-index: 10; }
+  @media screen and (min-width: 768px) {
+    .perfume__top-text {
+      padding: 80px; } }
+
+.perfume__bottom-text {
+  width: calc(100% - 80px);
+  max-width: 1000px;
+  position: absolute;
   bottom: 0;
-  padding: 0 80px;
+  padding: 0 15px;
   display: grid;
   grid-template-columns: 100%;
-  grid-gap: 0 80px; }
+  grid-column-gap: 80px; }
   @media screen and (min-width: 768px) {
     .perfume__bottom-text {
-      grid-template-columns: 50% 50%; } }
+      grid-template-columns: 50% 50%;
+      padding: 0 80px; } }
 
 .perfume__text {
   max-width: 365px; }
@@ -419,32 +430,41 @@ template {
   width: 100%;
   max-width: 1000px;
   position: absolute;
-  top: 80px;
-  left: 80px;
+  top: 0;
+  left: 0;
+  padding: 15px;
   z-index: 10; }
+  @media screen and (min-width: 768px) {
+    .sunglasses__top-text {
+      padding: 80px; } }
 
 .sunglasses__bottom-text {
-  width: 100%;
+  width: calc(100% - 15px);
   max-width: 1000px;
   position: absolute;
   bottom: 0;
-  padding: 0 80px;
+  padding: 0 15px;
   display: grid;
   grid-template-columns: 100%;
-  grid-gap: 0 80px; }
+  grid-column-gap: 80px; }
   @media screen and (min-width: 768px) {
     .sunglasses__bottom-text {
-      grid-template-columns: 50% 50%; } }
+      width: calc(100% - 80px);
+      grid-template-columns: 50% 50%;
+      padding: 0 80px; } }
 
 .navbar {
-  padding: 30px 40px 30px 80px;
+  padding: 30px 15px;
   display: flex;
   width: 100%; }
+  @media screen and (min-width: 768px) {
+    .navbar {
+      padding: 30px 40px 30px 80px; } }
   .navbar__demo {
     max-width: 200px;
     width: 100%;
     display: none; }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
       .navbar__demo {
         display: block;
         margin-left: 30px; } }
