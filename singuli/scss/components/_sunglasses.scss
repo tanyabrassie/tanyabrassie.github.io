@@ -1,21 +1,15 @@
-.perfume {
-  background: linear-gradient(180deg, #B0CFEF 0%, #ABCDE3 44.93%, #B3CFDB 65.24%, #C1DBEB 71.21%, #C1DBE8 100%);
-  position: relative;
+.sunglasses {
+  background: linear-gradient(152.32deg, #F6FAFD 3.58%, #F4FAFF 80.82%);
   margin: 10px 0;
-  padding-bottom: 360px;
+  position: relative;
+  padding-bottom: 500px;
 
   @media screen and (min-width: $tablet) {
     padding-bottom: 100px;
   }
 }
 
-.perfume__animation {
-  margin: auto;
-  max-width: 900px;
-  padding-top: 15%;
-}
-
-.perfume__top-text {
+.sunglasses__top-text {
   width: 100%;
   max-width: 1000px;
   position: absolute;
@@ -24,7 +18,7 @@
   z-index: 10;
 }
 
-.perfume__bottom-text {
+.sunglasses__bottom-text {
   width: 100%;
   max-width: 1000px;
   position: absolute;
@@ -38,8 +32,4 @@
   @media screen and (min-width: $tablet) {
     grid-template-columns: 50% 50%;
   }
-}
-
-.perfume__text {
-  max-width: 365px;
 }

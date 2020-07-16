@@ -1,3 +1,28 @@
+.large-headline, .display-block__headline {
+  font-size: 50px;
+  line-height: 40px;
+  font-weight: 600; }
+  @media screen and (min-width: 768px) {
+    .large-headline, .display-block__headline {
+      font-size: 110px;
+      line-height: 100px; } }
+
+.large-title, .display-block__title {
+  font-size: 25px;
+  line-height: 29px; }
+
+.small-title, .details-block__title {
+  font-size: 24px;
+  line-height: 28px; }
+
+.large-text, .display-block__paragraph {
+  font-size: 18px;
+  line-height: 21px; }
+
+.small-text, .details-block__paragraph {
+  font-size: 16px;
+  line-height: 19px; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -303,38 +328,134 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  box-sizing: border-box; }
+
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  margin: 0; }
+
+.button, .smallButton, .navbar__login, .largeButton, .navbar__demo {
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  line-height: 1; }
+
+.smallButton, .navbar__login {
+  height: 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: #fff;
+  color: #000;
+  border: 0.5px solid #000000; }
+
+.largeButton, .navbar__demo {
+  height: 35px;
+  font-size: 15px;
+  background: linear-gradient(230.19deg, #F27690 15.27%, #0029FF 113.6%);
+  color: white; }
+
+.details-block {
+  border-top: 1px solid black;
+  max-width: 370px;
+  margin-bottom: 40px; }
+  .details-block__title {
+    margin: 16px 0 8px; }
+
+.display-block__title {
+  margin: 50px 0 15px; }
+.display-block__paragraph {
+  max-width: 380px; }
+
 .perfume {
-  background-color: #AFCEEE;
-  position: relative; }
-
-.perfume__images {
-  max-width: 50%;
-  margin: auto;
+  background: linear-gradient(180deg, #B0CFEF 0%, #ABCDE3 44.93%, #B3CFDB 65.24%, #C1DBEB 71.21%, #C1DBE8 100%);
   position: relative;
-  padding-top: 5%; }
-  @media screen and (min-width: 480px) {
-    .perfume__images {
-      max-width: 280px; } }
-
-.perfume__bottle, .perfume__shadow {
-  display: block;
-  width: 100%; }
+  margin: 10px 0;
+  padding-bottom: 360px; }
+  @media screen and (min-width: 768px) {
+    .perfume {
+      padding-bottom: 100px; } }
 
 .perfume__animation {
-  position: absolute;
   margin: auto;
-  left: 0;
-  right: 0;
-  top: -14px;
-  padding-top: 5%; }
-  @media screen and (min-width: 480px) {
-    .perfume__animation {
-      left: 47px;
-      max-width: 528px; } }
+  max-width: 900px;
+  padding-top: 15%; }
 
-.perfume__animation-image {
-  max-width: 680px;
-  margin: auto;
-  padding-top: 5%; }
+.perfume__top-text {
+  width: 100%;
+  max-width: 1000px;
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  z-index: 10; }
+
+.perfume__bottom-text {
+  width: 100%;
+  max-width: 1000px;
+  position: absolute;
+  bottom: 0;
+  padding: 0 80px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 0 80px; }
+  @media screen and (min-width: 768px) {
+    .perfume__bottom-text {
+      grid-template-columns: 50% 50%; } }
+
+.perfume__text {
+  max-width: 365px; }
+
+.sunglasses {
+  background: linear-gradient(152.32deg, #F6FAFD 3.58%, #F4FAFF 80.82%);
+  margin: 10px 0;
+  position: relative;
+  padding-bottom: 500px; }
+  @media screen and (min-width: 768px) {
+    .sunglasses {
+      padding-bottom: 100px; } }
+
+.sunglasses__top-text {
+  width: 100%;
+  max-width: 1000px;
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  z-index: 10; }
+
+.sunglasses__bottom-text {
+  width: 100%;
+  max-width: 1000px;
+  position: absolute;
+  bottom: 0;
+  padding: 0 80px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 0 80px; }
+  @media screen and (min-width: 768px) {
+    .sunglasses__bottom-text {
+      grid-template-columns: 50% 50%; } }
+
+.navbar {
+  padding: 30px 40px 30px 80px;
+  display: flex;
+  width: 100%; }
+  .navbar__demo {
+    max-width: 200px;
+    width: 100%;
+    display: none; }
+    @media screen and (min-width: 480px) {
+      .navbar__demo {
+        display: block;
+        margin-left: 30px; } }
+  .navbar__login {
+    max-width: 100px;
+    width: 100%; }
+
+.navbar__buttons {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-left: 30px; }
 
 /*# sourceMappingURL=index.css.map */

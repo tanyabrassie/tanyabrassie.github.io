@@ -1,0 +1,31 @@
+// used for descriptive blocks at the bottom of sections
+.details-block {
+  border-top: 1px solid black;
+  max-width: 370px;
+  margin-bottom: 40px;
+
+  &__title {
+    @extend .small-title;
+    margin: 16px 0 8px;
+  }
+
+  &__paragraph {
+    @extend .small-text;
+  }
+}
+
+.display-block {
+  &__headline {
+    @extend .large-headline;
+  }
+
+  &__title {
+    @extend .large-title;
+    margin: 50px 0 15px;
+  }
+
+  &__paragraph{
+    @extend .large-text;
+    max-width: 380px;
+  }
+}
