@@ -12,7 +12,11 @@
 .perfume__animation {
   margin: auto;
   max-width: 900px;
-  padding-top: 15%;
+  padding-top: 50%;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 15%;
+  }
 }
 
 .perfume__top-text {
@@ -37,18 +41,18 @@
 }
 
 .perfume__bottom-text {
-  width: calc(100% - 80px);
+  width: calc(100% - 15px);
   max-width: 1000px;
   position: absolute;
   bottom: 0;
   padding: 0 15px;
-
 
   display: grid;
   grid-template-columns: 100%;
   grid-column-gap: 80px;
 
   @media screen and (min-width: $tablet) {
+    width: calc(100% - 80px);
     grid-template-columns: 50% 50%;
     padding: 0 80px;
   }

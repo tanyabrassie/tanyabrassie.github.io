@@ -380,7 +380,10 @@ template {
 .perfume__animation {
   margin: auto;
   max-width: 900px;
-  padding-top: 15%; }
+  padding-top: 50%; }
+  @media screen and (min-width: 768px) {
+    .perfume__animation {
+      padding-top: 15%; } }
 
 .perfume__top-text {
   width: 100%;
@@ -401,7 +404,7 @@ template {
       padding: 80px; } }
 
 .perfume__bottom-text {
-  width: calc(100% - 80px);
+  width: calc(100% - 15px);
   max-width: 1000px;
   position: absolute;
   bottom: 0;
@@ -411,6 +414,7 @@ template {
   grid-column-gap: 80px; }
   @media screen and (min-width: 768px) {
     .perfume__bottom-text {
+      width: calc(100% - 80px);
       grid-template-columns: 50% 50%;
       padding: 0 80px; } }
 
@@ -425,6 +429,12 @@ template {
   @media screen and (min-width: 768px) {
     .sunglasses {
       padding-bottom: 100px; } }
+
+.sunglasses__animation {
+  padding-top: 50%; }
+  @media screen and (min-width: 768px) {
+    .sunglasses__animation {
+      padding-top: 15%; } }
 
 .sunglasses__top-text {
   width: 100%;

@@ -9,6 +9,14 @@
   }
 }
 
+.sunglasses__animation {
+  padding-top: 50%;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 15%;
+  }
+}
+
 .sunglasses__top-text {
   width: 100%;
   max-width: 1000px;
