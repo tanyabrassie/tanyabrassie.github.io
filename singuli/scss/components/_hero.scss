@@ -1,0 +1,40 @@
+.hero__animation {
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 */
+  position: relative;
+  
+  div {
+    position: absolute;
+    margin: auto;
+    height: 100%;
+  }
+}
+
+.hero__text {
+  @extend .extra-large-headline;
+}
+
+.hero__animation__front {
+  top: 0; bottom: -50%; 
+  width: 60%;
+  left: 20%; right: 0;
+  z-index: 30;
+}
+
+.hero__animation__mid {
+  top: -6%; width: 50%;
+  left: 0; right: -3%;
+  z-index: 20;
+}
+
+.hero__animation__back {
+  top: 0; bottom: 0;
+  width: 27%;
+  left: 0; right: 35%;
+  z-index: 10;
+}
+
+.hero__text {
+  text-transform: uppercase;
+}
+

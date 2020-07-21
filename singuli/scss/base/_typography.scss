@@ -1,3 +1,11 @@
+//hero text
+.extra-large-headline {
+  font-size: 130px;
+  font-weight: 700;
+  line-height: 176px;
+}
+
+//Very large display text
 .large-headline {
   font-size: 50px;
   line-height: 40px;
@@ -9,6 +17,7 @@
   }
 }
 
+// Titles are used above paragraphs
 .large-title {
   font-size: 25px;
   line-height: 29px;

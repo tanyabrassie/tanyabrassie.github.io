@@ -1,8 +1,11 @@
 // used for descriptive blocks at the bottom of sections
 .details-block {
   border-top: 1px solid black;
-  max-width: 370px;
   margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 370px;
+  }
 
   &__title {
     @extend .small-title;

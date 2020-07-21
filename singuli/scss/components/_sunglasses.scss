@@ -1,6 +1,6 @@
 .sunglasses {
   background: linear-gradient(152.32deg, #F6FAFD 3.58%, #F4FAFF 80.82%);
-  margin: 10px 0;
+  margin-bottom: 10px;
   position: relative;
   padding-bottom: 500px;
 
@@ -10,7 +10,7 @@
 }
 
 .sunglasses__animation {
-  padding-top: 50%;
+  padding-top: 70%;
 
   @media screen and (min-width: $tablet) {
     padding-top: 15%;
@@ -23,11 +23,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: 15px;
+  padding: 35px 15px;
   z-index: 10;
 
   @media screen and (min-width: $tablet) {
-    padding: 80px;
+    // padding: 80px;
+    padding: min(5%, 80px);
   }
 }
 
