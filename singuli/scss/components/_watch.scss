@@ -4,27 +4,19 @@
 
 .watch__animation {
   height: 0;
-  padding-bottom: 90%; /* 16:9 */
+  padding-bottom: 120%; /* 16:9 */
   position: relative;
   z-index: -10;
 }
 
 .watch__top-text {
-  width: 100%;
-  max-width: 1000px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 35px 15px;
-  z-index: 10;
-
-  @media screen and (min-width: $tablet) {
-    // padding: 80px;
-    padding: min(5%, 80px);
-  }
-  color: $white;
+  @include top-text-container(#{$white});
 }
 
 .watch__animation__canvas {
   position: absolute;
+}
+
+.watch__bottom-text {
+  @include bottom-text-container(#{$white});
 }

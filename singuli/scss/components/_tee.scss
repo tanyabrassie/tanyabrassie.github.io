@@ -11,19 +11,11 @@
 }
 
 .tee__top-text {
-  width: 100%;
-  max-width: 1000px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 35px 15px;
-  z-index: 10;
+  @include top-text-container(#{$white});
+}
 
-  @media screen and (min-width: $tablet) {
-    // padding: 80px;
-    padding: min(5%, 80px);
-  }
-  color: $white;
+.tee__bottom-text {
+  @include bottom-text-container(#{$white});
 }
 
 .tee__animation__canvas {

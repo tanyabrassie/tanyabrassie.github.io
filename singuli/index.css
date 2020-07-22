@@ -3,12 +3,12 @@
   font-weight: 700;
   line-height: 176px; }
 
-.large-headline, .display-block__headline {
+.large-headline, .top-block__headline {
   font-size: 50px;
   line-height: 40px;
   font-weight: 600; }
   @media screen and (min-width: 768px) {
-    .large-headline, .display-block__headline {
+    .large-headline, .top-block__headline {
       font-size: 110px;
       line-height: 100px; } }
 
@@ -16,19 +16,19 @@
   font-size: .5rem;
   font-size: min(max(4rem, 5.5vw), 80px); }
 
-.large-title, .display-block__title {
+.large-title, .top-block__title {
   font-size: 25px;
   line-height: 29px; }
 
-.small-title, .details-block__title {
+.small-title, .tee__bottom-text .bottom-block__title, .perfume__bottom-text .bottom-block__title, .watch__bottom-text .bottom-block__title, .sunglasses__bottom-text .bottom-block__title {
   font-size: 24px;
   line-height: 28px; }
 
-.large-text, .display-block__paragraph {
+.large-text, .top-block__paragraph {
   font-size: 18px;
   line-height: 21px; }
 
-.small-text, .details-block__paragraph {
+.small-text, .tee__bottom-text .bottom-block__paragraph, .perfume__bottom-text .bottom-block__paragraph, .watch__bottom-text .bottom-block__paragraph, .sunglasses__bottom-text .bottom-block__paragraph {
   font-size: 16px;
   line-height: 19px; }
 
@@ -371,18 +371,9 @@ template {
   background: linear-gradient(230.19deg, #F27690 15.27%, #0029FF 113.6%);
   color: white; }
 
-.details-block {
-  border-top: 1px solid black;
-  margin-bottom: 40px; }
-  @media screen and (min-width: 768px) {
-    .details-block {
-      max-width: 370px; } }
-  .details-block__title {
-    margin: 16px 0 8px; }
-
-.display-block__title {
+.top-block__title {
   margin: 50px 0 15px; }
-.display-block__paragraph {
+.top-block__paragraph {
   max-width: 380px; }
 
 .intro {
@@ -433,6 +424,12 @@ template {
       margin-left: unset;
       max-width: 90px; } }
 
+.hero {
+  padding: 0 16px; }
+  @media screen and (min-width: 768px) {
+    .hero {
+      padding: 0 16px 0 80px; } }
+
 .hero__animation {
   height: 0;
   padding-bottom: 56.25%;
@@ -442,6 +439,9 @@ template {
     position: absolute;
     margin: auto;
     height: 100%; }
+
+.hero__text {
+  margin: 0; }
 
 .hero__animation__front {
   top: 0;
@@ -471,7 +471,8 @@ template {
 
 .hero__bottom__box {
   display: flex;
-  border: 1px solid #000000 0; }
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000 0; }
 
 .tee {
   background: radial-gradient(87.56% 185.88% at 44.11% 80.9%, #120C1D 1.24%, #252525 21.84%, #4B566D 100%), #252525;
@@ -495,6 +496,30 @@ template {
   @media screen and (min-width: 768px) {
     .tee__top-text {
       padding: min(5%, 80px); } }
+
+.tee__bottom-text {
+  width: calc(100% - 15px);
+  max-width: 1000px;
+  position: absolute;
+  bottom: 0;
+  padding: 0 16px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 80px; }
+  @media screen and (min-width: 768px) {
+    .tee__bottom-text {
+      width: calc(100% - 80px);
+      grid-template-columns: 50% 50%;
+      padding: 0 80px; } }
+  .tee__bottom-text .bottom-block {
+    border-top: 1px solid #fff;
+    margin-bottom: 40px; }
+    @media screen and (min-width: 768px) {
+      .tee__bottom-text .bottom-block {
+        max-width: 370px; } }
+    .tee__bottom-text .bottom-block__title {
+      margin: 16px 0 8px; }
 
 .tee__animation__canvas {
   padding-top: 20%; }
@@ -527,7 +552,8 @@ template {
   top: 0;
   left: 0;
   padding: 35px 15px;
-  z-index: 10; }
+  z-index: 10;
+  color: #000; }
   @media screen and (min-width: 768px) {
     .perfume__top-text {
       padding: min(5%, 80px); } }
@@ -537,7 +563,8 @@ template {
   max-width: 1000px;
   position: absolute;
   bottom: 0;
-  padding: 0 15px;
+  padding: 0 16px;
+  color: #000;
   display: grid;
   grid-template-columns: 100%;
   grid-column-gap: 80px; }
@@ -546,6 +573,14 @@ template {
       width: calc(100% - 80px);
       grid-template-columns: 50% 50%;
       padding: 0 80px; } }
+  .perfume__bottom-text .bottom-block {
+    border-top: 1px solid #000;
+    margin-bottom: 40px; }
+    @media screen and (min-width: 768px) {
+      .perfume__bottom-text .bottom-block {
+        max-width: 370px; } }
+    .perfume__bottom-text .bottom-block__title {
+      margin: 16px 0 8px; }
 
 .perfume__text {
   max-width: 365px; }
@@ -555,7 +590,7 @@ template {
 
 .watch__animation {
   height: 0;
-  padding-bottom: 90%;
+  padding-bottom: 120%;
   /* 16:9 */
   position: relative;
   z-index: -10; }
@@ -575,6 +610,30 @@ template {
 
 .watch__animation__canvas {
   position: absolute; }
+
+.watch__bottom-text {
+  width: calc(100% - 15px);
+  max-width: 1000px;
+  position: absolute;
+  bottom: 0;
+  padding: 0 16px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 80px; }
+  @media screen and (min-width: 768px) {
+    .watch__bottom-text {
+      width: calc(100% - 80px);
+      grid-template-columns: 50% 50%;
+      padding: 0 80px; } }
+  .watch__bottom-text .bottom-block {
+    border-top: 1px solid #fff;
+    margin-bottom: 40px; }
+    @media screen and (min-width: 768px) {
+      .watch__bottom-text .bottom-block {
+        max-width: 370px; } }
+    .watch__bottom-text .bottom-block__title {
+      margin: 16px 0 8px; }
 
 .sunglasses {
   background: linear-gradient(152.32deg, #F6FAFD 3.58%, #F4FAFF 80.82%);
@@ -598,7 +657,8 @@ template {
   top: 0;
   left: 0;
   padding: 35px 15px;
-  z-index: 10; }
+  z-index: 10;
+  color: #000; }
   @media screen and (min-width: 768px) {
     .sunglasses__top-text {
       padding: min(5%, 80px); } }
@@ -608,7 +668,8 @@ template {
   max-width: 1000px;
   position: absolute;
   bottom: 0;
-  padding: 0 15px;
+  padding: 0 16px;
+  color: #000;
   display: grid;
   grid-template-columns: 100%;
   grid-column-gap: 80px; }
@@ -617,6 +678,14 @@ template {
       width: calc(100% - 80px);
       grid-template-columns: 50% 50%;
       padding: 0 80px; } }
+  .sunglasses__bottom-text .bottom-block {
+    border-top: 1px solid #000;
+    margin-bottom: 40px; }
+    @media screen and (min-width: 768px) {
+      .sunglasses__bottom-text .bottom-block {
+        max-width: 370px; } }
+    .sunglasses__bottom-text .bottom-block__title {
+      margin: 16px 0 8px; }
 
 .navbar {
   padding: 70px 15px;

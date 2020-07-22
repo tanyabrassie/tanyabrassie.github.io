@@ -18,34 +18,9 @@
 }
 
 .sunglasses__top-text {
-  width: 100%;
-  max-width: 1000px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 35px 15px;
-  z-index: 10;
-
-  @media screen and (min-width: $tablet) {
-    // padding: 80px;
-    padding: min(5%, 80px);
-  }
+  @include top-text-container(#{$black});
 }
 
 .sunglasses__bottom-text {
-  width: calc(100% - 15px);
-  max-width: 1000px;
-  position: absolute;
-  bottom: 0;
-  padding: 0 15px;
-
-  display: grid;
-  grid-template-columns: 100%;
-  grid-column-gap: 80px;
-
-  @media screen and (min-width: $tablet) {
-    width: calc(100% - 80px);
-    grid-template-columns: 50% 50%;
-    padding: 0 80px;
-  }
+  @include bottom-text-container(#{$black});
 }

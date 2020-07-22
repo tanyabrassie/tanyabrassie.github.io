@@ -1,3 +1,10 @@
+.hero {
+  padding: 0 16px;
+  @media screen and (min-width: $tablet) {
+    padding: 0 16px 0 80px;
+  }
+}
+
 .hero__animation {
   height: 0;
   padding-bottom: 56.25%; /* 16:9 */
@@ -12,6 +19,7 @@
 
 .hero__text {
   @extend .extra-large-headline;
+  margin: 0;
 }
 
 .hero__animation__front {
@@ -44,6 +52,7 @@
 
 .hero__bottom__box {
   display: flex;
-  border: 1px solid #000000 0;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000 0;
 }
 
