@@ -58,3 +58,14 @@
   }
 }
 
+.intro__demo-button {
+  @extend .largeButton;
+  display: block;
+  width: 200px;
+  margin: 46px auto;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
