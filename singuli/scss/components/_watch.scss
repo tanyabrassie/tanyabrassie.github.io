@@ -1,0 +1,25 @@
+.watch {
+  height: 0;
+  padding-bottom: 90%; /* 16:9 */
+  position: relative;
+}
+
+.watch__top-text {
+  width: 100%;
+  max-width: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 35px 15px;
+  z-index: 10;
+
+  @media screen and (min-width: $tablet) {
+    // padding: 80px;
+    padding: min(5%, 80px);
+  }
+  color: $white;
+}
+
+.watch__animation__canvas {
+  position: absolute;
+}

@@ -1,0 +1,26 @@
+.tee {
+  background: radial-gradient(87.56% 185.88% at 44.11% 80.9%, #120C1D 1.24%, #252525 21.84%, #4B566D 100%), #252525;
+  height: 0;
+  padding-bottom: calc(1440 / 1500 * 100%);
+  position: relative;
+}
+
+.tee__top-text {
+  width: 100%;
+  max-width: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 35px 15px;
+  z-index: 10;
+
+  @media screen and (min-width: $tablet) {
+    // padding: 80px;
+    padding: min(5%, 80px);
+  }
+  color: $white;
+}
+
+.tee__animation__canvas {
+  padding: 20%;
+}
