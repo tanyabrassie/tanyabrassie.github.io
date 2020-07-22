@@ -17,6 +17,11 @@
   }
 }
 
+.medium-headline {
+  font-size: .5rem;
+  font-size: min(max(4rem, 5.5vw), 80px);
+}
+
 // Titles are used above paragraphs
 .large-title {
   font-size: 25px;
@@ -36,4 +41,13 @@
 .small-text {
   font-size: 16px;
   line-height: 19px;
+}
+
+.gradient-text {
+  font-size: min(max(1rem, 5vw), 18px);
+  background: linear-gradient(173.86deg, #F27690 23.38%, #0029FF 66.36%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
 }

@@ -3,7 +3,7 @@ lottie.setQuality(2);
 const perfumeAnimationDiv = document.getElementById('lottie-perfume');
 const sunglassesAnimationDiv = document.getElementById('lottie-sunglasses');
 const teeAnimationDiv = document.getElementById('lottie-tee');
-const watchAnimationDiv = document.getElementById('watch'); 
+const watchAnimationDiv = document.getElementById('lottie-watch'); 
 
 const shoeBackDiv = document.getElementById('animation-back-shoe');
 const shoeMidDiv = document.getElementById('animation-mid-shoe');
@@ -13,7 +13,7 @@ const animationDivs = [perfumeAnimationDiv, sunglassesAnimationDiv, teeAnimation
 
 const teeAnimation = lottie.loadAnimation({
   container: teeAnimationDiv,
-  renderer: 'canvas',
+  renderer: 'svg',
   loop: true,
   autoplay: false,
   animationData: tee,
@@ -113,7 +113,7 @@ const animationDict = {
   'lottie-perfume' : perfumeAnimation,
   'lottie-sunglasses' : sunglassesAnimation,
   'lottie-tee' : teeAnimation,
-  'watch' : watchAnimation,
+  'lottie-watch' : watchAnimation,
 };
 
 

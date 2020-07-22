@@ -38,3 +38,12 @@
   text-transform: uppercase;
 }
 
+.hero__bottom__text {
+  @extend .gradient-text;
+}
+
+.hero__bottom__box {
+  display: flex;
+  border: 1px solid #000000 0;
+}
+

@@ -12,6 +12,10 @@
       font-size: 110px;
       line-height: 100px; } }
 
+.medium-headline {
+  font-size: .5rem;
+  font-size: min(max(4rem, 5.5vw), 80px); }
+
 .large-title, .display-block__title {
   font-size: 25px;
   line-height: 29px; }
@@ -27,6 +31,14 @@
 .small-text, .details-block__paragraph {
   font-size: 16px;
   line-height: 19px; }
+
+.gradient-text, .intro__bottom__text, .hero__bottom__text {
+  font-size: min(max(1rem, 5vw), 18px);
+  background: linear-gradient(173.86deg, #F27690 23.38%, #0029FF 66.36%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -336,7 +348,8 @@ template {
 * {
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
-  margin: 0; }
+  margin: 0;
+  font-size: 10px; }
 
 .button, .smallButton, .navbar__login, .largeButton, .navbar__demo {
   cursor: pointer;
@@ -371,6 +384,54 @@ template {
   margin: 50px 0 15px; }
 .display-block__paragraph {
   max-width: 380px; }
+
+.intro {
+  padding: 0 16px; }
+  @media screen and (min-width: 768px) {
+    .intro {
+      padding: 0 16px 0 80px;
+      margin-top: 87px; } }
+
+.intro__text {
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    .intro__text {
+      flex-direction: row;
+      justify-content: space-between; } }
+
+.intro__left {
+  max-width: 80%; }
+  @media screen and (min-width: 768px) {
+    .intro__left {
+      max-width: 50%; } }
+
+.intro__right {
+  text-align: right; }
+  @media screen and (min-width: 768px) {
+    .intro__right {
+      text-align: left;
+      max-width: 50%; } }
+
+.intro__bottom__text {
+  padding: 12px 0;
+  width: 100%;
+  display: block;
+  max-width: 100%; }
+  @media screen and (min-width: 768px) {
+    .intro__bottom__text {
+      max-width: 40%; } }
+
+.intro__star {
+  width: 80%;
+  display: block;
+  max-width: 50px;
+  margin-left: auto; }
+  @media screen and (min-width: 768px) {
+    .intro__star {
+      margin-right: auto;
+      margin-left: unset;
+      max-width: 90px; } }
 
 .hero__animation {
   height: 0;
@@ -408,11 +469,19 @@ template {
 .hero__text {
   text-transform: uppercase; }
 
+.hero__bottom__box {
+  display: flex;
+  border: 1px solid #000000 0; }
+
 .tee {
   background: radial-gradient(87.56% 185.88% at 44.11% 80.9%, #120C1D 1.24%, #252525 21.84%, #4B566D 100%), #252525;
+  position: relative; }
+
+.tee_animation {
   height: 0;
   padding-bottom: calc(1440 / 1500 * 100%);
-  position: relative; }
+  position: relative;
+  z-index: -10; }
 
 .tee__top-text {
   width: 100%;
@@ -428,7 +497,7 @@ template {
       padding: min(5%, 80px); } }
 
 .tee__animation__canvas {
-  padding: 20%; }
+  padding-top: 20%; }
 
 .perfume {
   background: linear-gradient(180deg, #B0CFEF 0%, #ABCDE3 44.93%, #B3CFDB 65.24%, #C1DBEB 71.21%, #C1DBE8 100%);
@@ -482,10 +551,14 @@ template {
   max-width: 365px; }
 
 .watch {
+  position: relative; }
+
+.watch__animation {
   height: 0;
   padding-bottom: 90%;
   /* 16:9 */
-  position: relative; }
+  position: relative;
+  z-index: -10; }
 
 .watch__top-text {
   width: 100%;
@@ -546,7 +619,7 @@ template {
       padding: 0 80px; } }
 
 .navbar {
-  padding: 30px 15px;
+  padding: 70px 15px;
   display: flex;
   width: 100%; }
   @media screen and (min-width: 768px) {
