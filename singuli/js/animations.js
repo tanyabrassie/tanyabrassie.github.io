@@ -3,7 +3,7 @@ lottie.setQuality(2);
 const perfumeAnimationDiv = document.getElementById('lottie-perfume');
 const sunglassesAnimationDiv = document.getElementById('lottie-sunglasses');
 const teeAnimationDiv = document.getElementById('lottie-tee');
-const watchAnimationDiv = document.getElementById('lottie-watch'); 
+const watchAnimationDiv = document.getElementById('watch'); 
 
 const shoeBackDiv = document.getElementById('animation-back-shoe');
 const shoeMidDiv = document.getElementById('animation-mid-shoe');
@@ -17,11 +17,15 @@ const teeAnimation = lottie.loadAnimation({
   loop: true,
   autoplay: false,
   animationData: tee,
+  rendererSettings: {
+    preserveAspectRatio: 'xMidYMid meet',
+    className: 'tee__animation__canvas',
+  }
 });
 
 const perfumeAnimation = lottie.loadAnimation({
   container: perfumeAnimationDiv,
-  renderer: 'canvas',
+  renderer: 'svg',
   loop: true,
   autoplay: false,
   animationData: perfume,
@@ -35,12 +39,12 @@ const watchAnimation = lottie.loadAnimation({
   animationData: watch,
   rendererSettings: {
     // context: canvasContext, // the canvas context
-    preserveAspectRatio: 'none', // Supports the same options as the svg element's preserveAspectRatio property
+    preserveAspectRatio: 'xMidYMid slice', // Supports the same options as the svg element's preserveAspectRatio property
     clearCanvas: false,
     progressiveLoad: false, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
     hideOnTransparent: true, //Boolean, only svg renderer, hides elements when opacity reaches 0 (defaults to true)
-    className: 'some-css-class-name',
-    id: 'some-id',
+    className: 'watch__animation__canvas',
+    // id: 'lottie-watch',
   },
 });
 
@@ -109,7 +113,7 @@ const animationDict = {
   'lottie-perfume' : perfumeAnimation,
   'lottie-sunglasses' : sunglassesAnimation,
   'lottie-tee' : teeAnimation,
-  'lottie-watch' : watchAnimation,
+  'watch' : watchAnimation,
 };
 
 

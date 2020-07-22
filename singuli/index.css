@@ -408,6 +408,28 @@ template {
 .hero__text {
   text-transform: uppercase; }
 
+.tee {
+  background: radial-gradient(87.56% 185.88% at 44.11% 80.9%, #120C1D 1.24%, #252525 21.84%, #4B566D 100%), #252525;
+  height: 0;
+  padding-bottom: calc(1440 / 1500 * 100%);
+  position: relative; }
+
+.tee__top-text {
+  width: 100%;
+  max-width: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 35px 15px;
+  z-index: 10;
+  color: #fff; }
+  @media screen and (min-width: 768px) {
+    .tee__top-text {
+      padding: min(5%, 80px); } }
+
+.tee__animation__canvas {
+  padding: 20%; }
+
 .perfume {
   background: linear-gradient(180deg, #B0CFEF 0%, #ABCDE3 44.93%, #B3CFDB 65.24%, #C1DBEB 71.21%, #C1DBE8 100%);
   position: relative;
@@ -458,6 +480,28 @@ template {
 
 .perfume__text {
   max-width: 365px; }
+
+.watch {
+  height: 0;
+  padding-bottom: 90%;
+  /* 16:9 */
+  position: relative; }
+
+.watch__top-text {
+  width: 100%;
+  max-width: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 35px 15px;
+  z-index: 10;
+  color: #fff; }
+  @media screen and (min-width: 768px) {
+    .watch__top-text {
+      padding: min(5%, 80px); } }
+
+.watch__animation__canvas {
+  position: absolute; }
 
 .sunglasses {
   background: linear-gradient(152.32deg, #F6FAFD 3.58%, #F4FAFF 80.82%);
