@@ -1,24 +1,22 @@
 //hero text
+// 150/45
 .extra-large-headline {
-  font-size: 130px;
   font-weight: 700;
   line-height: 176px;
+  font-size: min(max(4.5rem, 8vw), 150px);
+
 }
 
 //Very large display text
+// 110/50px
 .large-headline {
-  font-size: 50px;
-  line-height: 40px;
-  font-weight: 600;
+  font-size: min(max(5rem, 8vw), 110px);
 
-  @media screen and (min-width: $tablet) {
-    font-size: 110px;
-    line-height: 100px;
-  }
 }
 
+// used above hero image
+// 80/40px
 .medium-headline {
-  font-size: .5rem;
   font-size: min(max(4rem, 5.5vw), 80px);
 }
 

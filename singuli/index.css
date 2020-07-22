@@ -1,19 +1,12 @@
-.extra-large-headline, .hero__text {
-  font-size: 130px;
+.extra-large-headline, .hero__text span {
   font-weight: 700;
-  line-height: 176px; }
+  line-height: 176px;
+  font-size: min(max(4.5rem, 8vw), 150px); }
 
 .large-headline, .top-block__headline {
-  font-size: 50px;
-  line-height: 40px;
-  font-weight: 600; }
-  @media screen and (min-width: 768px) {
-    .large-headline, .top-block__headline {
-      font-size: 110px;
-      line-height: 100px; } }
+  font-size: min(max(5rem, 8vw), 110px); }
 
 .medium-headline {
-  font-size: .5rem;
   font-size: min(max(4rem, 5.5vw), 80px); }
 
 .large-title, .top-block__title {
@@ -440,7 +433,7 @@ template {
     margin: auto;
     height: 100%; }
 
-.hero__text {
+.hero__text span {
   margin: 0; }
 
 .hero__animation__front {
@@ -465,9 +458,6 @@ template {
   left: 0;
   right: 35%;
   z-index: 10; }
-
-.hero__text {
-  text-transform: uppercase; }
 
 .hero__bottom__box {
   display: flex;
@@ -586,14 +576,14 @@ template {
   max-width: 365px; }
 
 .watch {
-  position: relative; }
+  position: relative;
+  background-color: #030303; }
 
 .watch__animation {
   height: 0;
-  padding-bottom: 120%;
-  /* 16:9 */
+  padding-bottom: 150%;
   position: relative;
-  z-index: -10; }
+  z-index: 0; }
 
 .watch__top-text {
   width: 100%;

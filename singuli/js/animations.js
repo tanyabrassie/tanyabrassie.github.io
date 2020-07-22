@@ -81,33 +81,11 @@ const shoeFrontAnimation = lottie.loadAnimation({
 });
 
 shoeFrontAnimation.addEventListener('loaded_images', () => {
-  console.log('im loading the images!');
-
   shoeFrontAnimation.play();
   shoeMidAnimation.play();
   shoeBackAnimation.play();
 });
 
-// shoeFrontAnimation.addEventListener('onComplete', () => {
-//   console.log('im complete!');
-// });
-
-// shoeFrontAnimation.onLoopComplete = function() {
-//   console.log('completed now?');
-// };
-
-
-// setTimeout(() => {
-//   shoeFrontAnimation.play();
-// }, 10);
-
-// setTimeout(() => {
-//   shoeMidAnimation.play();
-// }, 200);
-
-// setTimeout(() => {
-//   shoeBackAnimation.play();
-// }, 210);
 
 const animationDict = {
   'lottie-perfume' : perfumeAnimation,
@@ -125,8 +103,6 @@ const animationDict = {
   function checkPosition() {
     for (var i = 0; i < animationDivs.length; i++) {
       var animationDiv = animationDivs[i];
-      console.log(animationDiv);
-      console.log('hi');
       var positionFromTop = animationDiv.getBoundingClientRect().top;
       var height = animationDiv.getBoundingClientRect().height;
       const animation = animationDict[animationDiv.id];

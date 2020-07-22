@@ -1,12 +1,17 @@
 .watch {
   position: relative;
+  background-color: #030303;
 }
 
 .watch__animation {
   height: 0;
-  padding-bottom: 120%; /* 16:9 */
+  padding-bottom: 150%;
   position: relative;
-  z-index: -10;
+  z-index: 0;
+
+  @media screen and (min-width: $tablet) {
+    // padding-bottom: 120%;
+  }
 }
 
 .watch__top-text {
