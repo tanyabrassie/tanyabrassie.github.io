@@ -1,4 +1,4 @@
-console.log('in SCRIPTLOADER.js');
+console.log('in SCRIPTLOADER.js?');
 
 window.mobileCheck = function() {
   let check = false;
