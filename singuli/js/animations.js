@@ -65,6 +65,9 @@ const perfumeAnimation = lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: false,
+  rendererSettings: {
+    progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
+  },
   animationData: perfume,
 });
 
@@ -78,8 +81,8 @@ const watchAnimation = lottie.loadAnimation({
     // context: canvasContext, // the canvas context
     preserveAspectRatio: 'xMidYMid slice', // Supports the same options as the svg element's preserveAspectRatio property
     clearCanvas: false,
-    progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
-    hideOnTransparent: true, //Boolean, only svg renderer, hides elements when opacity reaches 0 (defaults to true)
+    // progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
+    // hideOnTransparent: true, //Boolean, only svg renderer, hides elements when opacity reaches 0 (defaults to true)
     className: 'watch__animation__canvas',
   },
 });
@@ -91,10 +94,10 @@ const sunglassesAnimation = lottie.loadAnimation({
   autoplay: true,
   animationData: sunglasses,
   rendererSettings: {
-    preserveAspectRatio: 'xMidYMin meet', 
+    preserveAspectRatio: 'xMaxYMax meet', 
     clearCanvas: false,
-    progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
-    hideOnTransparent: true, //Boolean, only svg renderer, hides elements when opacity reaches 0 (defaults to true)
+    // progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
+    // hideOnTransparent: true, //Boolean, only svg renderer, hides elements when opacity reaches 0 (defaults to true)
     className: 'sunglasses__animation__canvas',
   },
 });

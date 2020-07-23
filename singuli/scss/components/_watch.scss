@@ -1,11 +1,6 @@
 .watch {
   position: relative;
   background-color: #030303;
-
-  @media screen and (min-width: $tablet) {
-    padding-bottom: 100px;
-  }
-
 }
 
 .watch__animation {
