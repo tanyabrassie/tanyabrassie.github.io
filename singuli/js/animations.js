@@ -9,13 +9,16 @@ const teeAnimationDiv = document.getElementById('lottie-tee');
 const watchAnimationDiv = document.getElementById('lottie-watch'); 
 
 const perfumeAnimationDivMobile = document.getElementById('lottie-perfume-mobile');
-
+const sunglassesAnimationDivMobile = document.getElementById('lottie-sunglasses-mobile');
+const teeAnimationDivMobile = document.getElementById('lottie-tee-mobile');
+const watchAnimationDivMobile = document.getElementById('lottie-watch-mobile'); 
 
 const shoeBackDiv = document.getElementById('animation-back-shoe');
 const shoeMidDiv = document.getElementById('animation-mid-shoe');
 const shoeFrontDiv = document.getElementById('animation-front-shoe');
 
-const animationDivs = [perfumeAnimationDiv, sunglassesAnimationDiv, teeAnimationDiv, watchAnimationDiv, perfumeAnimationDivMobile]; 
+const animationDivs = [perfumeAnimationDiv, sunglassesAnimationDiv, 
+  teeAnimationDiv, watchAnimationDiv, perfumeAnimationDivMobile, sunglassesAnimationDivMobile, teeAnimationDivMobile, watchAnimationDiv]; 
 
 const teeAnimation = lottie.loadAnimation({
   container: teeAnimationDiv,
@@ -26,6 +29,18 @@ const teeAnimation = lottie.loadAnimation({
   rendererSettings: {
     preserveAspectRatio: 'xMidYMid meet',
     className: 'tee__animation__canvas',
+  }
+});
+
+const teeAnimationMobile = lottie.loadAnimation({
+  container: teeAnimationDivMobile,
+  renderer: 'svg',
+  loop: true,
+  autoplay: false,
+  animationData: mobileTee,
+  rendererSettings: {
+    preserveAspectRatio: 'xMidYMid meet',
+    className: 'tee__animation__canvas__mobile',
   }
 });
 
@@ -68,6 +83,22 @@ const watchAnimation = lottie.loadAnimation({
   },
 });
 
+const watchAnimationMobile = lottie.loadAnimation({
+  container: watchAnimationDivMobile,
+  renderer: 'canvas',
+  loop: true,
+  autoplay: false,
+  animationData: mobileWatch,
+  rendererSettings: {
+    // context: canvasContext, // the canvas context
+    preserveAspectRatio: 'xMinYMid meet', // Supports the same options as the svg element's preserveAspectRatio property
+    clearCanvas: false,
+    // progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
+    // hideOnTransparent: true, //Boolean, only svg renderer, hides elements when opacity reaches 0 (defaults to true)
+    className: 'watch__animation__canvas',
+  },
+});
+
 const sunglassesAnimation = lottie.loadAnimation({
   container: sunglassesAnimationDiv,
   renderer: 'canvas',
@@ -82,6 +113,22 @@ const sunglassesAnimation = lottie.loadAnimation({
     className: 'sunglasses__animation__canvas',
   },
 });
+
+const sunglassesAnimationMobile = lottie.loadAnimation({
+  container: sunglassesAnimationDivMobile,
+  renderer: 'canvas',
+  loop: true,
+  autoplay: true,
+  animationData: mobileSunglasses,
+  rendererSettings: {
+    preserveAspectRatio: 'xMaxYMax meet', 
+    clearCanvas: false,
+    // progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
+    // hideOnTransparent: true, //Boolean, only svg renderer, hides elements when opacity reaches 0 (defaults to true)
+    className: 'sunglasses__animation__canvas',
+  },
+});
+
 
 const shoeBackAnimation = lottie.loadAnimation({
   container: shoeBackDiv,
@@ -116,10 +163,14 @@ shoeFrontAnimation.addEventListener('loaded_images', () => {
 
 const animationDict = {
   'lottie-perfume' : perfumeAnimation,
-  'lottie-perfume-mobile' : perfumeAnimationMobile,
   'lottie-sunglasses' : sunglassesAnimation,
   'lottie-tee' : teeAnimation,
   'lottie-watch' : watchAnimation,
+  
+  'lottie-perfume-mobile' : perfumeAnimationMobile,
+  'lottie-sunglasses-mobile' : sunglassesAnimationMobile,
+  'lottie-tee-mobile' : teeAnimationMobile,
+  'lottie-watch-mobile' : watchAnimationMobile,
 };
 
 const transparentText = document.querySelectorAll('.transparent');
