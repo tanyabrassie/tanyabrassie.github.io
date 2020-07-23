@@ -40,6 +40,11 @@
   }
 }
 
+// 20/13 
+.medium-text {
+  font-size: min(max(1.3rem, 5.5vw), 20px);
+}
+
 .gradient-text {
   font-size: min(max(1rem, 5vw), 18px);
   background: linear-gradient(173.86deg, #F27690 23.38%, #0029FF 66.36%);

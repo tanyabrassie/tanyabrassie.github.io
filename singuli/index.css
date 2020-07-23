@@ -53,6 +53,9 @@
       font-size: 16px;
       line-height: 19px; } }
 
+.medium-text, .hero__bottom__list li, .hero__bottom__list strong, .hero__bottom__paragraph {
+  font-size: min(max(1.3rem, 5.5vw), 20px); }
+
 .gradient-text, .intro__bottom__text, .hero__bottom__text {
   font-size: min(max(1rem, 5vw), 18px);
   background: linear-gradient(173.86deg, #F27690 23.38%, #0029FF 66.36%);
@@ -525,10 +528,39 @@ template {
 
 .hero__bottom__box {
   display: flex;
+  flex-direction: column;
+  padding: 32px 0;
   margin-top: 10%;
   margin-bottom: 15px;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000; }
+  @media screen and (min-width: 768px) {
+    .hero__bottom__box {
+      flex-direction: row; } }
+
+.hero__bottom__list {
+  margin-left: auto;
+  padding-right: 10%;
+  padding-top: 40px; }
+  @media screen and (min-width: 768px) {
+    .hero__bottom__list {
+      padding-left: 10%;
+      width: 50%;
+      padding-top: 0; } }
+  .hero__bottom__list ul {
+    list-style-type: none;
+    padding: 0; }
+  .hero__bottom__list li, .hero__bottom__list strong {
+    padding: 0; }
+  .hero__bottom__list strong {
+    font-weight: 600;
+    padding-bottom: 10px;
+    display: block; }
+
+@media screen and (min-width: 768px) {
+  .hero__bottom__paragraph {
+    width: 50%;
+    padding-right: 10%; } }
 
 .tee {
   background: radial-gradient(87.56% 185.88% at 44.11% 80.9%, #120C1D 1.24%, #252525 21.84%, #4B566D 100%), #252525;
