@@ -1,0 +1,55 @@
+.about {
+  background-color: $darkBlue;
+  color: $white;
+  padding: 105px 15px 45px;
+
+  @media screen and (min-width: $tablet) {
+    padding: min(5%, 80px);
+  }
+
+  &__paragraph {
+    font-size: 2.5rem;
+    line-height: 29px;
+    max-width: 60%;
+    margin-bottom: 80px;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 4em;
+      line-height: 40px;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase; 
+    border-bottom: 1px solid white;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 3rem;
+    }
+  }
+
+  &__founders {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+      max-width: 60%;
+      justify-content: space-between;
+    }
+
+    &__name {
+      // 24/15
+      font-size: min(max(1.5em, 1.7vw), 24px);
+
+    }
+
+    &__title {
+      //16/12
+      font-size: min(max(1.6rem, 1.7vw), 12px);
+    }
+  }
+}
