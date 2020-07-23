@@ -8,21 +8,21 @@
 .medium-headline {
   font-size: min(max(4rem, 5.5vw), 80px); }
 
-.large-title, .top-block__title {
-  font-size: 25px;
-  line-height: 29px; }
+.small-title, .top-block__title, .tee__bottom-text .bottom-block__title, .perfume__bottom-text .bottom-block__title, .watch__bottom-text .bottom-block__title, .sunglasses__bottom-text .bottom-block__title {
+  font-size: 15px;
+  line-height: 18px; }
+  @media screen and (min-width: 768px) {
+    .small-title, .top-block__title, .tee__bottom-text .bottom-block__title, .perfume__bottom-text .bottom-block__title, .watch__bottom-text .bottom-block__title, .sunglasses__bottom-text .bottom-block__title {
+      font-size: 25px;
+      line-height: 29px; } }
 
-.small-title, .tee__bottom-text .bottom-block__title, .perfume__bottom-text .bottom-block__title, .watch__bottom-text .bottom-block__title, .sunglasses__bottom-text .bottom-block__title {
-  font-size: 24px;
-  line-height: 28px; }
-
-.large-text, .top-block__paragraph {
-  font-size: 18px;
-  line-height: 21px; }
-
-.small-text, .tee__bottom-text .bottom-block__paragraph, .perfume__bottom-text .bottom-block__paragraph, .watch__bottom-text .bottom-block__paragraph, .sunglasses__bottom-text .bottom-block__paragraph {
-  font-size: 16px;
-  line-height: 19px; }
+.small-text, .top-block__paragraph, .tee__bottom-text .bottom-block__paragraph, .perfume__bottom-text .bottom-block__paragraph, .watch__bottom-text .bottom-block__paragraph, .sunglasses__bottom-text .bottom-block__paragraph {
+  line-height: 15px;
+  font-size: 13px; }
+  @media screen and (min-width: 768px) {
+    .small-text, .top-block__paragraph, .tee__bottom-text .bottom-block__paragraph, .perfume__bottom-text .bottom-block__paragraph, .watch__bottom-text .bottom-block__paragraph, .sunglasses__bottom-text .bottom-block__paragraph {
+      font-size: 16px;
+      line-height: 19px; } }
 
 .gradient-text, .intro__bottom__text, .hero__bottom__text {
   font-size: min(max(1rem, 5vw), 18px);
@@ -496,21 +496,15 @@ template {
 
 .tee {
   background: radial-gradient(87.56% 185.88% at 44.11% 80.9%, #120C1D 1.24%, #252525 21.84%, #4B566D 100%), #252525;
-  position: relative;
-  padding-bottom: 360px; }
-  @media screen and (min-width: 768px) {
-    .tee {
-      padding-bottom: 0; } }
+  position: relative; }
 
 .tee__top-text {
   width: 100%;
   max-width: 1000px;
-  position: absolute;
-  top: 0;
-  left: 0;
   padding: 35px 15px;
   z-index: 10;
-  color: #fff; }
+  color: #fff;
+  max-width: 80%; }
   @media screen and (min-width: 768px) {
     .tee__top-text {
       padding: min(5%, 80px); } }
@@ -524,7 +518,8 @@ template {
   color: #fff;
   display: grid;
   grid-template-columns: 100%;
-  grid-column-gap: 80px; }
+  grid-column-gap: 80px;
+  position: relative; }
   @media screen and (min-width: 768px) {
     .tee__bottom-text {
       width: calc(100% - 80px);
@@ -540,7 +535,6 @@ template {
       margin: 16px 0 8px; }
 
 .tee__animation__canvas {
-  padding-top: 20%;
   padding-left: 10%; }
 
 .perfume {
@@ -548,7 +542,7 @@ template {
   position: relative;
   margin-bottom: 10px;
   padding-bottom: 360px;
-  background-color: red; }
+  z-index: -20; }
   @media screen and (min-width: 768px) {
     .perfume {
       padding-bottom: 100px; } }
@@ -557,19 +551,20 @@ template {
   height: 1000px !important; }
 
 .perfume__animation {
+  max-width: 1020px;
   margin: auto;
-  max-width: 900px;
-  padding-top: 70%; }
+  left: -25px;
+  position: relative;
+  z-index: -10;
+  margin-top: 0%;
+  margin-left: -25px; }
   @media screen and (min-width: 768px) {
     .perfume__animation {
-      padding-top: 15%; } }
+      margin-top: -25%; } }
 
 .perfume__top-text {
   width: 100%;
   max-width: 1000px;
-  position: absolute;
-  top: 0;
-  left: 0;
   padding: 35px 15px;
   z-index: 10;
   color: #000; }
@@ -607,6 +602,9 @@ template {
 .watch {
   position: relative;
   background-color: #030303; }
+  @media screen and (min-width: 768px) {
+    .watch {
+      padding-bottom: 100px; } }
 
 .watch__animation {
   height: 0;
@@ -659,15 +657,12 @@ template {
   margin-bottom: 10px;
   position: relative;
   padding-bottom: 500px; }
-  @media screen and (min-width: 768px) {
-    .sunglasses {
-      padding-bottom: 100px; } }
 
 .sunglasses__animation {
-  padding-top: 70%; }
-  @media screen and (min-width: 768px) {
-    .sunglasses__animation {
-      padding-top: 15%; } }
+  height: 0;
+  padding-bottom: 150%;
+  position: relative;
+  z-index: 0; }
 
 .sunglasses__top-text {
   width: 100%;
@@ -705,6 +700,9 @@ template {
         max-width: 370px; } }
     .sunglasses__bottom-text .bottom-block__title {
       margin: 16px 0 8px; }
+
+.sunglasses__animation__canvas {
+  position: absolute; }
 
 .navbar {
   padding: 70px 15px;

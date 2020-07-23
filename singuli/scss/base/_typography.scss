@@ -17,25 +17,27 @@
   font-size: min(max(4rem, 5.5vw), 80px);
 }
 
-// Titles are used above paragraphs
-.large-title {
-  font-size: 25px;
-  line-height: 29px;
-}
 
+// 24/15
 .small-title {
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 15px;
+  line-height: 18px;
+  
+  @media screen and (min-width: $tablet) {
+    font-size: 25px;
+    line-height: 29px;
+  }
 }
 
-.large-text {
-  font-size: 18px;
-  line-height: 21px;
-}
-
+// 16/13
 .small-text {
-  font-size: 16px;
-  line-height: 19px;
+  line-height: 15px;
+  font-size: 13px;
+  
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 .gradient-text {
