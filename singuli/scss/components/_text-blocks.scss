@@ -1,9 +1,18 @@
-// used for descriptive blocks at the bottom of sections
+
+.fade-in {
+  opacity: 1 !important;
+}
+
+.transparent {
+  opacity: 0;
+  transition: 1.5s;
+}
 
 //Top Text Blocks
 .top-block {
   &__headline {
     @extend .large-headline;
+    
   }
 
   &__title {

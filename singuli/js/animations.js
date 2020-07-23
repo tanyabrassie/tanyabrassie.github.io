@@ -140,6 +140,7 @@ const animationDict = {
   'lottie-watch' : watchAnimation,
 };
 
+const transparentText = document.querySelectorAll('.transparent');
 
 (function() {
   let windowHeight;
@@ -160,8 +161,25 @@ const animationDict = {
       }
     }
   }
+
+  function checkHeadlinePosition() {
+    console.warn(transparentText);
+    for (var i = 0; i < transparentText.length; i++) {
+      var headline = transparentText[i];
+      var positionFromTop = headline.getBoundingClientRect().top;
+      var height = headline.getBoundingClientRect().height;
+      
+      if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
+        headline.classList.add('fade-in');
+      } else {
+        headline.classList.remove('fade-in');
+      }
+    }
+  }
   window.addEventListener('scroll', checkPosition);
+  window.addEventListener('scroll', checkHeadlinePosition);
   window.addEventListener('resize', init);
   init();
   checkPosition();
+  checkHeadlinePosition();
 })();

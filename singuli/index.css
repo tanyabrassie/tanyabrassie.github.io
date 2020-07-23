@@ -363,6 +363,13 @@ template {
   background: linear-gradient(230.19deg, #F27690 15.27%, #0029FF 113.6%);
   color: white; }
 
+.fade-in {
+  opacity: 1 !important; }
+
+.transparent {
+  opacity: 0;
+  transition: 1.5s; }
+
 .top-block__title {
   margin: 50px 0 15px; }
 .top-block__paragraph {
