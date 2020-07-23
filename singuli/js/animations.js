@@ -129,7 +129,6 @@ const transparentText = document.querySelectorAll('.transparent');
   }
 
   function checkHeadlinePosition() {
-    console.warn(transparentText);
     for (var i = 0; i < transparentText.length; i++) {
       var headline = transparentText[i];
       var positionFromTop = headline.getBoundingClientRect().top;

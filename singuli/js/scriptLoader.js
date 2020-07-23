@@ -8,6 +8,13 @@ window.mobileCheck = function() {
 
 const isMobile = window.mobileCheck();
 
+
+function appendAnimationScript() {
+  const animations = document.createElement('script');
+  animations.src = 'js/animations.js';
+  document.body.appendChild(animations);
+}
+
 // if mobile browser is used import mobile versions of things
 if (isMobile) {
   console.log('MOBILE');
@@ -15,10 +22,7 @@ if (isMobile) {
   mobileAnimations.src = 'animations/mobileBodyAnimations.js';
   document.head.appendChild(mobileAnimations);
 
-  //load animations js
-  const animations = document.createElement('script');
-  animations.src = 'js/animations.js';
-  document.body.appendChild(animations);
+  mobileAnimations.onload = appendAnimationScript;
 
 } else {
   console.log('DESKTOP');
@@ -26,8 +30,13 @@ if (isMobile) {
   bodyAnimations.src = 'animations/bodyAnimations.js';
   document.body.appendChild(bodyAnimations);
 
-  // load animations.js
+  bodyAnimations.onload = appendAnimationScript;
+}
+
+
+function appendAnimationScript() {
   const animations = document.createElement('script');
   animations.src = 'js/animations.js';
   document.body.appendChild(animations);
+  console.log('loading animations script');
 }
