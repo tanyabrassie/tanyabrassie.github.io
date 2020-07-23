@@ -18,17 +18,27 @@
   height: 1000px !important;
 }
 
+.perfume__animation__mobile {
+  position: relative;
+  z-index: -10;
+  display: block;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
 .perfume__animation {
   max-width: 1020px;
   margin: auto;
-  left: -25px;
   position: relative;
   z-index: -10;
   margin-top: 0%;
   margin-left: -25px;
+  display: none;
 
   @media screen and (min-width: $tablet) {
-    margin-top: -25%;
+    display: block;
   }
 }
 
