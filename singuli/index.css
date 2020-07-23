@@ -736,6 +736,19 @@ template {
     .about__founders__title {
       font-size: min(max(1.6rem, 1.7vw), 12px); }
 
+.footer {
+  background-color: #fff;
+  padding: min(5%, 80px);
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    .footer {
+      flex-direction: row; } }
+  .footer__contact * {
+    font-size: min(max(3em, 1.7vw), 30px); }
+  .footer__copyright * {
+    font-size: min(max(1.5em, 1.7vw), 20px); }
+
 .navbar {
   padding: 70px 15px;
   display: flex;
