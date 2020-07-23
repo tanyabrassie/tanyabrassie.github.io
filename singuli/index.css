@@ -3,36 +3,36 @@
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/work-sans-v8-latin-regular.eot");
+  src: url("/fonts/work-sans-v8-latin-regular.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/work-sans-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/work-sans-v8-latin-regular.woff2") format("woff2"), url("../fonts/work-sans-v8-latin-regular.woff") format("woff"), url("../fonts/work-sans-v8-latin-regular.ttf") format("truetype"), url("../fonts/work-sans-v8-latin-regular.svg#WorkSans") format("svg");
+  src: local(""), url("/fonts/work-sans-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/work-sans-v8-latin-regular.woff2") format("woff2"), url("/fonts/work-sans-v8-latin-regular.woff") format("woff"), url("/fonts/work-sans-v8-latin-regular.ttf") format("truetype"), url("/fonts/work-sans-v8-latin-regular.svg#WorkSans") format("svg");
   /* Legacy iOS */ }
 /* work-sans-500 - latin */
 @font-face {
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/work-sans-v8-latin-500.eot");
+  src: url("/fonts/work-sans-v8-latin-500.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/work-sans-v8-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/work-sans-v8-latin-500.woff2") format("woff2"), url("../fonts/work-sans-v8-latin-500.woff") format("woff"), url("../fonts/work-sans-v8-latin-500.ttf") format("truetype"), url("../fonts/work-sans-v8-latin-500.svg#WorkSans") format("svg");
+  src: local(""), url("/fonts/work-sans-v8-latin-500.eot?#iefix") format("embedded-opentype"), url("/fonts/work-sans-v8-latin-500.woff2") format("woff2"), url("/fonts/work-sans-v8-latin-500.woff") format("woff"), url("/fonts/work-sans-v8-latin-500.ttf") format("truetype"), url("/fonts/work-sans-v8-latin-500.svg#WorkSans") format("svg");
   /* Legacy iOS */ }
 /* work-sans-600 - latin */
 @font-face {
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/work-sans-v8-latin-600.eot");
+  src: url("/fonts/work-sans-v8-latin-600.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/work-sans-v8-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/work-sans-v8-latin-600.woff2") format("woff2"), url("../fonts/work-sans-v8-latin-600.woff") format("woff"), url("../fonts/work-sans-v8-latin-600.ttf") format("truetype"), url("../fonts/work-sans-v8-latin-600.svg#WorkSans") format("svg");
+  src: local(""), url("/fonts/work-sans-v8-latin-600.eot?#iefix") format("embedded-opentype"), url("/fonts/work-sans-v8-latin-600.woff2") format("woff2"), url("/fonts/work-sans-v8-latin-600.woff") format("woff"), url("/fonts/work-sans-v8-latin-600.ttf") format("truetype"), url("/fonts/work-sans-v8-latin-600.svg#WorkSans") format("svg");
   /* Legacy iOS */ }
 /* work-sans-700 - latin */
 @font-face {
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/work-sans-v8-latin-700.eot");
+  src: url("/fonts/work-sans-v8-latin-700.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/work-sans-v8-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/work-sans-v8-latin-700.woff2") format("woff2"), url("../fonts/work-sans-v8-latin-700.woff") format("woff"), url("../fonts/work-sans-v8-latin-700.ttf") format("truetype"), url("../fonts/work-sans-v8-latin-700.svg#WorkSans") format("svg");
+  src: local(""), url("/fonts/work-sans-v8-latin-700.eot?#iefix") format("embedded-opentype"), url("/fonts/work-sans-v8-latin-700.woff2") format("woff2"), url("/fonts/work-sans-v8-latin-700.woff") format("woff"), url("/fonts/work-sans-v8-latin-700.ttf") format("truetype"), url("/fonts/work-sans-v8-latin-700.svg#WorkSans") format("svg");
   /* Legacy iOS */ }
 .extra-large-headline, .hero__text span {
   font-weight: 700;
