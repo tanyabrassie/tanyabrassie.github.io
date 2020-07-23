@@ -1,6 +1,6 @@
 lottie.setQuality(2);
 
-console.log('in animationjs');
+console.log('in ANIMATION.JS');
 
 // get all divs to attch animations to
 const perfumeAnimationDiv = document.getElementById('lottie-perfume');
@@ -42,7 +42,7 @@ const watchAnimation = lottie.loadAnimation({
   renderer: 'canvas',
   loop: true,
   autoplay: false,
-  animationData: watch,
+  animationData: isMobile ? mobileWatch : watch,
   rendererSettings: {
     // context: canvasContext, // the canvas context
     preserveAspectRatio: 'xMidYMid slice', // Supports the same options as the svg element's preserveAspectRatio property
