@@ -6,7 +6,8 @@
   font-size: min(max(5rem, 8vw), 110px); }
 
 .medium-headline {
-  font-size: min(max(4rem, 5.5vw), 80px); }
+  font-size: min(max(4rem, 5.5vw), 80px);
+  font-weight: 700; }
 
 .small-title, .top-block__title, .tee__bottom-text .bottom-block__title, .perfume__bottom-text .bottom-block__title, .watch__bottom-text .bottom-block__title, .sunglasses__bottom-text .bottom-block__title {
   font-size: 15px;
