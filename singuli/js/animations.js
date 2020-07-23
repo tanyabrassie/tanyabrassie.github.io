@@ -19,7 +19,7 @@ const teeAnimation = lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: false,
-  animationData: tee,
+  animationData: isMobile ? mobileTee : tee,
   rendererSettings: {
     preserveAspectRatio: 'xMidYMid meet',
     className: 'tee__animation__canvas',
@@ -34,7 +34,7 @@ const perfumeAnimation = lottie.loadAnimation({
   rendererSettings: {
     progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
   },
-  animationData: perfume,
+  animationData: isMobile ? mobilePerfume : perfume,
 });
 
 const watchAnimation = lottie.loadAnimation({
@@ -45,7 +45,7 @@ const watchAnimation = lottie.loadAnimation({
   animationData: isMobile ? mobileWatch : watch,
   rendererSettings: {
     // context: canvasContext, // the canvas context
-    preserveAspectRatio: 'xMidYMid slice', // Supports the same options as the svg element's preserveAspectRatio property
+    preserveAspectRatio: 'xMinYMid meet', // Supports the same options as the svg element's preserveAspectRatio property
     clearCanvas: false,
     // progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
     // hideOnTransparent: true, //Boolean, only svg renderer, hides elements when opacity reaches 0 (defaults to true)
@@ -58,7 +58,7 @@ const sunglassesAnimation = lottie.loadAnimation({
   renderer: 'canvas',
   loop: true,
   autoplay: true,
-  animationData: sunglasses,
+  animationData: isMobile ? mobileSunglasses : sunglasses,
   rendererSettings: {
     preserveAspectRatio: 'xMaxYMax meet', 
     clearCanvas: false,
