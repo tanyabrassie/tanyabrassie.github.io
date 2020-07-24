@@ -1,6 +1,6 @@
 lottie.setQuality(2);
 
-console.log('in ANIMATION.JS');
+console.log('in DESKTOP ANIMATION.JS');
 
 // get all divs to attch animations to
 const perfumeAnimationDiv = document.getElementById('lottie-perfume');
@@ -8,17 +8,12 @@ const sunglassesAnimationDiv = document.getElementById('lottie-sunglasses');
 const teeAnimationDiv = document.getElementById('lottie-tee');
 const watchAnimationDiv = document.getElementById('lottie-watch'); 
 
-const perfumeAnimationDivMobile = document.getElementById('lottie-perfume-mobile');
-const sunglassesAnimationDivMobile = document.getElementById('lottie-sunglasses-mobile');
-const teeAnimationDivMobile = document.getElementById('lottie-tee-mobile');
-const watchAnimationDivMobile = document.getElementById('lottie-watch-mobile'); 
-
 const shoeBackDiv = document.getElementById('animation-back-shoe');
 const shoeMidDiv = document.getElementById('animation-mid-shoe');
 const shoeFrontDiv = document.getElementById('animation-front-shoe');
 
 const animationDivs = [perfumeAnimationDiv, sunglassesAnimationDiv, 
-  teeAnimationDiv, watchAnimationDiv, perfumeAnimationDivMobile, sunglassesAnimationDivMobile, teeAnimationDivMobile, watchAnimationDiv]; 
+  teeAnimationDiv, watchAnimationDiv]; 
 
 const teeAnimation = lottie.loadAnimation({
   container: teeAnimationDiv,
@@ -32,17 +27,6 @@ const teeAnimation = lottie.loadAnimation({
   }
 });
 
-const teeAnimationMobile = lottie.loadAnimation({
-  container: teeAnimationDivMobile,
-  renderer: 'svg',
-  loop: true,
-  autoplay: false,
-  animationData: mobileTee,
-  rendererSettings: {
-    preserveAspectRatio: 'xMidYMid meet',
-    className: 'tee__animation__canvas__mobile',
-  }
-});
 
 const perfumeAnimation = lottie.loadAnimation({
   container: perfumeAnimationDiv,
@@ -55,21 +39,9 @@ const perfumeAnimation = lottie.loadAnimation({
   },
 });
 
-const perfumeAnimationMobile = lottie.loadAnimation({
-  container: perfumeAnimationDivMobile,
-  renderer: 'svg',
-  loop: true,
-  autoplay: false,
-  animationData: mobilePerfume,
-  rendererSettings: {
-    progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
-  },
-});
-
-
 const watchAnimation = lottie.loadAnimation({
   container: watchAnimationDiv,
-  renderer: 'canvas',
+  renderer: 'svg',
   loop: true,
   autoplay: false,
   animationData: watch,
@@ -83,43 +55,12 @@ const watchAnimation = lottie.loadAnimation({
   },
 });
 
-const watchAnimationMobile = lottie.loadAnimation({
-  container: watchAnimationDivMobile,
-  renderer: 'canvas',
-  loop: true,
-  autoplay: false,
-  animationData: mobileWatch,
-  rendererSettings: {
-    // context: canvasContext, // the canvas context
-    preserveAspectRatio: 'xMinYMid meet', // Supports the same options as the svg element's preserveAspectRatio property
-    clearCanvas: false,
-    // progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
-    // hideOnTransparent: true, //Boolean, only svg renderer, hides elements when opacity reaches 0 (defaults to true)
-    className: 'watch__animation__canvas',
-  },
-});
-
 const sunglassesAnimation = lottie.loadAnimation({
   container: sunglassesAnimationDiv,
-  renderer: 'canvas',
+  renderer: 'svg',
   loop: true,
   autoplay: true,
   animationData: sunglasses,
-  rendererSettings: {
-    preserveAspectRatio: 'xMaxYMax meet', 
-    clearCanvas: false,
-    // progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
-    // hideOnTransparent: true, //Boolean, only svg renderer, hides elements when opacity reaches 0 (defaults to true)
-    className: 'sunglasses__animation__canvas',
-  },
-});
-
-const sunglassesAnimationMobile = lottie.loadAnimation({
-  container: sunglassesAnimationDivMobile,
-  renderer: 'canvas',
-  loop: true,
-  autoplay: true,
-  animationData: mobileSunglasses,
   rendererSettings: {
     preserveAspectRatio: 'xMaxYMax meet', 
     clearCanvas: false,
@@ -166,11 +107,6 @@ const animationDict = {
   'lottie-sunglasses' : sunglassesAnimation,
   'lottie-tee' : teeAnimation,
   'lottie-watch' : watchAnimation,
-  
-  'lottie-perfume-mobile' : perfumeAnimationMobile,
-  'lottie-sunglasses-mobile' : sunglassesAnimationMobile,
-  'lottie-tee-mobile' : teeAnimationMobile,
-  'lottie-watch-mobile' : watchAnimationMobile,
 };
 
 const transparentText = document.querySelectorAll('.transparent');

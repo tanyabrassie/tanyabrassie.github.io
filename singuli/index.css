@@ -566,6 +566,18 @@ template {
   background: radial-gradient(87.56% 185.88% at 44.11% 80.9%, #120C1D 1.24%, #252525 21.84%, #4B566D 100%), #252525;
   position: relative; }
 
+.tee__animation {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .tee__animation {
+      display: block; } }
+
+.tee__animation__mobile {
+  display: block; }
+  @media screen and (min-width: 768px) {
+    .tee__animation__mobile {
+      display: none; } }
+
 .tee__top-text {
   width: 100%;
   max-width: 1000px;
@@ -682,7 +694,11 @@ template {
   height: 0;
   padding-bottom: 300%;
   position: relative;
-  z-index: 0; }
+  z-index: 0;
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .watch__animation {
+      display: block; } }
 
 .watch__top-text {
   width: 100%;
@@ -728,7 +744,11 @@ template {
   height: 0;
   padding-bottom: 300%;
   position: relative;
-  z-index: 0; }
+  z-index: 0;
+  display: block; }
+  @media screen and (min-width: 768px) {
+    .watch__animation__mobile {
+      display: none; } }
 
 .sunglasses {
   background: linear-gradient(152.32deg, #F6FAFD 3.58%, #F4FAFF 80.82%);
@@ -739,7 +759,11 @@ template {
   height: 0;
   padding-bottom: 90%;
   position: relative;
-  z-index: 0; }
+  z-index: 0;
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .sunglasses__animation {
+      display: block; } }
 
 .sunglasses__top-text {
   width: 100%;
@@ -783,7 +807,11 @@ template {
   height: 0;
   padding-bottom: 90%;
   position: relative;
-  z-index: 0; }
+  z-index: 0;
+  display: block; }
+  @media screen and (min-width: 768px) {
+    .sunglasses__animation__mobile {
+      display: none; } }
 
 .about {
   background-color: #2334EF;

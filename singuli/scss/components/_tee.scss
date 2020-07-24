@@ -4,6 +4,19 @@
 }
 
 .tee__animation {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.tee__animation__mobile {
+  display: block;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .tee__top-text {
