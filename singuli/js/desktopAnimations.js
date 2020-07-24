@@ -17,7 +17,7 @@ const animationDivs = [perfumeAnimationDiv, sunglassesAnimationDiv,
 
 const teeAnimation = lottie.loadAnimation({
   container: teeAnimationDiv,
-  renderer: 'svg',
+  renderer: 'canvas',
   loop: true,
   autoplay: false,
   animationData: tee,
@@ -32,7 +32,7 @@ const teeAnimation = lottie.loadAnimation({
 
 const perfumeAnimation = lottie.loadAnimation({
   container: perfumeAnimationDiv,
-  renderer: 'svg',
+  renderer: 'canvas',
   loop: true,
   autoplay: false,
   animationData: perfume,
@@ -43,7 +43,7 @@ const perfumeAnimation = lottie.loadAnimation({
 
 const watchAnimation = lottie.loadAnimation({
   container: watchAnimationDiv,
-  renderer: 'svg',
+  renderer: 'canvas',
   loop: true,
   autoplay: false,
   animationData: watch,
@@ -59,7 +59,7 @@ const watchAnimation = lottie.loadAnimation({
 
 const sunglassesAnimation = lottie.loadAnimation({
   container: sunglassesAnimationDiv,
-  renderer: 'svg',
+  renderer: 'canvas',
   loop: true,
   autoplay: true,
   animationData: sunglasses,
