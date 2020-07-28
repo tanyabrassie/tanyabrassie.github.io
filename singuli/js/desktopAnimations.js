@@ -2,6 +2,11 @@ lottie.setQuality(2);
 
 console.log('in DESKTOP ANIMATION.JS');
 
+const canvas = document.getElementById('watch-canvas');
+const canvasContext = canvas.getContext('2d');
+
+console.log(canvas);
+
 // get all divs to attch animations to
 const perfumeAnimationDiv = document.getElementById('lottie-perfume');
 const sunglassesAnimationDiv = document.getElementById('lottie-sunglasses');
@@ -32,30 +37,30 @@ const teeAnimation = lottie.loadAnimation({
 
 const perfumeAnimation = lottie.loadAnimation({
   container: perfumeAnimationDiv,
-  renderer: 'canvas',
+  renderer: 'svg',
   loop: true,
   autoplay: false,
   animationData: perfume,
   rendererSettings: {
+        // context: canvasContext, // the canvas context
+
     progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
   },
 });
 
 const watchAnimation = lottie.loadAnimation({
-  container: watchAnimationDiv,
   renderer: 'canvas',
   loop: true,
   autoplay: false,
   animationData: watch,
   rendererSettings: {
-    // context: canvasContext, // the canvas context
-    preserveAspectRatio: 'xMinYMid meet', // Supports the same options as the svg element's preserveAspectRatio property
+    context: canvasContext, // the canvas context
+    scaleMode: 'xMidYMid slice',
     clearCanvas: false,
-    progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
-    hideOnTransparent: true, //Boolean, only svg renderer, hides elements when opacity reaches 0 (defaults to true)
-    className: 'watch__animation__canvas',
   },
 });
+
+console.log(watchAnimation);
 
 const sunglassesAnimation = lottie.loadAnimation({
   container: sunglassesAnimationDiv,

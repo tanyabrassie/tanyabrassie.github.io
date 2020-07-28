@@ -2,6 +2,10 @@ lottie.setQuality(2);
 
 console.log('in MOBILE ANIMATIONS.JS');
 
+
+const canvasMobile = document.getElementById('watch-canvas-mobile');
+const canvasMobileContext = canvasMobile.getContext('2d');
+
 // get all divs to attch animations to
  const perfumeAnimationDivMobile = document.getElementById('lottie-perfume-mobile');
 const sunglassesAnimationDivMobile = document.getElementById('lottie-sunglasses-mobile');
@@ -38,18 +42,14 @@ const perfumeAnimationMobile = lottie.loadAnimation({
 });
 
 const watchAnimationMobile = lottie.loadAnimation({
-  container: watchAnimationDivMobile,
-  renderer: 'svg',
+  renderer: 'canvas',
   loop: true,
   autoplay: false,
   animationData: mobileWatch,
   rendererSettings: {
-    // context: canvasContext, // the canvas context
-    preserveAspectRatio: 'xMinYMid meet', // Supports the same options as the svg element's preserveAspectRatio property
+    context: canvasMobileContext, // the canvas context
+    scaleMode: 'xMidYMid slice',
     clearCanvas: false,
-    progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
-    // hideOnTransparent: true, //Boolean, only svg renderer, hides elements when opacity reaches 0 (defaults to true)
-    className: 'watch__animation__canvas',
   },
 });
 
@@ -67,38 +67,6 @@ const sunglassesAnimationMobile = lottie.loadAnimation({
     className: 'sunglasses__animation__canvas',
   },
 });
-
-
-// const shoeBackAnimation = lottie.loadAnimation({
-//   container: shoeBackDiv,
-//   renderer: 'canvas',
-//   loop: false,
-//   autoplay: false,
-//   animationData: heroShoeBack,
-// });
-
-// const shoeMidAnimation = lottie.loadAnimation({
-//   container: shoeMidDiv,
-//   renderer: 'canvas',
-//   loop: false,
-//   autoplay: false,
-//   animationData: heroShoeMid,
-// });
-
-// const shoeFrontAnimation = lottie.loadAnimation({
-//   container: shoeFrontDiv,
-//   renderer: 'canvas',
-//   loop: false,
-//   autoplay: false,
-//   animationData: heroShoeFront,
-// });
-
-// shoeFrontAnimation.addEventListener('loaded_images', () => {
-//   shoeFrontAnimation.play();
-//   shoeMidAnimation.play();
-//   shoeBackAnimation.play();
-// });
-
 
 const mobileAnimationDict = {
   'lottie-perfume-mobile' : perfumeAnimationMobile,

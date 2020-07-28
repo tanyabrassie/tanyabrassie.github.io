@@ -692,7 +692,7 @@ template {
 
 .watch__animation {
   height: 0;
-  padding-bottom: 300%;
+  padding-bottom: 100%;
   position: relative;
   z-index: 0;
   display: none; }
@@ -714,7 +714,14 @@ template {
       padding: min(5%, 80px); } }
 
 .watch__animation__canvas {
-  position: absolute; }
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.watch__animation__canvas__mobile {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
 
 .watch__bottom-text {
   width: calc(100% - 15px);
@@ -742,7 +749,7 @@ template {
 
 .watch__animation__mobile {
   height: 0;
-  padding-bottom: 300%;
+  padding-bottom: 250%;
   position: relative;
   z-index: 0;
   display: block; }
