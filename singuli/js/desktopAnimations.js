@@ -61,7 +61,7 @@ const sunglassesAnimation = lottie.loadAnimation({
   animationData: sunglasses,
   rendererSettings: {
     context: sunglassesCan.getContext('2d'), // the canvas context
-    scaleMode: 'xMidYMid meet',
+    scaleMode: 'xMidYmin slice',
     clearCanvas: false,
   },
 });
