@@ -61,7 +61,7 @@ const sunglassesAnimationMobile = lottie.loadAnimation({
   animationData: mobileSunglasses,
   rendererSettings: {
     context: sunglassesCanMob.getContext('2d'),
-    preserveAspectRatio: 'xMaxYMax meet', 
+    preserveAspectRatio: 'xMidYMin slice', 
     clearCanvas: false,
   },
 });

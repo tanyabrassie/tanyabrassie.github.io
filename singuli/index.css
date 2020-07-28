@@ -568,7 +568,7 @@ template {
 
 .tee__animation {
   height: 0;
-  padding-bottom: 100%;
+  padding-bottom: 50%;
   position: relative;
   z-index: 0;
   display: none; }
@@ -625,7 +625,7 @@ template {
 
 .tee__animation__mobile {
   height: 0;
-  padding-bottom: 250%;
+  padding-bottom: 100%;
   position: relative;
   z-index: 0;
   display: block; }
@@ -825,7 +825,7 @@ template {
 
 .sunglasses__animation__mobile {
   height: 0;
-  padding-bottom: 90%;
+  padding-bottom: 120%;
   position: relative;
   z-index: 0;
   display: block; }

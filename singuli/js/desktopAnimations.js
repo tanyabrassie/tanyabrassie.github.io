@@ -37,9 +37,7 @@ const perfumeAnimation = lottie.loadAnimation({
   autoplay: false,
   animationData: perfume,
   rendererSettings: {
-        // context: canvasContext, // the canvas context
-
-    progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
+  progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
   },
 });
 
@@ -63,7 +61,7 @@ const sunglassesAnimation = lottie.loadAnimation({
   animationData: sunglasses,
   rendererSettings: {
     context: sunglassesCan.getContext('2d'), // the canvas context
-    scaleMode: 'xMidYMid slice',
+    scaleMode: 'xMidYMid meet',
     clearCanvas: false,
   },
 });

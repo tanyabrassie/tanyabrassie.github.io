@@ -3,23 +3,14 @@
   position: relative;
 }
 
-// .tee__animation {
-//   display: none;
-
-//   @media screen and (min-width: $tablet) {
-//     display: block;
-//   }
-// }
-
 .tee__animation {
   height: 0;
-  padding-bottom: 100%;
+  padding-bottom: 50%;
   position: relative;
   z-index: 0;
   display: none;
 
   @media screen and (min-width: $tablet) {
-    // padding-bottom: 120%;
     display: block;
   }
 }
@@ -50,13 +41,12 @@
 
 .tee__animation__mobile {
   height: 0;
-  padding-bottom: 250%;
+  padding-bottom: 100%;
   position: relative;
   z-index: 0;
   display: block;
 
   @media screen and (min-width: $tablet) {
-    // padding-bottom: 120%;
     display: none;
   }
 }
