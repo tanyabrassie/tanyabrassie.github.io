@@ -1,7 +1,7 @@
 .about {
   background-color: $darkBlue;
   color: $white;
-  padding: 105px 15px 45px;
+  padding: 100px 15px 45px;
 
   @media screen and (min-width: $tablet) {
     padding: min(5%, 80px);
@@ -9,13 +9,12 @@
 
 
   &__title {
-    font-size: 2rem;
     margin-bottom: 20px;
     padding-bottom: 20px;
     text-transform: uppercase; 
     border-bottom: 1px solid white;
 
-    font-size: min(max(2erm, 1.7vw), 30px);
+    font-size: min(max(2rem, 1.7vw), 30px);
     line-height: min(max(2.3rem, 1.7vw), 35px);
   }
 

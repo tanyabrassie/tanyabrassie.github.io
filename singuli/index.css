@@ -839,17 +839,16 @@ template {
 .about {
   background-color: #2334EF;
   color: #fff;
-  padding: 105px 15px 45px; }
+  padding: 100px 15px 45px; }
   @media screen and (min-width: 768px) {
     .about {
       padding: min(5%, 80px); } }
   .about__title {
-    font-size: 2rem;
     margin-bottom: 20px;
     padding-bottom: 20px;
     text-transform: uppercase;
     border-bottom: 1px solid white;
-    font-size: min(max(2erm, 1.7vw), 30px);
+    font-size: min(max(2rem, 1.7vw), 30px);
     line-height: min(max(2.3rem, 1.7vw), 35px); }
   .about__paragraph {
     font-size: min(max(2.5rem, 3vw), 40px);
@@ -877,16 +876,31 @@ template {
 
 .footer {
   background-color: #fff;
-  padding: min(5%, 80px);
+  padding: min(max(4.4rem, 1.7vw), 80px) 15px;
   display: flex;
   flex-direction: column; }
   @media screen and (min-width: 768px) {
     .footer {
-      flex-direction: row; } }
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: min(5%, 80px); } }
   .footer__contact * {
-    font-size: min(max(3em, 1.7vw), 30px); }
-  .footer__copyright * {
-    font-size: min(max(1.5em, 1.7vw), 20px); }
+    font-size: min(max(3rem, 1.7vw), 50px);
+    font-weight: 600;
+    padding: 10px 0px; }
+  .footer__copyright {
+    padding-top: 270px; }
+    @media screen and (min-width: 768px) {
+      .footer__copyright {
+        padding-top: 10px; } }
+    .footer__copyright * {
+      font-size: min(max(1.5em, 1.7vw), 20px);
+      text-align: center;
+      line-height: 2; }
+      @media screen and (min-width: 768px) {
+        .footer__copyright * {
+          text-align: left; } }
 
 .navbar {
   padding: 70px 15px;
