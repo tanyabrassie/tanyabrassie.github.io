@@ -3,11 +3,12 @@ lottie.setQuality(2);
 console.log('in MOBILE ANIMATIONS.JS');
 
 
-const canvasMobile = document.getElementById('watch-canvas-mobile');
-const canvasMobileContext = canvasMobile.getContext('2d');
+const watchCanMob = document.getElementById('watch-canvas-mobile');
+const teeCanMob = document.getElementById('tee-canvas-mobile');
+const sunglassesCanMob = document.getElementById('sunglasses-canvas-mobile');
 
 // get all divs to attch animations to
- const perfumeAnimationDivMobile = document.getElementById('lottie-perfume-mobile');
+const perfumeAnimationDivMobile = document.getElementById('lottie-perfume-mobile');
 const sunglassesAnimationDivMobile = document.getElementById('lottie-sunglasses-mobile');
 const teeAnimationDivMobile = document.getElementById('lottie-tee-mobile');
 const watchAnimationDivMobile = document.getElementById('lottie-watch-mobile'); 
@@ -19,15 +20,15 @@ const watchAnimationDivMobile = document.getElementById('lottie-watch-mobile');
 const mobileAnimationDivs = [perfumeAnimationDivMobile, sunglassesAnimationDivMobile, teeAnimationDivMobile, watchAnimationDivMobile]; 
 
 const teeAnimationMobile = lottie.loadAnimation({
-  container: teeAnimationDivMobile,
-  renderer: 'svg',
+  renderer: 'canvas',
   loop: true,
   autoplay: false,
   animationData: mobileTee,
   rendererSettings: {
-    preserveAspectRatio: 'xMidYMid meet',
-    className: 'tee__animation__canvas__mobile',
-  }
+    context: teeCanMob.getContext('2d'), // the canvas context
+    scaleMode: 'xMidYMid slice',
+    // clearCanvas: false,
+  },
 });
 
 const perfumeAnimationMobile = lottie.loadAnimation({
@@ -47,24 +48,21 @@ const watchAnimationMobile = lottie.loadAnimation({
   autoplay: false,
   animationData: mobileWatch,
   rendererSettings: {
-    context: canvasMobileContext, // the canvas context
+    context: watchCanMob.getContext('2d'),
     scaleMode: 'xMidYMid slice',
     clearCanvas: false,
   },
 });
 
 const sunglassesAnimationMobile = lottie.loadAnimation({
-  container: sunglassesAnimationDivMobile,
-  renderer: 'svg',
+  renderer: 'canvas',
   loop: true,
   autoplay: false,
   animationData: mobileSunglasses,
   rendererSettings: {
+    context: sunglassesCanMob.getContext('2d'),
     preserveAspectRatio: 'xMaxYMax meet', 
-    clearCanvas: true,
-    // progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
-    // hideOnTransparent: true, //Boolean, only svg renderer, hides elements when opacity reaches 0 (defaults to true)
-    className: 'sunglasses__animation__canvas',
+    clearCanvas: false,
   },
 });
 

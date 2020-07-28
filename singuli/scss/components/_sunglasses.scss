@@ -24,8 +24,10 @@
   @include bottom-text-container-relative(#{$black});
 }
 
-.sunglasses__animation__canvas {
+.sunglasses__animation__canvas, .sunglasses__animation__canvas__mobile {
   position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .sunglasses__animation__mobile {

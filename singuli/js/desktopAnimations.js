@@ -2,10 +2,9 @@ lottie.setQuality(2);
 
 console.log('in DESKTOP ANIMATION.JS');
 
-const canvas = document.getElementById('watch-canvas');
-const canvasContext = canvas.getContext('2d');
-
-console.log(canvas);
+const watchCan = document.getElementById('watch-canvas');
+const teeCan = document.getElementById('tee-canvas');
+const sunglassesCan = document.getElementById('sunglasses-canvas');
 
 // get all divs to attch animations to
 const perfumeAnimationDiv = document.getElementById('lottie-perfume');
@@ -21,19 +20,15 @@ const animationDivs = [perfumeAnimationDiv, sunglassesAnimationDiv,
   teeAnimationDiv, watchAnimationDiv]; 
 
 const teeAnimation = lottie.loadAnimation({
-  container: teeAnimationDiv,
   renderer: 'canvas',
   loop: true,
   autoplay: false,
   animationData: tee,
-
   rendererSettings: {
-    preserveAspectRatio: 'xMidYMid meet',
-    className: 'tee__animation__canvas',
-    progressiveLoad: true,
-  }
+    context: teeCan.getContext('2d'), // the canvas context
+    scaleMode: 'xMidYMid slice',
+  },
 });
-
 
 const perfumeAnimation = lottie.loadAnimation({
   container: perfumeAnimationDiv,
@@ -54,27 +49,22 @@ const watchAnimation = lottie.loadAnimation({
   autoplay: false,
   animationData: watch,
   rendererSettings: {
-    context: canvasContext, // the canvas context
+    context: watchCan.getContext('2d'), // the canvas context
     scaleMode: 'xMidYMid slice',
     clearCanvas: false,
   },
 });
 
-console.log(watchAnimation);
 
 const sunglassesAnimation = lottie.loadAnimation({
-  container: sunglassesAnimationDiv,
   renderer: 'canvas',
   loop: true,
-  autoplay: true,
+  autoplay: false,
   animationData: sunglasses,
   rendererSettings: {
-    preserveAspectRatio: 'xMaxYMax meet', 
+    context: sunglassesCan.getContext('2d'), // the canvas context
+    scaleMode: 'xMidYMid slice',
     clearCanvas: false,
-    progressiveLoad: true,
-    // progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
-    // hideOnTransparent: true, //Boolean, only svg renderer, hides elements when opacity reaches 0 (defaults to true)
-    className: 'sunglasses__animation__canvas',
   },
 });
 

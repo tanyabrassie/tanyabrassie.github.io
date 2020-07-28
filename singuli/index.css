@@ -567,6 +567,10 @@ template {
   position: relative; }
 
 .tee__animation {
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  z-index: 0;
   display: none; }
   @media screen and (min-width: 768px) {
     .tee__animation {
@@ -614,8 +618,20 @@ template {
     .tee__bottom-text .bottom-block__title {
       margin: 16px 0 8px; }
 
-.tee__animation__canvas {
-  padding-left: 10%; }
+.tee__animation__canvas, .tee__animation__canvas__mobile {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.tee__animation__mobile {
+  height: 0;
+  padding-bottom: 250%;
+  position: relative;
+  z-index: 0;
+  display: block; }
+  @media screen and (min-width: 768px) {
+    .tee__animation__mobile {
+      display: none; } }
 
 .perfume {
   background: linear-gradient(180deg, #B0CFEF 0%, #ABCDE3 44.93%, #B3CFDB 65.24%, #C1DBEB 71.21%, #C1DBE8 100%);
@@ -713,12 +729,7 @@ template {
     .watch__top-text {
       padding: min(5%, 80px); } }
 
-.watch__animation__canvas {
-  position: absolute;
-  width: 100%;
-  height: 100%; }
-
-.watch__animation__canvas__mobile {
+.watch__animation__canvas, .watch__animation__canvas__mobile {
   position: absolute;
   width: 100%;
   height: 100%; }
@@ -807,8 +818,10 @@ template {
     .sunglasses__bottom-text .bottom-block__title {
       margin: 16px 0 8px; }
 
-.sunglasses__animation__canvas {
-  position: absolute; }
+.sunglasses__animation__canvas, .sunglasses__animation__canvas__mobile {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
 
 .sunglasses__animation__mobile {
   height: 0;
