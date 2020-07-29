@@ -1,0 +1,77 @@
+.bullet-styles {
+  background-color: $lightPurple;
+  border: none;
+  padding: 5px 10px;
+  width: 1px;
+  height: 20px;
+  border-radius: 100px;
+  transform: scale(0.4, 0.4);
+}
+
+.demo {
+  background-color: $lightGrey;
+}
+
+.demo__slider {
+  margin: auto;
+  width: 60%;
+
+  .glide__track {
+    overflow: inherit;
+  }
+
+  .glide__slide {
+    padding: 20px;
+  }
+
+  .glide__bullets {
+    display: flex;
+    justify-content: center;
+  }
+
+  .glide__bullet {
+   @extend .bullet-styles;
+  }
+
+  .glide__bullet--active {
+    @extend .bullet-styles;
+    background-color: $darkPurple;
+  }
+
+  .glide__arrow--left {
+    display: none;
+  }
+
+  .glide__arrow--right {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      background-color: $black;
+      position: absolute;
+      top: calc(50% - 50px);
+      right: -15%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      cursor: pointer;
+
+      border: none;
+      outline: none;
+      border-radius: 50%;
+
+      height: 75px;
+      width: 75px;
+      transition: opacity .5s;
+
+      &:hover {
+        opacity: .85;
+      }
+    }
+  }
+}
+
+.demo__slide {
+  width: 100%;
+  border-radius: 10px;
+}

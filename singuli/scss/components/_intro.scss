@@ -60,7 +60,7 @@
 
 .intro__demo-button {
   @extend .largeButton;
-  display: block;
+  display: flex;
   width: 200px;
   margin: 46px auto;
 

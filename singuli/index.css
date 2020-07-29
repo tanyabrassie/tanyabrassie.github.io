@@ -375,13 +375,17 @@ template {
   cursor: pointer;
   border-radius: 100px;
   border: none;
-  line-height: 1; }
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; }
 
 .smallButton, .navbar__login {
   height: 30px;
   text-transform: uppercase;
   font-size: 12px;
-  background-color: #fff;
+  background-color: transparent;
   color: #000;
   border: 0.5px solid #000000; }
 
@@ -453,7 +457,7 @@ template {
       max-width: 90px; } }
 
 .intro__demo-button {
-  display: block;
+  display: flex;
   width: 200px;
   margin: 46px auto; }
   @media screen and (min-width: 768px) {
@@ -910,6 +914,57 @@ template {
   .sunglasses__animation__mobile canvas {
     margin-top: min(40%, 120px); }
 
+.bullet-styles, .demo__slider .glide__bullet, .demo__slider .glide__bullet--active {
+  background-color: rgba(49, 70, 255, 0.3);
+  border: none;
+  padding: 5px 10px;
+  width: 1px;
+  height: 20px;
+  border-radius: 100px;
+  transform: scale(0.4, 0.4); }
+
+.demo {
+  background-color: #E5E5E5; }
+
+.demo__slider {
+  margin: auto;
+  width: 60%; }
+  .demo__slider .glide__track {
+    overflow: inherit; }
+  .demo__slider .glide__slide {
+    padding: 20px; }
+  .demo__slider .glide__bullets {
+    display: flex;
+    justify-content: center; }
+  .demo__slider .glide__bullet--active {
+    background-color: #3146FF; }
+  .demo__slider .glide__arrow--left {
+    display: none; }
+  .demo__slider .glide__arrow--right {
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .demo__slider .glide__arrow--right {
+        background-color: #000;
+        position: absolute;
+        top: calc(50% - 50px);
+        right: -15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border-radius: 50%;
+        height: 75px;
+        width: 75px;
+        transition: opacity .5s; }
+        .demo__slider .glide__arrow--right:hover {
+          opacity: .85; } }
+
+.demo__slide {
+  width: 100%;
+  border-radius: 10px; }
+
 .about {
   background-color: #2334EF;
   color: #fff;
@@ -989,7 +1044,7 @@ template {
     display: none; }
     @media screen and (min-width: 768px) {
       .navbar__demo {
-        display: block;
+        display: flex;
         margin-left: 30px; } }
   .navbar__login {
     max-width: 100px;

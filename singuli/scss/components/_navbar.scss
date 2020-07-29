@@ -14,7 +14,7 @@
     display: none;
 
     @media screen and (min-width: $tablet) {
-      display: block;
+      display: flex;
       margin-left: 30px;
     }
   }
