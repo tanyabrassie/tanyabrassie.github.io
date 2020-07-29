@@ -17,7 +17,7 @@ function loadOppositeLottieScript() {
   const additionalLotties = document.createElement('script');
   const lottiePath = isMobile ? 'animations/bodyLottieAnimations.js' : 'animations/mobileLottieAnimations.js';
   additionalLotties.src = lottiePath;
-  document.body.appendChild(additionalLotties);
+  // document.body.appendChild(additionalLotties);
 
   additionalLotties.onload = loadOppositeAnimationScript;
 }
@@ -26,7 +26,7 @@ function loadOppositeAnimationScript() {
   const additionAnimations = document.createElement('script');
   const animationPath = isMobile ? 'js/desktopAnimations.js' : 'js/mobileAnimations.js';
   additionAnimations.src = animationPath;
-  document.body.appendChild(additionAnimations);
+  // document.body.appendChild(additionAnimations);
 }
 
 

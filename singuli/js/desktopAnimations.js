@@ -97,7 +97,6 @@ shoeFrontAnimation.addEventListener('loaded_images', () => {
   shoeBackAnimation.play();
 });
 
-
 const animationDict = {
   'lottie-perfume' : perfumeAnimation,
   'lottie-sunglasses' : sunglassesAnimation,
