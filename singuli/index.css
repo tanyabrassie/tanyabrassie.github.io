@@ -639,7 +639,8 @@ template {
   display: none; }
   @media screen and (min-width: 768px) {
     .tee__animation {
-      display: block; } }
+      display: block;
+      margin-top: -10%; } }
 
 .tee__animation__mobile {
   display: block; }
@@ -653,7 +654,8 @@ template {
   padding: 35px 15px;
   z-index: 10;
   color: #fff;
-  max-width: 80%; }
+  max-width: 80%;
+  position: relative; }
   @media screen and (min-width: 768px) {
     .tee__top-text {
       padding: min(5%, 80px); } }
@@ -706,8 +708,7 @@ template {
   z-index: -20; }
   @media screen and (min-width: 768px) {
     .perfume {
-      padding-bottom: 0px;
-      margin-top: -22%; } }
+      padding-bottom: 0px; } }
 
 .some-css-class-name {
   height: 1000px !important; }
@@ -730,7 +731,8 @@ template {
   display: none; }
   @media screen and (min-width: 768px) {
     .perfume__animation {
-      display: block; } }
+      display: block;
+      margin-top: -28%; } }
 
 .perfume__top-text {
   width: 100%;
