@@ -1,5 +1,3 @@
-console.log('in SCRIPTLOADER.js?');
-
 const isSmallScreen = window.innerWidth < 767;
 
 window.mobileCheck = function() {
@@ -31,7 +29,6 @@ let isResized = false;;
 
 function loadOppositeAnimations() {
   if (!isResized) {
-    console.log('loading additional animations');
     const oppositeAnimations = document.createElement('script');
     const animationPath = isSmallScreen ? 'js/desktopAnimations.js' : 'js/mobileAnimations.js';
     oppositeAnimations.src = animationPath;

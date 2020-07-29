@@ -1,7 +1,6 @@
 lottie.setQuality(2);
 
 import {mobileTee, mobilePerfume, mobileWatch, mobileSunglasses} from '../animations/mobileLotties.js';
-console.log('in MOBILE ANIMATIONS.JS');
 
 const watchCanMob = document.getElementById('watch-canvas-mobile');
 const teeCanMob = document.getElementById('tee-canvas-mobile');
@@ -96,7 +95,6 @@ function checkMobilePositions(windowHeight) {
 }
 
 function fadeInTextMobile(windowHeight) {
-  console.log('fade in text');
   for (var i = 0; i < transparentText.length; i++) {
     var headline = transparentText[i];
     var positionFromTop = headline.getBoundingClientRect().top;

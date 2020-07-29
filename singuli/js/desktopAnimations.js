@@ -1,7 +1,6 @@
 import {tee, perfume, watch, sunglasses} from '../animations/desktopLotties.js';
-lottie.setQuality(2);
 
-console.log('in DESKTOP ANIMATION.JS');
+lottie.setQuality(2);
 
 const watchCan = document.getElementById('watch-canvas');
 const teeCan = document.getElementById('tee-canvas');
@@ -97,7 +96,6 @@ const transparentText = document.querySelectorAll('.transparent');
       } else {
         animation.stop();
         canvas ? canvas.remove() : null;
-        console.log('paused animation', animation);
       }
     }
   }
