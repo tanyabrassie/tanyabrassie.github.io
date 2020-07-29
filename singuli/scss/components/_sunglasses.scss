@@ -1,5 +1,5 @@
 .sunglasses {
-  background: linear-gradient(152.32deg, #F6FAFD 3.58%, #F4FAFF 80.82%);
+  background: linear-gradient(152.32deg, #F6FAFD 3.58%, #edf5fc 80.82%);
   margin-bottom: 10px;
   position: relative;
 }
@@ -23,7 +23,7 @@
 .sunglasses__bottom-text {
   @include bottom-text-container-relative(#{$black});
   position: relative;
-  margin-top: -10%;
+  margin-top: 30%;
   z-index: 10;
 
   @media screen and (min-width: $tablet) {
@@ -37,6 +37,7 @@
   height: 100%;
 }
 
+
 .sunglasses__animation__mobile {
   height: 0;
   padding-bottom: 120%;
@@ -46,5 +47,9 @@
   
   @media screen and (min-width: $tablet) {
     display: none;
+  }
+
+  canvas {
+    margin-top: min(40%, 120px);
   }
 }

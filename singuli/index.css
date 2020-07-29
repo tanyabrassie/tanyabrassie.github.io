@@ -402,7 +402,7 @@ template {
   margin-top: min(max(3rem, 4.5vw), 50px);
   margin-bottom: min(max(0.7rem, 1.7vw), 16px); }
 .top-block__paragraph {
-  max-width: 380px; }
+  max-width: min(60%, 380px); }
 
 .intro {
   padding: 0 16px; }
@@ -699,14 +699,15 @@ template {
       display: none; } }
 
 .perfume {
-  background: linear-gradient(180deg, #B0CFEF 0%, #ABCDE3 44.93%, #B3CFDB 65.24%, #C1DBEB 71.21%, #C1DBE8 100%);
+  background: linear-gradient(180deg, #B0CFEF 0%, #ABCDE3 44.93%, #B3CFDB 65.24%, #C1DBEB 71.21%, #a1c7ee 100%);
   position: relative;
   margin-bottom: 10px;
-  padding-bottom: 360px;
+  padding-bottom: 210px;
   z-index: -20; }
   @media screen and (min-width: 768px) {
     .perfume {
-      padding-bottom: 100px; } }
+      padding-bottom: 0px;
+      margin-top: -22%; } }
 
 .some-css-class-name {
   height: 1000px !important; }
@@ -714,7 +715,8 @@ template {
 .perfume__animation__mobile {
   position: relative;
   z-index: -10;
-  display: block; }
+  display: block;
+  margin-top: -10%; }
   @media screen and (min-width: 768px) {
     .perfume__animation__mobile {
       display: none; } }
@@ -834,7 +836,7 @@ template {
       display: none; } }
 
 .sunglasses {
-  background: linear-gradient(152.32deg, #F6FAFD 3.58%, #F4FAFF 80.82%);
+  background: linear-gradient(152.32deg, #F6FAFD 3.58%, #edf5fc 80.82%);
   margin-bottom: 10px;
   position: relative; }
 
@@ -870,7 +872,7 @@ template {
   grid-template-columns: 100%;
   grid-column-gap: 80px;
   position: relative;
-  margin-top: -10%;
+  margin-top: 30%;
   z-index: 10; }
   @media screen and (min-width: 768px) {
     .sunglasses__bottom-text {
@@ -903,6 +905,8 @@ template {
   @media screen and (min-width: 768px) {
     .sunglasses__animation__mobile {
       display: none; } }
+  .sunglasses__animation__mobile canvas {
+    margin-top: min(40%, 120px); }
 
 .about {
   background-color: #2334EF;

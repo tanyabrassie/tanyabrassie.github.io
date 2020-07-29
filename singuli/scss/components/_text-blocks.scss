@@ -12,7 +12,6 @@
 .top-block {
   &__headline {
     @extend .large-headline;
-    
   } 
 
   &__title {
@@ -23,7 +22,7 @@
 
   &__paragraph{
     @extend .small-text;
-    max-width: 380px;
+    max-width: min(60%, 380px);
   }
 }
 
