@@ -930,7 +930,7 @@ template {
   margin: auto;
   width: 60%; }
   .demo__slider .glide__track {
-    overflow: inherit; }
+    width: 133%; }
   .demo__slider .glide__slide {
     padding: 20px; }
   .demo__slider .glide__bullets {
