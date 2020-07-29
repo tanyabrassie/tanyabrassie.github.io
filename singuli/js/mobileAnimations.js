@@ -21,7 +21,7 @@ const teeAnimationMobile = lottie.loadAnimation({
   autoplay: false,
   animationData: mobileTee,
   rendererSettings: {
-  context: teeCanMob.getContext('2d'), // the canvas context
+  context: teeCanMob.getContext('2d'),
   scaleMode: 'xMidYMid slice',
   },
 });
@@ -43,7 +43,7 @@ const watchAnimationMobile = lottie.loadAnimation({
   autoplay: false,
   animationData: mobileWatch,
   rendererSettings: {
-    context: watchCanMob.getContext('2d'),
+    context: watchCanMob.getContext('2d', { alpha: false }),
     scaleMode: 'xMidYMid slice',
     clearCanvas: false,
   },
@@ -68,6 +68,13 @@ const mobileAnimationDict = {
   'lottie-watch-mobile' : watchAnimationMobile,
 };
 
+
+const mobileCanvasDict = {
+  'lottie-sunglasses-mobile' : sunglassesCanMob,
+  'lottie-tee-mobile' : teeCanMob,
+  'lottie-watch-mobile' : watchCanMob,
+};
+
 const transparentText = document.querySelectorAll('.transparent');
 
 (function() {
@@ -81,10 +88,13 @@ const transparentText = document.querySelectorAll('.transparent');
       var positionFromTop = animationDiv.getBoundingClientRect().top;
       var height = animationDiv.getBoundingClientRect().height;
       const animation = mobileAnimationDict[animationDiv.id];
-      
+      const canvas = mobileCanvasDict[animationDiv.id];
+
       if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
+        canvas ? canvas.hidden = false : undefined;
         animation.play();
       } else {
+        canvas ? canvas.hidden = true : undefined;
         animation.stop();
       }
     }

@@ -44,7 +44,7 @@ const watchAnimation = lottie.loadAnimation({
   autoplay: false,
   animationData: watch,
   rendererSettings: {
-    context: watchCan.getContext('2d'), // the canvas context
+    context: watchCan.getContext('2d', { alpha: false }), // the canvas context
     scaleMode: 'xMidYMid slice',
     clearCanvas: false,
   },
@@ -69,6 +69,12 @@ const animationDict = {
   'lottie-watch' : watchAnimation,
 };
 
+const canvasDict = {
+  'lottie-sunglasses' : sunglassesCan,
+  'lottie-tee' : teeCan,
+  'lottie-watch' : watchCan,
+};
+
 const transparentText = document.querySelectorAll('.transparent');
 
 (function() {
@@ -83,11 +89,15 @@ const transparentText = document.querySelectorAll('.transparent');
       var positionFromTop = animationDiv.getBoundingClientRect().top;
       var height = animationDiv.getBoundingClientRect().height;
       const animation = animationDict[animationDiv.id];
+      const canvas = canvasDict[animationDiv.id];
       
       if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
+        canvas ? canvas.hidden = false : undefined;
         animation.play();
       } else {
+        canvas ? canvas.hidden = true : undefined;
         animation.stop();
+        console.log('paused animation', animation);
       }
     }
   }
