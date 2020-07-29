@@ -77,47 +77,53 @@ const mobileCanvasDict = {
 
 const transparentText = document.querySelectorAll('.transparent');
 
+
+function checkMobilePositions(windowHeight) {
+  for (var i = 0; i < mobileAnimationDivs.length; i++) {
+    var animationDiv = mobileAnimationDivs[i];
+    var positionFromTop = animationDiv.getBoundingClientRect().top;
+    var height = animationDiv.getBoundingClientRect().height;
+    const animation = mobileAnimationDict[animationDiv.id];
+    const canvas = mobileCanvasDict[animationDiv.id];
+
+    if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
+      canvas ? animationDiv.appendChild(canvas) : null;
+      animation.play();
+    } else {
+      canvas ? canvas.remove() : null;
+      animation.stop();
+    }
+  }
+}
+
+function fadeInTextMobile(windowHeight) {
+  console.log('fade in text');
+  for (var i = 0; i < transparentText.length; i++) {
+    var headline = transparentText[i];
+    var positionFromTop = headline.getBoundingClientRect().top;
+    var height = headline.getBoundingClientRect().height;
+    
+    if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
+      headline.classList.add('fade-in');
+    } else {
+      headline.classList.remove('fade-in');
+    }
+  }
+}
+
 (function() {
   let windowHeight;
   function init() {
     windowHeight = window.innerHeight;
   }
-  function checkMobilePositions() {
-    for (var i = 0; i < mobileAnimationDivs.length; i++) {
-      var animationDiv = mobileAnimationDivs[i];
-      var positionFromTop = animationDiv.getBoundingClientRect().top;
-      var height = animationDiv.getBoundingClientRect().height;
-      const animation = mobileAnimationDict[animationDiv.id];
-      const canvas = mobileCanvasDict[animationDiv.id];
-
-      if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
-        canvas ? animationDiv.appendChild(canvas) : null;
-        animation.play();
-      } else {
-        canvas ? canvas.remove() : null;
-        animation.stop();
-      }
-    }
+  
+  function checkElementPositions() {
+    checkMobilePositions(windowHeight);
+    fadeInTextMobile(windowHeight);
   }
 
-  function fadeInTextMobile() {
-    console.log('fade in text');
-    for (var i = 0; i < transparentText.length; i++) {
-      var headline = transparentText[i];
-      var positionFromTop = headline.getBoundingClientRect().top;
-      var height = headline.getBoundingClientRect().height;
-      
-      if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
-        headline.classList.add('fade-in');
-      } else {
-        headline.classList.remove('fade-in');
-      }
-    }
-  }
-
-  window.addEventListener('scroll', checkMobilePositions);
-  window.addEventListener('scroll', fadeInTextMobile);
+  // window.addEventListener('scroll', checkMobilePositions);
+  window.addEventListener('scroll', checkElementPositions);
   init();
-  checkMobilePositions();
-  fadeInTextMobile();
+  checkElementPositions();
 })();
