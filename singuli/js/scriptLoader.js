@@ -12,57 +12,38 @@ const isMobile = window.mobileCheck();
 
 // if the screen is small *or* if it is mobile load the mobile stuff
 if (isMobile || isSmallScreen) {
-  // load the lottie mobile animations
-  const mobileLottie = document.createElement('script');
-  mobileLottie.src = 'animations/mobileLotties.js';
+  console.log('mobile');
 
-  document.head.appendChild(mobileLottie);
-
-  // THEN load animation script
-  mobileLottie.onload = appendAnimationScript;
+  // load mobile animations
+  const mobileAnimations = document.createElement('script');
+  mobileAnimations.src = 'js/mobileAnimations.js';
+  mobileAnimations.type = 'module'
+  document.head.appendChild(mobileAnimations);
 
 } else if (!isSmallScreen) {
   console.log('DESKTOP');
   // load the body lottie animations
-  const desktopLottie = document.createElement('script');
-  desktopLottie.src = 'animations/desktopLotties.js';
-  document.body.appendChild(desktopLottie);
-
-  //Then load animation script
-  desktopLottie.onload = appendAnimationScript;
-}
-
-function appendAnimationScript() {
-  console.log('appending animation scripts');
-  console.log('isSmallScreen', isSmallScreen);
-  const animations = document.createElement('script');
-  animations.src = isSmallScreen ? 'js/mobileAnimations.js' : 'js/desktopAnimations.js';
-  document.body.appendChild(animations);
+  const desktopAnimations = document.createElement('script');
+  desktopAnimations.src = 'js/desktopAnimations.js';
+  desktopAnimations.type = 'module';
+  document.body.appendChild(desktopAnimations);
 }
 
 let isResized = false;;
 
-function loadOppositeLotties() {
+function loadOppositeAnimations() {
   if (!isResized) {
     console.log('loading additional animations');
-    const additionalLotties = document.createElement('script');
-    const lottiePath = isSmallScreen ? 'animations/desktopLotties.js' : 'animations/mobileLotties.js';
-    additionalLotties.src = lottiePath;
-    document.body.appendChild(additionalLotties);
+    const oppositeAnimations = document.createElement('script');
+    const animationPath = isSmallScreen ? 'js/desktopAnimations.js' : 'js/mobileAnimations.js';
+    oppositeAnimations.src = animationPath;
+    oppositeAnimations.type = 'module';
+    document.body.appendChild(oppositeAnimations);
     isResized = true;
-    additionalLotties.onload = loadOppositeAnimationScript;
   } else {
-    window.removeEventListener('resize', loadOppositeLotties, true);
+    window.removeEventListener('resize', loadOppositeAnimations, true);
   }
 }
 
-function loadOppositeAnimationScript() {
-  const additionAnimations = document.createElement('script');
-  const animationPath = isSmallScreen ? 'js/desktopAnimations.js' : 'js/mobileAnimations.js';
-  additionAnimations.src = animationPath;
-  document.body.appendChild(additionAnimations);
-  additionAnimations.onLoad = window.removeEventListener('resize', loadOppositeLotties);
-}
-
 //if the screen is resized then add the opposide script
-window.addEventListener('resize', loadOppositeLotties);
+window.addEventListener('resize', loadOppositeAnimations);

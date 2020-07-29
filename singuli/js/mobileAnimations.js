@@ -1,5 +1,6 @@
 lottie.setQuality(2);
 
+import {mobileTee, mobilePerfume, mobileWatch, mobileSunglasses} from '../animations/mobileLotties.js';
 console.log('in MOBILE ANIMATIONS.JS');
 
 const watchCanMob = document.getElementById('watch-canvas-mobile');

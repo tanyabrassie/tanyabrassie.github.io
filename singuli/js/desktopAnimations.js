@@ -1,3 +1,4 @@
+import {tee, perfume, watch, sunglasses} from '../animations/desktopLotties.js';
 lottie.setQuality(2);
 
 console.log('in DESKTOP ANIMATION.JS');
@@ -11,10 +12,6 @@ const perfumeAnimationDiv = document.getElementById('lottie-perfume');
 const sunglassesAnimationDiv = document.getElementById('lottie-sunglasses');
 const teeAnimationDiv = document.getElementById('lottie-tee');
 const watchAnimationDiv = document.getElementById('lottie-watch'); 
-
-const shoeBackDiv = document.getElementById('animation-back-shoe');
-const shoeMidDiv = document.getElementById('animation-mid-shoe');
-const shoeFrontDiv = document.getElementById('animation-front-shoe');
 
 const animationDivs = [perfumeAnimationDiv, sunglassesAnimationDiv, 
   teeAnimationDiv, watchAnimationDiv]; 
@@ -53,7 +50,6 @@ const watchAnimation = lottie.loadAnimation({
   },
 });
 
-
 const sunglassesAnimation = lottie.loadAnimation({
   renderer: 'canvas',
   loop: true,
@@ -64,37 +60,6 @@ const sunglassesAnimation = lottie.loadAnimation({
     scaleMode: 'xMidYmin slice',
     clearCanvas: false,
   },
-});
-
-
-const shoeBackAnimation = lottie.loadAnimation({
-  container: shoeBackDiv,
-  renderer: 'canvas',
-  loop: false,
-  autoplay: false,
-  animationData: heroShoeBack,
-});
-
-const shoeMidAnimation = lottie.loadAnimation({
-  container: shoeMidDiv,
-  renderer: 'canvas',
-  loop: false,
-  autoplay: false,
-  animationData: heroShoeMid,
-});
-
-const shoeFrontAnimation = lottie.loadAnimation({
-  container: shoeFrontDiv,
-  renderer: 'canvas',
-  loop: false,
-  autoplay: false,
-  animationData: heroShoeFront,
-});
-
-shoeFrontAnimation.addEventListener('loaded_images', () => {
-  shoeFrontAnimation.play();
-  shoeMidAnimation.play();
-  shoeBackAnimation.play();
 });
 
 const animationDict = {
