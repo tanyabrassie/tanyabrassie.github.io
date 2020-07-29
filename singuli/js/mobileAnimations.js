@@ -2,7 +2,6 @@ lottie.setQuality(2);
 
 console.log('in MOBILE ANIMATIONS.JS');
 
-
 const watchCanMob = document.getElementById('watch-canvas-mobile');
 const teeCanMob = document.getElementById('tee-canvas-mobile');
 const sunglassesCanMob = document.getElementById('sunglasses-canvas-mobile');
@@ -12,10 +11,6 @@ const perfumeAnimationDivMobile = document.getElementById('lottie-perfume-mobile
 const sunglassesAnimationDivMobile = document.getElementById('lottie-sunglasses-mobile');
 const teeAnimationDivMobile = document.getElementById('lottie-tee-mobile');
 const watchAnimationDivMobile = document.getElementById('lottie-watch-mobile'); 
-
-// const shoeBackDiv = document.getElementById('animation-back-shoe');
-// const shoeMidDiv = document.getElementById('animation-mid-shoe');
-// const shoeFrontDiv = document.getElementById('animation-front-shoe');
 
 const mobileAnimationDivs = [perfumeAnimationDivMobile, sunglassesAnimationDivMobile, teeAnimationDivMobile, watchAnimationDivMobile]; 
 
@@ -72,8 +67,6 @@ const mobileAnimationDict = {
   'lottie-tee-mobile' : teeAnimationMobile,
   'lottie-watch-mobile' : watchAnimationMobile,
 };
-
-// const mobileTransparent = document.querySelectorAll('.transparent');
 
 (function() {
   let windowHeight;
