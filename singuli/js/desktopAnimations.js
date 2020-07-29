@@ -29,7 +29,7 @@ const teeAnimation = lottie.loadAnimation({
 
 const perfumeAnimation = lottie.loadAnimation({
   container: perfumeAnimationDiv,
-  renderer: 'canvas',
+  renderer: 'svg',
   loop: true,
   autoplay: false,
   animationData: perfume,
@@ -92,7 +92,6 @@ const transparentText = document.querySelectorAll('.transparent');
       const canvas = canvasDict[animationDiv.id];
       
       if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
-        console.log(animation);
         canvas ? animationDiv.appendChild(canvas) : null;
         animation.play();
       } else {
@@ -104,12 +103,11 @@ const transparentText = document.querySelectorAll('.transparent');
   }
 
   function fadeInText() {
-    console.log('fade in text');
     for (var i = 0; i < transparentText.length; i++) {
       var headline = transparentText[i];
       var positionFromTop = headline.getBoundingClientRect().top;
       var height = headline.getBoundingClientRect().height;
-      
+  
       if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
         headline.classList.add('fade-in');
       } else {

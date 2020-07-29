@@ -12,7 +12,6 @@ const isMobile = window.mobileCheck();
 
 // if the screen is small *or* if it is mobile load the mobile stuff
 if (isMobile || isSmallScreen) {
-  console.log('mobile');
 
   // load mobile animations
   const mobileAnimations = document.createElement('script');
@@ -21,7 +20,6 @@ if (isMobile || isSmallScreen) {
   document.head.appendChild(mobileAnimations);
 
 } else if (!isSmallScreen) {
-  console.log('DESKTOP');
   // load the body lottie animations
   const desktopAnimations = document.createElement('script');
   desktopAnimations.src = 'js/desktopAnimations.js';
