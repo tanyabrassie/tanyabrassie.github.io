@@ -22,6 +22,7 @@ if (isMobile || isSmallScreen) {
   mobileLottie.onload = appendAnimationScript;
 
 } else if (!isSmallScreen) {
+  console.log('DESKTOP');
   // load the body lottie animations
   const desktopLottie = document.createElement('script');
   desktopLottie.src = 'animations/bodyLottieAnimations.js';
@@ -64,4 +65,3 @@ function loadOppositeAnimationScript() {
 
 //if the screen is resized then add the opposide script
 window.addEventListener('resize', loadOppositeLotties);
-

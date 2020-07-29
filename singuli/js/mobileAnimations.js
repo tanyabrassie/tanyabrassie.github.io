@@ -20,9 +20,8 @@ const teeAnimationMobile = lottie.loadAnimation({
   autoplay: false,
   animationData: mobileTee,
   rendererSettings: {
-    context: teeCanMob.getContext('2d'), // the canvas context
-    scaleMode: 'xMidYMid slice',
-    // clearCanvas: false,
+  context: teeCanMob.getContext('2d'), // the canvas context
+  scaleMode: 'xMidYMid slice',
   },
 });
 
@@ -68,6 +67,8 @@ const mobileAnimationDict = {
   'lottie-watch-mobile' : watchAnimationMobile,
 };
 
+const transparentText = document.querySelectorAll('.transparent');
+
 (function() {
   let windowHeight;
   function init() {
@@ -88,24 +89,24 @@ const mobileAnimationDict = {
     }
   }
 
-//   function checkHeadlinePosition() {
-//     for (var i = 0; i < transparentText.length; i++) {
-//       var headline = transparentText[i];
-//       var positionFromTop = headline.getBoundingClientRect().top;
-//       var height = headline.getBoundingClientRect().height;
+  function fadeInText() {
+    console.log('fade in text');
+    for (var i = 0; i < transparentText.length; i++) {
+      var headline = transparentText[i];
+      var positionFromTop = headline.getBoundingClientRect().top;
+      var height = headline.getBoundingClientRect().height;
       
-//       if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
-//         headline.classList.add('fade-in');
-//       } else {
-//         headline.classList.remove('fade-in');
-//       }
-//     }
-//   }
+      if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
+        headline.classList.add('fade-in');
+      } else {
+        headline.classList.remove('fade-in');
+      }
+    }
+  }
+
   window.addEventListener('scroll', checkPosition);
-//   window.addEventListener('scroll', checkHeadlinePosition);
-//   window.addEventListener('resize', init);
+  window.addEventListener('scroll', fadeInText);
   init();
   checkPosition();
-//   checkHeadlinePosition();
-// })();
+  fadeInText();
 })();
