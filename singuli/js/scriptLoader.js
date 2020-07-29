@@ -14,7 +14,7 @@ const isMobile = window.mobileCheck();
 if (isMobile || isSmallScreen) {
   // load the lottie mobile animations
   const mobileLottie = document.createElement('script');
-  mobileLottie.src = 'animations/mobileLottieAnimations.js';
+  mobileLottie.src = 'animations/mobileLotties.js';
 
   document.head.appendChild(mobileLottie);
 
@@ -25,7 +25,7 @@ if (isMobile || isSmallScreen) {
   console.log('DESKTOP');
   // load the body lottie animations
   const desktopLottie = document.createElement('script');
-  desktopLottie.src = 'animations/bodyLottieAnimations.js';
+  desktopLottie.src = 'animations/desktopLotties.js';
   document.body.appendChild(desktopLottie);
 
   //Then load animation script
@@ -34,6 +34,7 @@ if (isMobile || isSmallScreen) {
 
 function appendAnimationScript() {
   console.log('appending animation scripts');
+  console.log('isSmallScreen', isSmallScreen);
   const animations = document.createElement('script');
   animations.src = isSmallScreen ? 'js/mobileAnimations.js' : 'js/desktopAnimations.js';
   document.body.appendChild(animations);
@@ -45,7 +46,7 @@ function loadOppositeLotties() {
   if (!isResized) {
     console.log('loading additional animations');
     const additionalLotties = document.createElement('script');
-    const lottiePath = isSmallScreen ? 'animations/bodyLottieAnimations.js' : 'animations/mobileLottieAnimations.js';
+    const lottiePath = isSmallScreen ? 'animations/desktopLotties.js' : 'animations/mobileLotties.js';
     additionalLotties.src = lottiePath;
     document.body.appendChild(additionalLotties);
     isResized = true;

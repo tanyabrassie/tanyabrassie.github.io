@@ -74,7 +74,7 @@ const transparentText = document.querySelectorAll('.transparent');
   function init() {
     windowHeight = window.innerHeight;
   }
-  function checkPosition() {
+  function checkMobilePositions() {
     for (var i = 0; i < mobileAnimationDivs.length; i++) {
       var animationDiv = mobileAnimationDivs[i];
       var positionFromTop = animationDiv.getBoundingClientRect().top;
@@ -89,7 +89,7 @@ const transparentText = document.querySelectorAll('.transparent');
     }
   }
 
-  function fadeInText() {
+  function fadeInTextMobile() {
     console.log('fade in text');
     for (var i = 0; i < transparentText.length; i++) {
       var headline = transparentText[i];
@@ -104,9 +104,9 @@ const transparentText = document.querySelectorAll('.transparent');
     }
   }
 
-  window.addEventListener('scroll', checkPosition);
-  window.addEventListener('scroll', fadeInText);
+  window.addEventListener('scroll', checkMobilePositions);
+  window.addEventListener('scroll', fadeInTextMobile);
   init();
-  checkPosition();
-  fadeInText();
+  checkMobilePositions();
+  fadeInTextMobile();
 })();

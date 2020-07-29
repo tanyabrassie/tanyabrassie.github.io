@@ -145,59 +145,7 @@ const transparentText = document.querySelectorAll('.transparent');
   window.addEventListener('scroll', fadeInText);
   window.addEventListener('resize', init);
   init();
-  checkPosition();
-  checkHeadlinePosition();
+  triggerAnimations();
+  fadeInText();
 })();
 
-
-const animationDict = {
-  'lottie-perfume' : perfumeAnimation,
-  'lottie-sunglasses' : sunglassesAnimation,
-  'lottie-tee' : teeAnimation,
-  'lottie-watch' : watchAnimation,
-};
-
-const transparentText = document.querySelectorAll('.transparent');
-
-function addScrollEffects () {
-    let windowHeight;
-    function init() {
-      windowHeight = window.innerHeight;
-    }
-    
-    function triggerAnimations() {
-      for (var i = 0; i < animationDivs.length; i++) {
-        var animationDiv = animationDivs[i];
-        var positionFromTop = animationDiv.getBoundingClientRect().top;
-        var height = animationDiv.getBoundingClientRect().height;
-        const animation = animationDict[animationDiv.id];
-        
-        if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
-          animation.play();
-        } else {
-          animation.stop();
-        }
-      }
-    }
-  
-    function fadeInText() {
-      console.log('fade in text');
-      for (var i = 0; i < transparentText.length; i++) {
-        var headline = transparentText[i];
-        var positionFromTop = headline.getBoundingClientRect().top;
-        var height = headline.getBoundingClientRect().height;
-        
-        if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
-          headline.classList.add('fade-in');
-        } else {
-          headline.classList.remove('fade-in');
-        }
-      }
-    }
-    window.addEventListener('scroll', triggerAnimations);
-    window.addEventListener('scroll', fadeInText);
-    window.addEventListener('resize', init);
-    init();
-    checkPosition();
-    checkHeadlinePosition();
-  };
