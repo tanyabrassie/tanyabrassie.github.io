@@ -32,11 +32,9 @@ const shoeFrontAnimation = lottie.loadAnimation({
   animationData: heroShoeFront,
 });
 
-shoeFrontAnimation.addEventListener('loaded_images', () => {
-  shoeFrontAnimation.play();
-  shoeMidAnimation.play();
-  shoeBackAnimation.play();
-});
+shoeFrontAnimation.play();
+shoeMidAnimation.play();
+shoeBackAnimation.play();
 
 const shoeBackAnimationMobile = lottie.loadAnimation({
   container: shoeBackDivMobile,
@@ -62,8 +60,6 @@ const shoeFrontAnimationMobile = lottie.loadAnimation({
   animationData: mobileShoeFront,
 });
 
-shoeFrontAnimationMobile.addEventListener('loaded_images', () => {
-  shoeFrontAnimationMobile.play();
-  shoeMidAnimationMobile.play();
-  shoeBackAnimationMobile.play();
-});
+shoeFrontAnimationMobile.play();
+shoeMidAnimationMobile.play();
+shoeBackAnimationMobile.play();
