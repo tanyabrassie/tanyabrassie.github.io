@@ -123,7 +123,7 @@ function fadeInTextMobile(windowHeight) {
   }
 
   // window.addEventListener('scroll', checkMobilePositions);
-  window.addEventListener('scroll', checkElementPositions);
+  // window.addEventListener('scroll', checkElementPositions);
   init();
-  checkElementPositions();
+  // checkElementPositions();
 })();
