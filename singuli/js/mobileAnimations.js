@@ -77,7 +77,6 @@ const mobileCanvasDict = {
 
 const transparentText = document.querySelectorAll('.transparent');
 
-
 function checkMobilePositions(windowHeight) {
   for (var i = 0; i < mobileAnimationDivs.length; i++) {
     var animationDiv = mobileAnimationDivs[i];
@@ -122,8 +121,7 @@ function fadeInTextMobile(windowHeight) {
     fadeInTextMobile(windowHeight);
   }
 
-  // window.addEventListener('scroll', checkMobilePositions);
-  // window.addEventListener('scroll', checkElementPositions);
+  window.addEventListener('scroll', checkElementPositions);
   init();
-  // checkElementPositions();
+  checkElementPositions();
 })();
