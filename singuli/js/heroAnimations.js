@@ -10,7 +10,7 @@ const shoeFrontDivMobile = document.getElementById('animation-front-shoe-mobile'
 
 const shoeBackAnimation = lottie.loadAnimation({
   container: shoeBackDiv,
-  renderer: 'svg',
+  renderer: 'canvas',
   loop: false,
   autoplay: false,
   animationData: heroShoeBack,
@@ -18,7 +18,7 @@ const shoeBackAnimation = lottie.loadAnimation({
 
 const shoeMidAnimation = lottie.loadAnimation({
   container: shoeMidDiv,
-  renderer: 'svg',
+  renderer: 'canvas',
   loop: false,
   autoplay: false,
   animationData: heroShoeMid,
@@ -26,7 +26,7 @@ const shoeMidAnimation = lottie.loadAnimation({
 
 const shoeFrontAnimation = lottie.loadAnimation({
   container: shoeFrontDiv,
-  renderer: 'svg',
+  renderer: 'canvas',
   loop: false,
   autoplay: false,
   animationData: heroShoeFront,
@@ -38,7 +38,7 @@ shoeBackAnimation.play();
 
 const shoeBackAnimationMobile = lottie.loadAnimation({
   container: shoeBackDivMobile,
-  renderer: 'svg',
+  renderer: 'canvas',
   loop: false,
   autoplay: false,
   animationData: mobileShoeBack,
@@ -46,7 +46,7 @@ const shoeBackAnimationMobile = lottie.loadAnimation({
 
 const shoeMidAnimationMobile = lottie.loadAnimation({
   container: shoeMidDivMobile,
-  renderer: 'svg',
+  renderer: 'canvas',
   loop: false,
   autoplay: false,
   animationData: mobileShoeMid,
@@ -54,7 +54,7 @@ const shoeMidAnimationMobile = lottie.loadAnimation({
 
 const shoeFrontAnimationMobile = lottie.loadAnimation({
   container: shoeFrontDivMobile,
-  renderer: 'svg',
+  renderer: 'canvas',
   loop: false,
   autoplay: false,
   animationData: mobileShoeFront,

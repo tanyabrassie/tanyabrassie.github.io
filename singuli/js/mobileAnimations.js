@@ -28,7 +28,7 @@ const teeAnimationMobile = lottie.loadAnimation({
 
 const perfumeAnimationMobile = lottie.loadAnimation({
   container: perfumeAnimationDivMobile,
-  renderer: 'svg',
+  renderer: 'canvas',
   loop: true,
   autoplay: false,
   animationData: mobilePerfume,
