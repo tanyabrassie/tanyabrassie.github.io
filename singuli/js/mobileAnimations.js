@@ -91,10 +91,10 @@ const transparentText = document.querySelectorAll('.transparent');
       const canvas = mobileCanvasDict[animationDiv.id];
 
       if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
-        canvas ? canvas.hidden = false : undefined;
+        canvas ? animationDiv.appendChild(canvas) : null;
         animation.play();
       } else {
-        canvas ? canvas.hidden = true : undefined;
+        canvas ? canvas.remove() : null;
         animation.stop();
       }
     }

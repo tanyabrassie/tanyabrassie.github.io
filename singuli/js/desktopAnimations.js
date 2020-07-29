@@ -92,11 +92,12 @@ const transparentText = document.querySelectorAll('.transparent');
       const canvas = canvasDict[animationDiv.id];
       
       if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
-        canvas ? canvas.hidden = false : undefined;
+        console.log(animation);
+        canvas ? animationDiv.appendChild(canvas) : null;
         animation.play();
       } else {
-        canvas ? canvas.hidden = true : undefined;
         animation.stop();
+        canvas ? canvas.remove() : null;
         console.log('paused animation', animation);
       }
     }
