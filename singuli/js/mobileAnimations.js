@@ -6,6 +6,7 @@ import {mobileTee, mobilePerfume, mobileWatch, mobileSunglasses} from '../animat
 const watchCanMob = document.getElementById('watch-canvas-mobile');
 const teeCanMob = document.getElementById('tee-canvas-mobile');
 const sunglassesCanMob = document.getElementById('sunglasses-canvas-mobile');
+const perfumeCanMob = document.getElementById('perfume-canvas-mobile');
 
 // get all divs to attch animations to
 const perfumeAnimationDivMobile = document.getElementById('lottie-perfume-mobile');
@@ -13,29 +14,29 @@ const sunglassesAnimationDivMobile = document.getElementById('lottie-sunglasses-
 const teeAnimationDivMobile = document.getElementById('lottie-tee-mobile');
 const watchAnimationDivMobile = document.getElementById('lottie-watch-mobile'); 
 
-const mobileAnimationDivs = [perfumeAnimationDivMobile, sunglassesAnimationDivMobile, teeAnimationDivMobile]; 
+const mobileAnimationDivs = [perfumeAnimationDivMobile, sunglassesAnimationDivMobile, teeAnimationDivMobile, watchAnimationDivMobile]; 
 
-const teeAnimationMobile = lottie.loadAnimation({
-  renderer: 'canvas',
-  loop: true,
-  autoplay: false,
-  animationData: mobileTee,
-  rendererSettings: {
-  context: teeCanMob.getContext('2d'),
-  scaleMode: 'xMidYMid slice',
-  },
-});
+// const teeAnimationMobile = lottie.loadAnimation({
+//   renderer: 'canvas',
+//   loop: true,
+//   autoplay: false,
+//   animationData: mobileTee,
+//   rendererSettings: {
+//   context: teeCanMob.getContext('2d'),
+//   scaleMode: 'xMidYMid slice',
+//   },
+// });
 
-const perfumeAnimationMobile = lottie.loadAnimation({
-  container: perfumeAnimationDivMobile,
-  renderer: 'svg',
-  loop: true,
-  autoplay: false,
-  animationData: mobilePerfume,
-  rendererSettings: {
-    progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
-  },
-});
+// const perfumeAnimationMobile = lottie.loadAnimation({
+//   container: perfumeAnimationDivMobile,
+//   renderer: 'svg',
+//   loop: true,
+//   autoplay: false,
+//   animationData: mobilePerfume,
+//   rendererSettings: {
+//     progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
+//   },
+// });
 
 // const watchAnimationMobile = lottie.loadAnimation({
 //   renderer: 'canvas',
@@ -49,49 +50,82 @@ const perfumeAnimationMobile = lottie.loadAnimation({
 //   },
 // });
 
-const sunglassesAnimationMobile = lottie.loadAnimation({
-  renderer: 'canvas',
-  loop: true,
-  autoplay: false,
-  animationData: mobileSunglasses,
-  rendererSettings: {
-    context: sunglassesCanMob.getContext('2d'),
-    preserveAspectRatio: 'xMidYMin slice', 
-    clearCanvas: false,
-  },
-});
+// const sunglassesAnimationMobile = lottie.loadAnimation({
+//   renderer: 'canvas',
+//   loop: true,
+//   autoplay: false,
+//   animationData: mobileSunglasses,
+//   rendererSettings: {
+//     context: sunglassesCanMob.getContext('2d'),
+//     preserveAspectRatio: 'xMidYMin slice', 
+//     clearCanvas: false,
+//   },
+// });
 
-console.log(sunglassesAnimationMobile);
 
-const mobileAnimationDict = {
-  'lottie-perfume-mobile' : perfumeAnimationMobile,
-  'lottie-sunglasses-mobile' : sunglassesAnimationMobile,
-  'lottie-tee-mobile' : teeAnimationMobile,
-  // 'lottie-watch-mobile' : watchAnimationMobile,
+const mobileAnimations = {
+  'lottie-perfume-mobile' : null,
+  'lottie-sunglasses-mobile' : null,
+  'lottie-tee-mobile' : null,
+  'lottie-watch-mobile' : null,
 };
 
-const mobileCanvasDict = {
+const mobileCanvases = {
   'lottie-sunglasses-mobile' : sunglassesCanMob,
   'lottie-tee-mobile' : teeCanMob,
-  // 'lottie-watch-mobile' : watchCanMob,
+  'lottie-watch-mobile' : watchCanMob,
+  'lottie-perfume-mobile' : perfumeCanMob,
 };
+
+const mobileAnimationData = {
+  'lottie-perfume-mobile' : mobilePerfume,
+  'lottie-sunglasses-mobile' : mobileSunglasses,
+  'lottie-tee-mobile' : mobileTee,
+  'lottie-watch-mobile' : mobileWatch,
+};
+
+console.log('mobileAnimationDivs', mobileAnimationDivs);
 
 const transparentText = document.querySelectorAll('.transparent');
 
 function checkMobilePositions(windowHeight) {
   for (var i = 0; i < mobileAnimationDivs.length; i++) {
+
+    // go through each animation div and find its size
     var animationDiv = mobileAnimationDivs[i];
     var positionFromTop = animationDiv.getBoundingClientRect().top;
     var height = animationDiv.getBoundingClientRect().height;
-    const animation = mobileAnimationDict[animationDiv.id];
-    const canvas = mobileCanvasDict[animationDiv.id];
 
-    if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
-      if (canvas) animationDiv.appendChild(canvas);
-      animation.play();
+    // IF ANIMATION IS IN VIEW
+    if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {      
+      
+      // IF ANIMATION IS NOT NULL 
+      if (!mobileAnimations[animationDiv.id]) {
+        console.log('creating animation');
+        const animation = lottie.loadAnimation({
+          renderer: 'canvas',
+          name: [animationDiv.id],
+          loop: false,
+          autoplay: false,
+          animationData: mobileAnimationData[[animationDiv.id]],
+          rendererSettings: {
+          context: mobileCanvases[animationDiv.id].getContext('2d'),
+          scaleMode: 'xMidYMid slice',
+          },
+        });
+        
+        // log animation
+        mobileAnimations[animationDiv.id] = animation;
+  
+        // update animation dict with animation
+        animation.play();
+        console.log('animation data', mobileAnimationData);
+      } 
     } else {
-      canvas ? canvas.remove() : null;
-      animation.stop();
+      if (!!mobileAnimations[animationDiv.id]) {
+        lottie.destroy([animationDiv.id]);
+        mobileAnimations[animationDiv.id] = null;
+      }
     }
   }
 }
