@@ -26,3 +26,9 @@
   background: $purplePinkGradient;
   color: white;
 }
+
+.largeButton--black {
+  @extend .largeButton;
+  background: $black;
+
+}
