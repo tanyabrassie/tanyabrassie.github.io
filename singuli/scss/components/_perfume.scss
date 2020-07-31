@@ -40,6 +40,13 @@
 
 .perfume__bottom-text {
   @include bottom-text-container(#{$black});
+  position: relative;
+  margin-top: -30%;
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    margin-top: 0;
+  }
 }
 
 .perfume__text {
@@ -54,7 +61,7 @@
 
 .perfume__animation__mobile {
   height: 0;
-  padding-bottom: 120%;
+  padding-bottom: 160%;
   position: relative;
   z-index: 0;
   display: block;

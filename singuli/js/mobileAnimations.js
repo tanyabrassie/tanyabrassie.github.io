@@ -70,6 +70,13 @@ const mobileAnimations = {
   'lottie-watch-mobile' : null,
 };
 
+const scaleModes = {
+  'lottie-perfume-mobile' : 'xMidYMid slice',
+  'lottie-sunglasses-mobile' : 'xMidYMin slice',
+  'lottie-tee-mobile' : 'xMidYMid slice',
+  'lottie-watch-mobile' : 'xMidYMid slice',
+};
+
 const mobileCanvases = {
   'lottie-sunglasses-mobile' : sunglassesCanMob,
   'lottie-tee-mobile' : teeCanMob,
@@ -110,7 +117,7 @@ function checkMobilePositions(windowHeight) {
           animationData: mobileAnimationData[[animationDiv.id]],
           rendererSettings: {
           context: mobileCanvases[animationDiv.id].getContext('2d'),
-          scaleMode: 'xMidYMid slice',
+          preserveAspectRatio: scaleModes[animationDiv.id],
           },
         });
         

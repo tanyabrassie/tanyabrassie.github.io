@@ -753,7 +753,9 @@ template {
   color: #000;
   display: grid;
   grid-template-columns: 100%;
-  grid-column-gap: 80px; }
+  grid-column-gap: 80px;
+  position: relative;
+  margin-top: -30%; }
   @media screen and (min-width: 768px) {
     .perfume__bottom-text {
       width: calc(100% - 80px);
@@ -767,6 +769,10 @@ template {
         max-width: 370px; } }
     .perfume__bottom-text .bottom-block__title {
       margin: 16px 0 8px; }
+  @media screen and (min-width: 768px) {
+    .perfume__bottom-text {
+      position: absolute;
+      margin-top: 0; } }
 
 .perfume__text {
   max-width: 365px; }
@@ -778,7 +784,7 @@ template {
 
 .perfume__animation__mobile {
   height: 0;
-  padding-bottom: 120%;
+  padding-bottom: 160%;
   position: relative;
   z-index: 0;
   display: block; }
