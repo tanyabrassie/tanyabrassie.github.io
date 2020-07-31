@@ -955,7 +955,7 @@ template {
     .demo {
       padding-top: 40px; } }
 
-.demo__nav * {
+.demo__nav div, .demo__nav a {
   position: relative;
   z-index: 20; }
 
@@ -969,8 +969,8 @@ template {
   top: -70px;
   z-index: -1;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  background-position: top; }
   @media screen and (min-width: 768px) {
     .demo__background {
       background-image: url("images/desktop-demo-bg-1.png");

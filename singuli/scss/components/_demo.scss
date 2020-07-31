@@ -21,7 +21,7 @@
 .demo__nav {
   @extend .navbar--gray;
 
-  * {
+  div, a {
     position: relative;
     z-index: 20;
   }
@@ -36,8 +36,8 @@
   top: -70px;
   z-index: -1;
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  background-position: top;
 
    @media screen and (min-width: $tablet) {
     background-image: url('images/desktop-demo-bg-1.png');
