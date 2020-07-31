@@ -18,6 +18,15 @@
   }
 }
 
+.demo__nav {
+  @extend .navbar--gray;
+
+  * {
+    position: relative;
+    z-index: 20;
+  }
+}
+
 .demo__background {
   background-image: url('images/mobile-demo-bg.png');
   width: 100%;
@@ -31,9 +40,9 @@
   background-size: cover;
 
    @media screen and (min-width: $tablet) {
-    background-image: url('images/desktop-demo-bg.png');
-    top: -140px;
+    background-image: url('images/desktop-demo-bg-1.png');
     background-size: contain;
+    background-position: top;
   }
 }
 

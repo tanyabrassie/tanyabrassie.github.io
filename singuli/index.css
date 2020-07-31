@@ -955,6 +955,10 @@ template {
     .demo {
       padding-top: 40px; } }
 
+.demo__nav * {
+  position: relative;
+  z-index: 20; }
+
 .demo__background {
   background-image: url("images/mobile-demo-bg.png");
   width: 100%;
@@ -969,9 +973,9 @@ template {
   background-size: cover; }
   @media screen and (min-width: 768px) {
     .demo__background {
-      background-image: url("images/desktop-demo-bg.png");
-      top: -140px;
-      background-size: contain; } }
+      background-image: url("images/desktop-demo-bg-1.png");
+      background-size: contain;
+      background-position: top; } }
 
 .demo__slider {
   margin: auto;
@@ -1108,12 +1112,12 @@ template {
         .footer__copyright * {
           text-align: left; } }
 
-.navbar, .navbar--gray {
+.navbar, .navbar--gray, .demo__nav {
   padding: 70px 15px;
   display: flex;
   width: 100%; }
   @media screen and (min-width: 768px) {
-    .navbar, .navbar--gray {
+    .navbar, .navbar--gray, .demo__nav {
       padding: 30px 40px 30px 80px; } }
   .navbar__demo {
     max-width: 200px;
@@ -1133,7 +1137,7 @@ template {
   justify-content: flex-end;
   margin-left: 30px; }
 
-.navbar--gray {
+.navbar--gray, .demo__nav {
   background-color: #E5E5E5; }
 
 /*# sourceMappingURL=index.css.map */
