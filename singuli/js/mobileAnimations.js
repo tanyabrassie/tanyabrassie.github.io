@@ -1,4 +1,5 @@
 lottie.setQuality(2);
+lottie.setSubframeRendering(false);
 
 import {mobileTee, mobilePerfume, mobileWatch, mobileSunglasses} from '../animations/mobileLotties.js';
 
@@ -59,6 +60,8 @@ const sunglassesAnimationMobile = lottie.loadAnimation({
     clearCanvas: false,
   },
 });
+
+console.log(sunglassesAnimationMobile);
 
 const mobileAnimationDict = {
   'lottie-perfume-mobile' : perfumeAnimationMobile,
