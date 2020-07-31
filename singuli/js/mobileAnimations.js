@@ -3,7 +3,7 @@ lottie.setSubframeRendering(false);
 
 import {mobileTee, mobilePerfume, mobileWatch, mobileSunglasses} from '../animations/mobileLotties.js';
 
-const watchCanMob = document.getElementById('watch-canvas-mobile');
+// const watchCanMob = document.getElementById('watch-canvas-mobile');
 const teeCanMob = document.getElementById('tee-canvas-mobile');
 const sunglassesCanMob = document.getElementById('sunglasses-canvas-mobile');
 const perfumeCanMob = document.getElementById('perfume-canvas-mobile');
@@ -12,9 +12,9 @@ const perfumeCanMob = document.getElementById('perfume-canvas-mobile');
 const perfumeAnimationDivMobile = document.getElementById('lottie-perfume-mobile');
 const sunglassesAnimationDivMobile = document.getElementById('lottie-sunglasses-mobile');
 const teeAnimationDivMobile = document.getElementById('lottie-tee-mobile');
-const watchAnimationDivMobile = document.getElementById('lottie-watch-mobile'); 
+// const watchAnimationDivMobile = document.getElementById('lottie-watch-mobile'); 
 
-const mobileAnimationDivs = [perfumeAnimationDivMobile, sunglassesAnimationDivMobile, teeAnimationDivMobile, watchAnimationDivMobile]; 
+const mobileAnimationDivs = [perfumeAnimationDivMobile, sunglassesAnimationDivMobile, teeAnimationDivMobile]; 
 
 // const teeAnimationMobile = lottie.loadAnimation({
 //   renderer: 'canvas',
@@ -67,20 +67,20 @@ const mobileAnimations = {
   'lottie-perfume-mobile' : null,
   'lottie-sunglasses-mobile' : null,
   'lottie-tee-mobile' : null,
-  'lottie-watch-mobile' : null,
+  // 'lottie-watch-mobile' : null,
 };
 
 const scaleModes = {
   'lottie-perfume-mobile' : 'xMidYMid slice',
   'lottie-sunglasses-mobile' : 'xMidYMin slice',
   'lottie-tee-mobile' : 'xMidYMid slice',
-  'lottie-watch-mobile' : 'xMidYMid slice',
+  // 'lottie-watch-mobile' : 'xMidYMid slice',
 };
 
 const mobileCanvases = {
   'lottie-sunglasses-mobile' : sunglassesCanMob,
   'lottie-tee-mobile' : teeCanMob,
-  'lottie-watch-mobile' : watchCanMob,
+  // 'lottie-watch-mobile' : watchCanMob,
   'lottie-perfume-mobile' : perfumeCanMob,
 };
 
@@ -88,7 +88,7 @@ const mobileAnimationData = {
   'lottie-perfume-mobile' : mobilePerfume,
   'lottie-sunglasses-mobile' : mobileSunglasses,
   'lottie-tee-mobile' : mobileTee,
-  'lottie-watch-mobile' : mobileWatch,
+  // 'lottie-watch-mobile' : mobileWatch,
 };
 
 console.log('mobileAnimationDivs', mobileAnimationDivs);
