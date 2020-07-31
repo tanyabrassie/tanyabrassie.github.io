@@ -13,7 +13,7 @@ const sunglassesAnimationDivMobile = document.getElementById('lottie-sunglasses-
 const teeAnimationDivMobile = document.getElementById('lottie-tee-mobile');
 const watchAnimationDivMobile = document.getElementById('lottie-watch-mobile'); 
 
-const mobileAnimationDivs = [perfumeAnimationDivMobile, sunglassesAnimationDivMobile, teeAnimationDivMobile, watchAnimationDivMobile]; 
+const mobileAnimationDivs = [perfumeAnimationDivMobile, sunglassesAnimationDivMobile, teeAnimationDivMobile]; 
 
 const teeAnimationMobile = lottie.loadAnimation({
   renderer: 'canvas',
@@ -37,17 +37,17 @@ const perfumeAnimationMobile = lottie.loadAnimation({
   },
 });
 
-const watchAnimationMobile = lottie.loadAnimation({
-  renderer: 'canvas',
-  loop: true,
-  autoplay: false,
-  animationData: mobileTee,
-  rendererSettings: {
-    context: watchCanMob.getContext('2d'),
-    scaleMode: 'xMidYMid slice',
-    clearCanvas: true,
-  },
-});
+// const watchAnimationMobile = lottie.loadAnimation({
+//   renderer: 'canvas',
+//   loop: true,
+//   autoplay: false,
+//   animationData: mobileTee,
+//   rendererSettings: {
+//     context: watchCanMob.getContext('2d'),
+//     scaleMode: 'xMidYMid slice',
+//     clearCanvas: true,
+//   },
+// });
 
 const sunglassesAnimationMobile = lottie.loadAnimation({
   renderer: 'canvas',
@@ -67,13 +67,13 @@ const mobileAnimationDict = {
   'lottie-perfume-mobile' : perfumeAnimationMobile,
   'lottie-sunglasses-mobile' : sunglassesAnimationMobile,
   'lottie-tee-mobile' : teeAnimationMobile,
-  'lottie-watch-mobile' : watchAnimationMobile,
+  // 'lottie-watch-mobile' : watchAnimationMobile,
 };
 
 const mobileCanvasDict = {
   'lottie-sunglasses-mobile' : sunglassesCanMob,
   'lottie-tee-mobile' : teeCanMob,
-  'lottie-watch-mobile' : watchCanMob,
+  // 'lottie-watch-mobile' : watchCanMob,
 };
 
 const transparentText = document.querySelectorAll('.transparent');
