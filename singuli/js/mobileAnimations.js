@@ -42,9 +42,9 @@ const watchAnimationMobile = lottie.loadAnimation({
   autoplay: false,
   animationData: mobileWatch,
   rendererSettings: {
-    context: watchCanMob.getContext('2d', { alpha: false }),
+    context: watchCanMob.getContext('2d'),
     scaleMode: 'xMidYMid slice',
-    clearCanvas: false,
+    clearCanvas: true,
   },
 });
 
@@ -66,7 +66,6 @@ const mobileAnimationDict = {
   'lottie-tee-mobile' : teeAnimationMobile,
   'lottie-watch-mobile' : watchAnimationMobile,
 };
-
 
 const mobileCanvasDict = {
   'lottie-sunglasses-mobile' : sunglassesCanMob,
