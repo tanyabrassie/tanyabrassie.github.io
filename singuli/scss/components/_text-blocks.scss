@@ -4,8 +4,12 @@
 }
 
 .transparent {
-  opacity: 0;
-  transition: 1.5s;
+  opacity: 1;
+  
+  @media screen and (min-width: $tablet) {
+    opacity: 0;
+    transition: 1.5s;
+  }
 }
 
 //Top Text Blocks

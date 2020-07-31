@@ -137,19 +137,19 @@ function checkMobilePositions(windowHeight) {
   }
 }
 
-function fadeInTextMobile(windowHeight) {
-  for (var i = 0; i < transparentText.length; i++) {
-    var headline = transparentText[i];
-    var positionFromTop = headline.getBoundingClientRect().top;
-    var height = headline.getBoundingClientRect().height;
+// function fadeInTextMobile(windowHeight) {
+//   for (var i = 0; i < transparentText.length; i++) {
+//     var headline = transparentText[i];
+//     var positionFromTop = headline.getBoundingClientRect().top;
+//     var height = headline.getBoundingClientRect().height;
     
-    if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
-      headline.classList.add('fade-in');
-    } else {
-      headline.classList.remove('fade-in');
-    }
-  }
-}
+//     if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
+//       headline.classList.add('fade-in');
+//     } else {
+//       headline.classList.remove('fade-in');
+//     }
+//   }
+// }
 
 (function() {
   let windowHeight;
@@ -159,7 +159,7 @@ function fadeInTextMobile(windowHeight) {
   
   function checkElementPositions() {
     checkMobilePositions(windowHeight);
-    fadeInTextMobile(windowHeight);
+    // fadeInTextMobile(windowHeight);
   }
 
   window.addEventListener('scroll', checkElementPositions);
