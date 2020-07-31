@@ -16,52 +16,6 @@ const watchAnimationDivMobile = document.getElementById('lottie-watch-mobile');
 
 const mobileAnimationDivs = [perfumeAnimationDivMobile, sunglassesAnimationDivMobile, teeAnimationDivMobile, watchAnimationDivMobile]; 
 
-// const teeAnimationMobile = lottie.loadAnimation({
-//   renderer: 'canvas',
-//   loop: true,
-//   autoplay: false,
-//   animationData: mobileTee,
-//   rendererSettings: {
-//   context: teeCanMob.getContext('2d'),
-//   scaleMode: 'xMidYMid slice',
-//   },
-// });
-
-// const perfumeAnimationMobile = lottie.loadAnimation({
-//   container: perfumeAnimationDivMobile,
-//   renderer: 'svg',
-//   loop: true,
-//   autoplay: false,
-//   animationData: mobilePerfume,
-//   rendererSettings: {
-//     progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
-//   },
-// });
-
-// const watchAnimationMobile = lottie.loadAnimation({
-//   renderer: 'canvas',
-//   loop: true,
-//   autoplay: false,
-//   animationData: mobileTee,
-//   rendererSettings: {
-//     context: watchCanMob.getContext('2d'),
-//     scaleMode: 'xMidYMid slice',
-//     clearCanvas: true,
-//   },
-// });
-
-// const sunglassesAnimationMobile = lottie.loadAnimation({
-//   renderer: 'canvas',
-//   loop: true,
-//   autoplay: false,
-//   animationData: mobileSunglasses,
-//   rendererSettings: {
-//     context: sunglassesCanMob.getContext('2d'),
-//     preserveAspectRatio: 'xMidYMin slice', 
-//     clearCanvas: false,
-//   },
-// });
-
 
 const mobileAnimations = {
   'lottie-perfume-mobile' : null,
@@ -112,7 +66,7 @@ function checkMobilePositions(windowHeight) {
         const animation = lottie.loadAnimation({
           renderer: 'canvas',
           name: [animationDiv.id],
-          loop: false,
+          loop: true,
           autoplay: false,
           animationData: mobileAnimationData[[animationDiv.id]],
           rendererSettings: {
