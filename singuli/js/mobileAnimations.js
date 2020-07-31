@@ -1,4 +1,4 @@
-lottie.setQuality(2);
+lottie.setQuality(1);
 lottie.setSubframeRendering(false);
 
 import {mobileTee, mobilePerfume, mobileWatch, mobileSunglasses} from '../animations/mobileLotties.js';
