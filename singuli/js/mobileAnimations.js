@@ -40,7 +40,7 @@ const watchAnimationMobile = lottie.loadAnimation({
   renderer: 'canvas',
   loop: true,
   autoplay: false,
-  animationData: mobileWatch,
+  animationData: mobilePerfume,
   rendererSettings: {
     context: watchCanMob.getContext('2d'),
     scaleMode: 'xMidYMid slice',
