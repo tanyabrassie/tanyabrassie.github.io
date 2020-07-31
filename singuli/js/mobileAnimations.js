@@ -66,7 +66,7 @@ function checkMobilePositions(windowHeight) {
         const animation = lottie.loadAnimation({
           renderer: 'canvas',
           name: [animationDiv.id],
-          loop: true,
+          loop: false,
           autoplay: false,
           animationData: mobileAnimationData[[animationDiv.id]],
           rendererSettings: {
