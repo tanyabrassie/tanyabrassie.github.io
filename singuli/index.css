@@ -372,9 +372,6 @@ template {
   font-size: 10px;
   -webkit-overflow-scrolling: auto; }
 
-.svg-test {
-  position: absolute; }
-
 .button, .smallButton, .navbar__login, .largeButton, .largeButton--black, .demo__button, .intro__demo-button, .navbar__demo {
   cursor: pointer;
   border-radius: 100px;
