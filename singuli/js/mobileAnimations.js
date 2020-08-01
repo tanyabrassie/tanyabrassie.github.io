@@ -1,7 +1,7 @@
+import {mobileTee, mobilePerfume, mobileWatch, mobileSunglasses} from '../animations/mobileLotties.js';
+
 lottie.setQuality(1);
 lottie.setSubframeRendering(false);
-
-import {mobileTee, mobilePerfume, mobileWatch, mobileSunglasses} from '../animations/mobileLotties.js';
 
 const watchCanMob = document.getElementById('watch-canvas-mobile');
 const teeCanMob = document.getElementById('tee-canvas-mobile');
@@ -88,7 +88,7 @@ const perfumeAnimationMobile = lottie.loadAnimation({
   animationData: mobilePerfume,
   rendererSettings: {
     progressiveLoad: false,
-    className: 'svg-test'
+    className: 'svg-test',
   }
 });
 

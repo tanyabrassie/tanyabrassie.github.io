@@ -25,7 +25,7 @@ if (isMobile || isSmallScreen) {
   document.body.appendChild(desktopAnimations);
 }
 
-let isResized = false;;
+let isResized = false;
 
 function loadOppositeAnimations() {
   if (!isResized) {
@@ -40,5 +40,5 @@ function loadOppositeAnimations() {
   }
 }
 
-//if the screen is resized then add the opposide script
+// If the screen is resized then add the opposide script
 window.addEventListener('resize', loadOppositeAnimations);

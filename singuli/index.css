@@ -372,6 +372,9 @@ template {
   font-size: 10px;
   -webkit-overflow-scrolling: auto; }
 
+#lottie-watch-mobile, #lottie-perfume-mobile, #lottie-tee-mobile, #lottie-sunglasses-mobile {
+  width: 50%; }
+
 .button, .smallButton, .navbar__login, .largeButton, .largeButton--black, .demo__button, .intro__demo-button, .navbar__demo {
   cursor: pointer;
   border-radius: 100px;
