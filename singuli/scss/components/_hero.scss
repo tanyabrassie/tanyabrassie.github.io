@@ -24,56 +24,56 @@
   }
 }
 
-// .hero__text span {
-//   @extend .extra-large-headline;
-//   margin: 0;
-//   text-transform: uppercase;
-//   display: block;
-//   position: absolute;
-// }
+.hero__text span {
+  @extend .extra-large-headline;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  position: absolute;
+}
 
-// .hero__step-up {
-//   top: 14%;
-//   z-index: 5;
+.hero__step-up {
+  top: 14%;
+  z-index: 5;
   
-//   @media screen and (min-width: $tablet) {
-//     z-index: 15;
-//     top: 20%;
-//   }
-// }
+  @media screen and (min-width: $tablet) {
+    z-index: 15;
+    top: 20%;
+  }
+}
 
-// .hero__your {
-//   top: 35%;
-//   z-index: 25;
-//   left: 10%;
+.hero__your {
+  top: 35%;
+  z-index: 25;
+  left: 10%;
   
-//   @media screen and (min-width: $tablet) {
-//     top: 42%;
-//     left: 10%;
-//   }
-// }
+  @media screen and (min-width: $tablet) {
+    top: 42%;
+    left: 10%;
+  }
+}
 
-// .hero__inventory {
-//   top: 51%;
-//   z-index: 25;
-//   left: 10%;
+.hero__inventory {
+  top: 51%;
+  z-index: 25;
+  left: 10%;
   
-//   @media screen and (min-width: $tablet) {
-//     top: 64%;
-//     left: 10%;
-//   }
-// }
+  @media screen and (min-width: $tablet) {
+    top: 64%;
+    left: 10%;
+  }
+}
 
-// .hero__game {
-//   top: 88%;
-//   z-index: 35;
-//   right: 10%;
+.hero__game {
+  top: 88%;
+  z-index: 35;
+  right: 10%;
   
-//   @media screen and (min-width: $tablet) {
-//     top: 85%;
-//     right: 10%;
-//   }
-// }
+  @media screen and (min-width: $tablet) {
+    top: 85%;
+    right: 10%;
+  }
+}
 
 .hero__animation__front__mobile {
   display: block;
