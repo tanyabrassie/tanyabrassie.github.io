@@ -1,8 +1,5 @@
 import {mobileTee, mobilePerfume, mobileWatch, mobileSunglasses} from '../animations/mobileLotties.js';
 
-lottie.setQuality(1);
-lottie.setSubframeRendering(false);
-
 const watchCanMob = document.getElementById('watch-canvas-mobile');
 const teeCanMob = document.getElementById('tee-canvas-mobile');
 const sunglassesCanMob = document.getElementById('sunglasses-canvas-mobile');
