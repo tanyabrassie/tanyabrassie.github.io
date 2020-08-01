@@ -14,14 +14,14 @@ if (isMobile || isSmallScreen) {
   // load mobile animations
   const mobileAnimations = document.createElement('script');
   mobileAnimations.src = 'js/mobileAnimations.js';
-  mobileAnimations.type = 'module'
+  // mobileAnimations.type = 'module'
   document.head.appendChild(mobileAnimations);
 
 } else if (!isSmallScreen) {
   // load the body lottie animations
   const desktopAnimations = document.createElement('script');
   desktopAnimations.src = 'js/desktopAnimations.js';
-  desktopAnimations.type = 'module';
+  // desktopAnimations.type = 'module';
   document.body.appendChild(desktopAnimations);
 }
 
@@ -41,4 +41,7 @@ function loadOppositeAnimations() {
 }
 
 // If the screen is resized then add the opposide script
-window.addEventListener('resize', loadOppositeAnimations);
+
+if (!isMobile) {
+  window.addEventListener('resize', loadOppositeAnimations);
+}
