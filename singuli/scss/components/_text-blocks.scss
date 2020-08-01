@@ -22,7 +22,7 @@
 
   &__paragraph{
     @extend .small-text;
-    max-width: min(60%, 380px);
+    max-width: min(80%, 380px);
   }
 }
 
@@ -91,7 +91,6 @@
     }
   }
 }
-
 
 //Bottom text blocks
 @mixin bottom-text-container-relative($color) {

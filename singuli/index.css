@@ -410,7 +410,7 @@ template {
   margin-top: min(max(3rem, 4.5vw), 50px);
   margin-bottom: min(max(0.7rem, 1.7vw), 16px); }
 .top-block__paragraph {
-  max-width: min(60%, 380px); }
+  max-width: min(80%, 380px); }
 
 .intro {
   padding: 0 16px; }
@@ -1065,7 +1065,7 @@ template {
     font-weight: 600;
     padding: 10px 0px; }
   .footer__copyright {
-    padding-top: 270px; }
+    padding-top: 170px; }
     @media screen and (min-width: 768px) {
       .footer__copyright {
         padding-top: 10px; } }
