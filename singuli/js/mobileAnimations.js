@@ -13,33 +13,14 @@ const watchAnimationDivMobile = document.getElementById('lottie-watch-mobile');
 
 const mobileAnimationDivs = [perfumeAnimationDivMobile, sunglassesAnimationDivMobile, teeAnimationDivMobile, watchAnimationDivMobile]; 
 
-const mobileAnimations = {
-  'lottie-perfume-mobile' : null,
-  'lottie-sunglasses-mobile' : null,
-  'lottie-tee-mobile' : null,
-  'lottie-watch-mobile' : null,
-};
-
-const scaleModes = {
-  'lottie-perfume-mobile' : 'xMidYMid slice',
-  'lottie-sunglasses-mobile' : 'xMidYMin slice',
-  'lottie-tee-mobile' : 'xMidYMid slice',
-  'lottie-watch-mobile' : 'xMidYMid slice',
-};
-
-const mobileCanvases = {
-  'lottie-sunglasses-mobile' : sunglassesCanMob,
-  'lottie-tee-mobile' : teeCanMob,
-  'lottie-watch-mobile' : watchCanMob,
-  'lottie-perfume-mobile' : perfumeCanMob,
-};
-
 const mobileAnimationData = {
   'lottie-perfume-mobile' : mobilePerfume,
   'lottie-sunglasses-mobile' : mobileSunglasses,
   'lottie-tee-mobile' : mobileTee,
   'lottie-watch-mobile' : mobileWatch,
 };
+
+const transparentText = document.querySelectorAll('.transparent');
 
 const watchAnimationMobile = lottie.loadAnimation({
   container: watchAnimationDivMobile,
@@ -89,60 +70,58 @@ const perfumeAnimationMobile = lottie.loadAnimation({
   }
 });
 
+const mobileAnimationDict = {
+  'lottie-perfume-mobile' : perfumeAnimationMobile,
+  'lottie-sunglasses-mobile' : sunglassesAnimationMobile,
+  'lottie-tee-mobile' : teeAnimationMobile,
+  'lottie-watch-mobile' : watchAnimationMobile,
+};
 
-// function checkMobilePositions(windowHeight) {
-//   for (var i = 0; i < mobileAnimationDivs.length; i++) {
+function checkMobilePositions(windowHeight) {
+  for (var i = 0; i < mobileAnimationDivs.length; i++) {
 
-//     // go through each animation div and find its size
-//     var animationDiv = mobileAnimationDivs[i];
-//     var positionFromTop = animationDiv.getBoundingClientRect().top;
-//     var height = animationDiv.getBoundingClientRect().height;
+    // go through each animation div and find its size
+    const animationDiv = mobileAnimationDivs[i];
+    const positionFromTop = animationDiv.getBoundingClientRect().top;
+    const height = animationDiv.getBoundingClientRect().height;
 
-//     // IF ANIMATION IS IN VIEW
-//     if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {      
-      
-//       // IF ANIMATION IS NOT NULL 
-//       if (!mobileAnimations[animationDiv.id]) {
-//         console.log('creating animation');
-//         const animation = lottie.loadAnimation({
+    const animation = mobileAnimationDict[animationDiv.id];
 
-//           renderer: 'svg',
-//           name: [animationDiv.id],
-//           loop: false,
-//           autoplay: false,
-//           animationData: mobileAnimationData[[animationDiv.id]],
-//           rendererSettings: {
-//           context: mobileCanvases[animationDiv.id].getContext('2d'),
-//           preserveAspectRatio: scaleModes[animationDiv.id],
-//           },
-//         });
-        
-//         mobileAnimations[animationDiv.id] = animation;
+    // if div is in view
+    if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {      
+      animation.play(); 
+    } else {
+      animation.stop();
+    }
+  }
+}
+
+function fadeInTextMobile(windowHeight) {
+  for (var i = 0; i < transparentText.length; i++) {
+    var headline = transparentText[i];
+    var positionFromTop = headline.getBoundingClientRect().top;
+    var height = headline.getBoundingClientRect().height;
+
+    if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
+      headline.classList.add('fade-in');
+    } else {
+      headline.classList.remove('fade-in');
+    }
+  }
+}
+
+(function() {
+  let windowHeight;
+  function init() {
+    windowHeight = window.innerHeight;
+  }
   
-//         // update animation dict with animation
-//         animation.play();
-//       } 
-//     } else {
-//       if (!!mobileAnimations[animationDiv.id]) {
-//         lottie.destroy([animationDiv.id]);
-//         mobileAnimations[animationDiv.id] = null;
-//       }
-//     }
-//   }
-// }
+  function checkElementPositions() {
+    checkMobilePositions(windowHeight);
+    fadeInTextMobile(windowHeight);
+  }
 
-// (function() {
-//   let windowHeight;
-//   function init() {
-//     windowHeight = window.innerHeight;
-//   }
-  
-//   function checkElementPositions() {
-//     checkMobilePositions(windowHeight);
-//     // fadeInTextMobile(windowHeight);
-//   }
-
-//   window.addEventListener('scroll', checkElementPositions);
-//   init();
-//   checkElementPositions();
-// })();
+  window.addEventListener('scroll', checkElementPositions);
+  init();
+  checkElementPositions();
+})();
