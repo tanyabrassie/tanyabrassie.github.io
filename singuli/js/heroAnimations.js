@@ -32,9 +32,9 @@ const shoeFrontDivMobile = document.getElementById('animation-front-shoe-mobile'
 //   animationData: heroShoeFront,
 // });
 
-shoeFrontAnimation.play();
-shoeMidAnimation.play();
-shoeBackAnimation.play();
+// shoeFrontAnimation.play();
+// shoeMidAnimation.play();
+// shoeBackAnimation.play();
 
 // const shoeBackAnimationMobile = lottie.loadAnimation({
 //   container: shoeBackDivMobile,
@@ -60,6 +60,6 @@ shoeBackAnimation.play();
 //   animationData: mobileShoeFront,
 // });
 
-shoeFrontAnimationMobile.play();
-shoeMidAnimationMobile.play();
-shoeBackAnimationMobile.play();
+// shoeFrontAnimationMobile.play();
+// shoeMidAnimationMobile.play();
+// shoeBackAnimationMobile.play();
