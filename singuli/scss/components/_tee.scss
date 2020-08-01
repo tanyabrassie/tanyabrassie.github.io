@@ -5,7 +5,6 @@
 
 .tee__top-text {
   @include top-text-container-relative(#{$white});
-  max-width: 80%;
   position: relative;
 }
 

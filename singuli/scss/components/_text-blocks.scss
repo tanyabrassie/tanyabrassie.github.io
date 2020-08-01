@@ -22,7 +22,7 @@
 
   &__paragraph{
     @extend .small-text;
-    max-width: min(80%, 380px);
+    max-width: min(85%, 380px);
   }
 }
 
@@ -39,7 +39,7 @@
   @media screen and (min-width: $tablet) {
     padding: min(5%, 80px);
   }
-  
+
 }
 
 @mixin top-text-container-relative($color) {
