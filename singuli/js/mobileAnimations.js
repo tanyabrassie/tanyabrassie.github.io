@@ -41,53 +41,53 @@ const mobileAnimationData = {
   'lottie-watch-mobile' : mobileWatch,
 };
 
-// const watchAnimationMobile = lottie.loadAnimation({
-//   container: watchAnimationDivMobile,
-//   renderer: 'svg',
-//   loop: true,
-//   autoplay: true,
-//   animationData: mobileWatch,
-//   rendererSettings: {
-//     progressiveLoad: false,
-//     className: 'svg-test'
-//   },
-// });
+const watchAnimationMobile = lottie.loadAnimation({
+  container: watchAnimationDivMobile,
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  animationData: mobileWatch,
+  rendererSettings: {
+    progressiveLoad: false,
+    className: 'svg-test'
+  },
+});
 
-// const teeAnimationMobile = lottie.loadAnimation({
-//   container: teeAnimationDivMobile,
-//   renderer: 'svg',
-//   loop: true,
-//   autoplay: true,
-//   animationData: mobileTee,
-//   rendererSettings: {
-//     progressiveLoad: false,
-//     className: 'svg-test'
-//   },
-// });
+const teeAnimationMobile = lottie.loadAnimation({
+  container: teeAnimationDivMobile,
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  animationData: mobileTee,
+  rendererSettings: {
+    progressiveLoad: false,
+    className: 'svg-test'
+  },
+});
 
-// const sunglassesAnimationMobile = lottie.loadAnimation({
-//   container: sunglassesAnimationDivMobile,
-//   renderer: 'svg',
-//   loop: true,
-//   autoplay: true,
-//   animationData: mobileSunglasses,
-//   rendererSettings: {
-//     progressiveLoad: false,
-//     className: 'svg-test'
-//   }
-// });
+const sunglassesAnimationMobile = lottie.loadAnimation({
+  container: sunglassesAnimationDivMobile,
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  animationData: mobileSunglasses,
+  rendererSettings: {
+    progressiveLoad: false,
+    className: 'svg-test'
+  }
+});
 
-// const perfumeAnimationMobile = lottie.loadAnimation({
-//   container: perfumeAnimationDivMobile,
-//   renderer: 'svg',
-//   loop: true,
-//   autoplay: true,
-//   animationData: mobilePerfume,
-//   rendererSettings: {
-//     progressiveLoad: false,
-//     className: 'svg-test',
-//   }
-// });
+const perfumeAnimationMobile = lottie.loadAnimation({
+  container: perfumeAnimationDivMobile,
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  animationData: mobilePerfume,
+  rendererSettings: {
+    progressiveLoad: false,
+    className: 'svg-test',
+  }
+});
 
 
 // function checkMobilePositions(windowHeight) {
