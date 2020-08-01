@@ -51,13 +51,6 @@
   width: 90%;
   z-index: 40;
   
-  // .glide__track {
-  //   width: 113%;
-    
-  //   @media screen and (min-width: $tablet) {
-  //     width: 133%;
-  //   }
-  // }
 
   .glide__slide {
     padding: 20px;
@@ -130,7 +123,7 @@
 }
 
 .demo__changes {
-  padding-left: 70px;
+  padding-left: min(10%, 80px);
 }
 
 .demo__starting, .demo__here {

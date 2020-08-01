@@ -16,7 +16,6 @@ const watchAnimationDivMobile = document.getElementById('lottie-watch-mobile');
 
 const mobileAnimationDivs = [perfumeAnimationDivMobile, sunglassesAnimationDivMobile, teeAnimationDivMobile, watchAnimationDivMobile]; 
 
-
 const mobileAnimations = {
   'lottie-perfume-mobile' : null,
   'lottie-sunglasses-mobile' : null,
@@ -45,10 +44,6 @@ const mobileAnimationData = {
   'lottie-watch-mobile' : mobileWatch,
 };
 
-console.log('mobileAnimationDivs', mobileAnimationDivs);
-
-const transparentText = document.querySelectorAll('.transparent');
-
 function checkMobilePositions(windowHeight) {
   for (var i = 0; i < mobileAnimationDivs.length; i++) {
 
@@ -75,12 +70,10 @@ function checkMobilePositions(windowHeight) {
           },
         });
         
-        // log animation
         mobileAnimations[animationDiv.id] = animation;
   
         // update animation dict with animation
         animation.play();
-        console.log('animation data', mobileAnimationData);
       } 
     } else {
       if (!!mobileAnimations[animationDiv.id]) {
@@ -90,20 +83,6 @@ function checkMobilePositions(windowHeight) {
     }
   }
 }
-
-// function fadeInTextMobile(windowHeight) {
-//   for (var i = 0; i < transparentText.length; i++) {
-//     var headline = transparentText[i];
-//     var positionFromTop = headline.getBoundingClientRect().top;
-//     var height = headline.getBoundingClientRect().height;
-    
-//     if (positionFromTop - windowHeight <= 0 && positionFromTop + height >=0) {
-//       headline.classList.add('fade-in');
-//     } else {
-//       headline.classList.remove('fade-in');
-//     }
-//   }
-// }
 
 (function() {
   let windowHeight;

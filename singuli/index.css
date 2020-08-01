@@ -1027,7 +1027,7 @@ template {
   margin: 0; }
 
 .demo__changes {
-  padding-left: 70px; }
+  padding-left: min(10%, 80px); }
 
 .demo__starting, .demo__here {
   text-align: right; }
