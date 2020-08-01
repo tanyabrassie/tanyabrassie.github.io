@@ -30,7 +30,6 @@ const watchAnimationMobile = lottie.loadAnimation({
   animationData: mobileWatch,
   rendererSettings: {
     progressiveLoad: false,
-    className: 'svg-test'
   },
 });
 
@@ -42,7 +41,6 @@ const teeAnimationMobile = lottie.loadAnimation({
   animationData: mobileTee,
   rendererSettings: {
     progressiveLoad: false,
-    className: 'svg-test'
   },
 });
 
@@ -54,7 +52,6 @@ const sunglassesAnimationMobile = lottie.loadAnimation({
   animationData: mobileSunglasses,
   rendererSettings: {
     progressiveLoad: false,
-    className: 'svg-test'
   }
 });
 
@@ -66,7 +63,6 @@ const perfumeAnimationMobile = lottie.loadAnimation({
   animationData: mobilePerfume,
   rendererSettings: {
     progressiveLoad: false,
-    className: 'svg-test',
   }
 });
 
