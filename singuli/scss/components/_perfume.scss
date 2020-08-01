@@ -9,19 +9,12 @@
   }
 }
 
-.perfume__animation__mobile {
-  position: relative;
-  z-index: -10;
-  display: block;
-  margin-top: -10%;
-
-  @media screen and (min-width: $tablet) {
-    display: none;
-  }
+.perfume__text {
+  max-width: 365px;
 }
 
 .perfume__animation {
-  max-width: 1020px;
+  max-width: 900px;
   margin: auto;
   position: relative;
   z-index: -10;
@@ -31,6 +24,17 @@
   @media screen and (min-width: $tablet) {
     display: block;
     margin-top: -28%;
+  }
+}
+
+.perfume__animation__mobile {
+  position: relative;
+  z-index: -10;
+  display: block;
+  margin-top: -10%;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
   }
 }
 
@@ -46,27 +50,5 @@
   @media screen and (min-width: $tablet) {
     position: absolute;
     margin-top: 0;
-  }
-}
-
-.perfume__text {
-  max-width: 365px;
-}
-
-.perfume__animation__canvas__mobile {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.perfume__animation__mobile {
-  height: 0;
-  padding-bottom: 160%;
-  position: relative;
-  z-index: -10;
-  display: block;
-
-  @media screen and (min-width: $tablet) {
-    display: none;
   }
 }

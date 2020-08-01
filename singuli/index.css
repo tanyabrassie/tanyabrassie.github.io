@@ -639,23 +639,6 @@ template {
   background: radial-gradient(87.56% 185.88% at 44.11% 80.9%, #120C1D 1.24%, #252525 21.84%, #4B566D 100%), #252525;
   position: relative; }
 
-.tee__animation {
-  height: 0;
-  padding-bottom: 50%;
-  position: relative;
-  z-index: 0;
-  display: none; }
-  @media screen and (min-width: 768px) {
-    .tee__animation {
-      display: block;
-      margin-top: -10%; } }
-
-.tee__animation__mobile {
-  display: block; }
-  @media screen and (min-width: 768px) {
-    .tee__animation__mobile {
-      display: none; } }
-
 .tee__top-text {
   width: 100%;
   max-width: 1000px;
@@ -693,16 +676,23 @@ template {
     .tee__bottom-text .bottom-block__title {
       margin: 16px 0 8px; }
 
-.tee__animation__canvas, .tee__animation__canvas__mobile {
+.tee__animation__canvas {
   position: absolute;
   width: 100%;
   height: 100%; }
 
-.tee__animation__mobile {
+.tee__animation {
   height: 0;
-  padding-bottom: 100%;
+  padding-bottom: 50%;
   position: relative;
   z-index: 0;
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .tee__animation {
+      display: block;
+      margin-top: -10%; } }
+
+.tee__animation__mobile {
   display: block; }
   @media screen and (min-width: 768px) {
     .tee__animation__mobile {
@@ -717,17 +707,11 @@ template {
       padding-bottom: 0px;
       margin-bottom: 0px; } }
 
-.perfume__animation__mobile {
-  position: relative;
-  z-index: -10;
-  display: block;
-  margin-top: -10%; }
-  @media screen and (min-width: 768px) {
-    .perfume__animation__mobile {
-      display: none; } }
+.perfume__text {
+  max-width: 365px; }
 
 .perfume__animation {
-  max-width: 1020px;
+  max-width: 900px;
   margin: auto;
   position: relative;
   z-index: -10;
@@ -737,6 +721,15 @@ template {
     .perfume__animation {
       display: block;
       margin-top: -28%; } }
+
+.perfume__animation__mobile {
+  position: relative;
+  z-index: -10;
+  display: block;
+  margin-top: -10%; }
+  @media screen and (min-width: 768px) {
+    .perfume__animation__mobile {
+      display: none; } }
 
 .perfume__top-text {
   width: 100%;
@@ -778,37 +771,9 @@ template {
       position: absolute;
       margin-top: 0; } }
 
-.perfume__text {
-  max-width: 365px; }
-
-.perfume__animation__canvas__mobile {
-  position: absolute;
-  width: 100%;
-  height: 100%; }
-
-.perfume__animation__mobile {
-  height: 0;
-  padding-bottom: 160%;
-  position: relative;
-  z-index: -10;
-  display: block; }
-  @media screen and (min-width: 768px) {
-    .perfume__animation__mobile {
-      display: none; } }
-
 .watch {
   position: relative;
   background-color: #030303; }
-
-.watch__animation {
-  height: 0;
-  padding-bottom: 100%;
-  position: relative;
-  z-index: 0;
-  display: none; }
-  @media screen and (min-width: 768px) {
-    .watch__animation {
-      display: block; } }
 
 .watch__top-text {
   width: 100%;
@@ -822,11 +787,6 @@ template {
   @media screen and (min-width: 768px) {
     .watch__top-text {
       padding: min(5%, 80px); } }
-
-.watch__animation__canvas, .watch__animation__canvas__mobile {
-  position: absolute;
-  width: 100%;
-  height: 100%; }
 
 .watch__bottom-text {
   width: calc(100% - 15px);
@@ -852,11 +812,22 @@ template {
     .watch__bottom-text .bottom-block__title {
       margin: 16px 0 8px; }
 
-.watch__animation__mobile {
+.watch__animation {
   height: 0;
-  padding-bottom: 250%;
+  padding-bottom: 100%;
   position: relative;
   z-index: 0;
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .watch__animation {
+      display: block; } }
+
+.watch__animation__canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.watch__animation__mobile {
   display: block; }
   @media screen and (min-width: 768px) {
     .watch__animation__mobile {
@@ -866,16 +837,6 @@ template {
   background: linear-gradient(152.32deg, #F6FAFD 3.58%, #edf5fc 80.82%);
   margin-bottom: 10px;
   position: relative; }
-
-.sunglasses__animation {
-  height: 0;
-  padding-bottom: 80%;
-  position: relative;
-  z-index: 0;
-  display: none; }
-  @media screen and (min-width: 768px) {
-    .sunglasses__animation {
-      display: block; } }
 
 .sunglasses__top-text {
   width: 100%;
@@ -899,7 +860,7 @@ template {
   grid-template-columns: 100%;
   grid-column-gap: 80px;
   position: relative;
-  margin-top: 30%;
+  margin-top: -25%;
   z-index: 10; }
   @media screen and (min-width: 768px) {
     .sunglasses__bottom-text {
@@ -918,17 +879,24 @@ template {
     .sunglasses__bottom-text {
       margin-top: -10%; } }
 
-.sunglasses__animation__canvas, .sunglasses__animation__canvas__mobile {
+.sunglasses__animation__canvas {
   position: absolute;
   width: 100%;
   height: 100%; }
 
-.sunglasses__animation__mobile {
+.sunglasses__animation {
   height: 0;
-  padding-bottom: 120%;
+  padding-bottom: 80%;
   position: relative;
   z-index: 0;
-  display: block; }
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .sunglasses__animation {
+      display: block; } }
+
+.sunglasses__animation__mobile {
+  display: block;
+  padding-top: 20%; }
   @media screen and (min-width: 768px) {
     .sunglasses__animation__mobile {
       display: none; } }
