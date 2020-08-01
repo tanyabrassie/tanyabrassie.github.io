@@ -1,7 +1,5 @@
 import {tee, perfume, watch, sunglasses} from '../animations/desktopLotties.js';
 
-lottie.setQuality(2);
-
 const watchCan = document.getElementById('watch-canvas');
 const teeCan = document.getElementById('tee-canvas');
 const sunglassesCan = document.getElementById('sunglasses-canvas');
