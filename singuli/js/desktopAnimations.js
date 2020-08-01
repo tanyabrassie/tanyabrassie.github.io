@@ -4,7 +4,7 @@ const watchCan = document.getElementById('watch-canvas');
 const teeCan = document.getElementById('tee-canvas');
 const sunglassesCan = document.getElementById('sunglasses-canvas');
 
-// get all divs to attch animations to
+// get all divs to attach animations to
 const perfumeAnimationDiv = document.getElementById('lottie-perfume');
 const sunglassesAnimationDiv = document.getElementById('lottie-sunglasses');
 const teeAnimationDiv = document.getElementById('lottie-tee');
@@ -41,7 +41,7 @@ const watchAnimation = lottie.loadAnimation({
   autoplay: false,
   animationData: watch,
   rendererSettings: {
-    context: watchCan.getContext('2d', { alpha: false }), // the canvas context
+    context: watchCan.getContext('2d', { alpha: false }),
     scaleMode: 'xMidYMid slice',
     clearCanvas: false,
   },
@@ -53,7 +53,7 @@ const sunglassesAnimation = lottie.loadAnimation({
   autoplay: false,
   animationData: sunglasses,
   rendererSettings: {
-    context: sunglassesCan.getContext('2d'), // the canvas context
+    context: sunglassesCan.getContext('2d'), 
     scaleMode: 'xMidYmin slice',
     clearCanvas: false,
   },
