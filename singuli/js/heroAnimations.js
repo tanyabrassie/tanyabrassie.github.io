@@ -8,57 +8,57 @@ const shoeBackDivMobile = document.getElementById('animation-back-shoe-mobile');
 const shoeMidDivMobile = document.getElementById('animation-mid-shoe-mobile');
 const shoeFrontDivMobile = document.getElementById('animation-front-shoe-mobile');
 
-const shoeBackAnimation = lottie.loadAnimation({
-  container: shoeBackDiv,
-  renderer: 'svg',
-  loop: false,
-  autoplay: false,
-  animationData: heroShoeBack,
-});
+// const shoeBackAnimation = lottie.loadAnimation({
+//   container: shoeBackDiv,
+//   renderer: 'svg',
+//   loop: false,
+//   autoplay: false,
+//   animationData: heroShoeBack,
+// });
 
-const shoeMidAnimation = lottie.loadAnimation({
-  container: shoeMidDiv,
-  renderer: 'svg',
-  loop: false,
-  autoplay: false,
-  animationData: heroShoeMid,
-});
+// const shoeMidAnimation = lottie.loadAnimation({
+//   container: shoeMidDiv,
+//   renderer: 'svg',
+//   loop: false,
+//   autoplay: false,
+//   animationData: heroShoeMid,
+// });
 
-const shoeFrontAnimation = lottie.loadAnimation({
-  container: shoeFrontDiv,
-  renderer: 'svg',
-  loop: false,
-  autoplay: false,
-  animationData: heroShoeFront,
-});
+// const shoeFrontAnimation = lottie.loadAnimation({
+//   container: shoeFrontDiv,
+//   renderer: 'svg',
+//   loop: false,
+//   autoplay: false,
+//   animationData: heroShoeFront,
+// });
 
 shoeFrontAnimation.play();
 shoeMidAnimation.play();
 shoeBackAnimation.play();
 
-const shoeBackAnimationMobile = lottie.loadAnimation({
-  container: shoeBackDivMobile,
-  renderer: 'svg',
-  loop: false,
-  autoplay: false,
-  animationData: mobileShoeBack,
-});
+// const shoeBackAnimationMobile = lottie.loadAnimation({
+//   container: shoeBackDivMobile,
+//   renderer: 'svg',
+//   loop: false,
+//   autoplay: false,
+//   animationData: mobileShoeBack,
+// });
 
-const shoeMidAnimationMobile = lottie.loadAnimation({
-  container: shoeMidDivMobile,
-  renderer: 'svg',
-  loop: false,
-  autoplay: false,
-  animationData: mobileShoeMid,
-});
+// const shoeMidAnimationMobile = lottie.loadAnimation({
+//   container: shoeMidDivMobile,
+//   renderer: 'svg',
+//   loop: false,
+//   autoplay: false,
+//   animationData: mobileShoeMid,
+// });
 
-const shoeFrontAnimationMobile = lottie.loadAnimation({
-  container: shoeFrontDivMobile,
-  renderer: 'svg',
-  loop: false,
-  autoplay: false,
-  animationData: mobileShoeFront,
-});
+// const shoeFrontAnimationMobile = lottie.loadAnimation({
+//   container: shoeFrontDivMobile,
+//   renderer: 'svg',
+//   loop: false,
+//   autoplay: false,
+//   animationData: mobileShoeFront,
+// });
 
 shoeFrontAnimationMobile.play();
 shoeMidAnimationMobile.play();
