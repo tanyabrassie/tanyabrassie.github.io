@@ -1,0 +1,54 @@
+.about {
+  background-color: $darkBlue;
+  color: $white;
+  padding: 100px 15px 45px;
+
+  @media screen and (min-width: $tablet) {
+    padding: min(5%, 80px);
+  }
+
+
+  &__title {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase; 
+    border-bottom: 1px solid white;
+
+    font-size: min(max(2rem, 1.7vw), 30px);
+    line-height: min(max(2.3rem, 1.7vw), 35px);
+  }
+
+  &__paragraph {
+    font-size: min(max(2.5rem, 3vw), 40px);
+    line-height: min(max(2.9rem, 3.5vw), 47px);
+    font-weight: 500;
+    max-width: 60%;
+    margin-bottom: min(max(6rem, 14vw), 188px);
+  }
+
+  &__founders {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+      max-width: 60%;
+      justify-content: space-between;
+    }
+
+    &__name {
+      // 24/15
+      font-size: min(max(1.5rem, 1.7vw), 24px);
+      line-height: min(max(1.8rem, 1.7vw), 28px);
+      display: block;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+
+    &__title {
+      //16/12
+      font-size: min(max(1.6rem, 1.7vw), 12px);
+      line-height: min(max(1.4rem, 1.7vw), 19px);
+    }
+  }
+}

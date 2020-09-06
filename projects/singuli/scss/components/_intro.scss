@@ -1,0 +1,71 @@
+.intro {
+  padding: 0 16px;
+  @media screen and (min-width: $tablet) {
+    padding: 0 16px 0 80px;
+    margin-top: 87px;
+  }
+}
+
+.intro__text {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.intro__left {
+  max-width: 80%;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 50%;
+  }
+} 
+
+.intro__right {
+  text-align: right;
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+    max-width: 50%;
+  }
+}
+
+.intro__bottom__text {
+  @extend .gradient-text;
+  padding: 12px 0;
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  
+  @media screen and (min-width: $tablet) {
+    max-width: 40%;
+  }
+}
+
+.intro__star {
+  width: 80%;
+  display: block;
+  max-width: 50px;
+  margin-left: auto;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: auto;
+    margin-left: unset;
+    max-width: 90px;
+  }
+}
+
+.intro__demo-button {
+  @extend .largeButton;
+  display: flex;
+  width: 200px;
+  margin: 46px auto;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+

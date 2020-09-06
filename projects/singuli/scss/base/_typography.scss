@@ -1,0 +1,50 @@
+//hero text
+// 150/45
+.extra-large-headline {
+  font-weight: 700;
+  font-size: min(max(4.5rem, 10vw), 150px);
+}
+
+//Very large display text
+// 110/50px
+.large-headline {
+  font-size: min(max(5rem, 8vw), 110px);
+  line-height: min(max(4.5rem, 8vw), 100px);
+  font-weight: 600;
+}
+
+// used above hero image
+// 80/40px
+.medium-headline {
+  font-size: min(max(4rem, 5.5vw), 80px);
+  line-height: min(max(4.6rem, 6.5vw), 94px);
+  
+  font-weight: 700;
+}
+
+// 24/15
+.small-title {
+  font-size: min(max(1.5rem, 3vw), 25px);
+  line-height: min(max(1.8rem, 3vw), 29px);
+  font-weight: 600;
+}
+
+// 16/13
+.small-text {
+  font-size: min(max(1.3rem, 2.5vw), 16px);
+  line-height: min(max(1.5rem, 3vw), 19px);
+}
+
+// 20/13 
+.medium-text {
+  font-size: min(max(1.3rem, 5.5vw), 20px);
+}
+
+.gradient-text {
+  font-size: min(max(1rem, 5vw), 18px);
+  background: linear-gradient(173.86deg, #F27690 23.38%, #0029FF 66.36%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 400;
+}

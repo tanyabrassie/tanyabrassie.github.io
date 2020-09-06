@@ -1,0 +1,41 @@
+.tee {
+  background: radial-gradient(87.56% 185.88% at 44.11% 80.9%, #120C1D 1.24%, #252525 21.84%, #4B566D 100%), #252525;
+  position: relative;
+}
+
+.tee__top-text {
+  @include top-text-container-relative(#{$white});
+  position: relative;
+}
+
+.tee__bottom-text {
+  @include bottom-text-container(#{$white});
+  position: relative;
+}
+
+.tee__animation__canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.tee__animation {
+  height: 0;
+  padding-bottom: 50%;
+  position: relative;
+  z-index: 0;
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+    margin-top: -10%;
+  }
+}
+
+.tee__animation__mobile {
+  display: block;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}

@@ -1,0 +1,40 @@
+.navbar {
+  padding: 70px 15px;
+  display: flex;
+  width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    padding: 30px 40px 30px 80px;
+  }
+
+  &__demo {
+    @extend .largeButton;
+    max-width: 200px;
+    width: 100%;
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      margin-left: 30px;
+    }
+  }
+
+  &__login {
+    @extend .smallButton;
+    max-width: 100px;
+    width: 100%;
+  }
+}
+
+.navbar__buttons {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-left: 30px;
+  align-items: center;
+}
+
+.navbar--gray {
+  @extend .navbar;
+  background-color: $lightGrey;
+}
