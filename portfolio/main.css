@@ -62,7 +62,6 @@ table {
   width: 100%;
   background: #fff;
   padding: 20px 20px;
-  box-shadow: 0px 1px 1px #905af92b;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -296,13 +295,13 @@ body {
   100% {
     opacity: 1; } }
 .section-title {
-  font-size: 50px;
+  font-size: 28px;
   color: #383732;
   font-family: monospace;
   padding: 30px 30px;
   text-align: center;
   font-weight: 500;
-  letter-spacing: 6px; }
+  letter-spacing: 3px; }
 
 footer {
   position: relative;
@@ -341,20 +340,15 @@ footer {
       margin: 30px 0 0 0; } }
 
 .work__image--main {
-  padding-top: 10px; }
+  padding-bottom: 10px; }
 
 .image__caption {
   padding-bottom: 20px; }
 
 .work__image--main, .image__caption {
   width: 100%;
-  margin: auto;
   min-width: 270px;
   max-width: 650px; }
-  .work__image--main--icon, .image__caption--icon {
-    width: 150px;
-    padding: 10px 20px;
-    margin: 0px 20px; }
 
 .dwell {
   max-width: 400px;
@@ -364,6 +358,9 @@ footer {
   max-width: 400px;
   margin: auto;
   display: block; }
+
+.shadow {
+  box-shadow: 0px 0px 3px 2px #edecec; }
 
 .styleguide {
   max-width: 450px;
@@ -382,6 +379,10 @@ footer {
   margin: 20px auto 20px;
   text-align: left;
   font-style: italic; }
+  .image__caption--icon {
+    width: 150px;
+    padding: 10px 20px;
+    margin: 0px 20px; }
 
 .work__image {
   transition: transform .3s; }
