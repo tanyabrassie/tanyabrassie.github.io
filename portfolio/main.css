@@ -1,84 +1,16 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -94,17 +26,8 @@ html * > svg {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -118,8 +41,7 @@ ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
@@ -132,11 +54,9 @@ a:hover {
   color: #029db1;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
   content: none;
 }
 
@@ -164,8 +84,7 @@ table {
   }
 }
 @media (max-width: 650px) {
-  .navigation__list,
-  .navigation__list--icon {
+  .navigation__list, .navigation__list--icon {
     padding-top: 15px;
   }
 }
@@ -198,12 +117,17 @@ table {
     margin-left: 10px;
   }
 }
+.navigation__item--icon--invisible {
+  visibility: hidden;
+  width: 1px;
+}
 .navigation__item--icon:hover {
   opacity: 0.7;
 }
 .navigation__link {
   color: #383732;
   text-decoration: none;
+  border-bottom: 1.5px solid black;
   font-family: monospace;
   cursor: pointer;
 }
@@ -247,9 +171,8 @@ body {
   position: relative;
   padding: 90px 20px 70px;
 }
-.welcome__container:before,
-.welcome__container:after {
-  content: '';
+.welcome__container:before, .welcome__container:after {
+  content: "";
   display: table;
 }
 .welcome__container:after {
@@ -265,9 +188,8 @@ body {
   max-width: 600px;
   margin: auto;
 }
-.welcome__message:before,
-.welcome__message:after {
-  content: '';
+.welcome__message:before, .welcome__message:after {
+  content: "";
   display: table;
 }
 .welcome__message:after {
@@ -298,9 +220,8 @@ body {
   width: auto;
   margin: auto;
 }
-.welcome__image-container:before,
-.welcome__image-container:after {
-  content: '';
+.welcome__image-container:before, .welcome__image-container:after {
+  content: "";
   display: table;
 }
 .welcome__image-container:after {
@@ -366,14 +287,21 @@ body {
 }
 
 .work {
+  margin-top: 200px;
+}
+
+.work-title {
+  padding: 20px;
+}
+
+.work {
   background: #fff;
 }
 .work__list {
   position: relative;
 }
-.work__list:before,
-.work__list:after {
-  content: '';
+.work__list:before, .work__list:after {
+  content: "";
   display: table;
 }
 .work__list:after {
@@ -386,8 +314,7 @@ body {
 }
 .work__container {
   position: relative;
-  width: 100%;
-  /* for IE 6 */
+  width: 100%; /* for IE 6 */
   margin: auto;
   background: #fff;
 }
@@ -395,7 +322,7 @@ body {
   display: block;
   text-align: center;
   padding: 10px 20px;
-  width: calc(100% / 3);
+  width: 33.3333333333%;
 }
 @media (max-width: 640px) {
   .work__item {
@@ -520,16 +447,11 @@ footer {
   padding-bottom: 10px;
 }
 
-.work__image--main.riso {
-  max-width: 300px;
-}
-
 .image__caption {
   padding-bottom: 20px;
 }
 
-.work__image--main,
-.image__caption {
+.work__image--main, .image__caption {
   width: 100%;
   min-width: 270px;
   max-width: 650px;
@@ -610,8 +532,7 @@ footer {
 .work__explanation__paragraph {
   padding: 5px 0 10px;
 }
-.work__explanation ol,
-.work__explanation ul {
+.work__explanation ol, .work__explanation ul {
   padding-left: 30px;
 }
 .work__explanation li {
@@ -654,8 +575,7 @@ footer {
   min-width: 300px;
 }
 
-.back-arrow,
-.next-arrow {
+.back-arrow, .next-arrow {
   font-size: 16px;
   display: inline-block;
   text-decoration: none;
@@ -663,14 +583,12 @@ footer {
   color: #333;
 }
 @media (min-width: 680px) {
-  .back-arrow,
-  .next-arrow {
+  .back-arrow, .next-arrow {
     position: fixed;
   }
 }
 
-.back-arrow:hover,
-.next-arrow:hover {
+.back-arrow:hover, .next-arrow:hover {
   color: #9d67f4;
 }
 
@@ -704,9 +622,7 @@ footer {
   Author - Dallas Bass
   Site - dallasbass.com
 */
-*,
-*:after,
-*:before {
+*, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -716,7 +632,7 @@ body {
   margin: 0px;
 }
 
-[class*='col-'] {
+[class*=col-] {
   float: left;
 }
 
@@ -729,7 +645,7 @@ body {
 }
 
 .grid:after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -737,8 +653,7 @@ body {
 .grid-pad {
   margin-top: 77px;
   margin-bottom: 20px;
-  padding-right: 0px;
-  /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
+  padding-right: 0px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
 }
 
 .push-right {
@@ -750,23 +665,19 @@ body {
   width: 100%;
 }
 
-.col-2-3,
-.col-8-12 {
+.col-2-3, .col-8-12 {
   width: 66.66%;
 }
 
-.col-1-2,
-.col-6-12 {
+.col-1-2, .col-6-12 {
   width: 50%;
 }
 
-.col-1-3,
-.col-4-12 {
+.col-1-3, .col-4-12 {
   width: 33.33%;
 }
 
-.col-1-4,
-.col-3-12 {
+.col-1-4, .col-3-12 {
   width: 25%;
 }
 
@@ -774,8 +685,7 @@ body {
   width: 20%;
 }
 
-.col-1-6,
-.col-2-12 {
+.col-1-6, .col-2-12 {
   width: 16.667%;
 }
 
@@ -825,23 +735,19 @@ body {
 }
 
 /* Pushing blocks */
-.push-2-3,
-.push-8-12 {
+.push-2-3, .push-8-12 {
   margin-left: 66.66%;
 }
 
-.push-1-2,
-.push-6-12 {
+.push-1-2, .push-6-12 {
   margin-left: 50%;
 }
 
-.push-1-3,
-.push-4-12 {
+.push-1-3, .push-4-12 {
   margin-left: 33.33%;
 }
 
-.push-1-4,
-.push-3-12 {
+.push-1-4, .push-3-12 {
   margin-left: 25%;
 }
 
@@ -849,8 +755,7 @@ body {
   margin-left: 20%;
 }
 
-.push-1-6,
-.push-2-12 {
+.push-1-6, .push-2-12 {
   margin-left: 16.667%;
 }
 
@@ -884,13 +789,10 @@ body {
     min-width: 0;
     margin-left: 0px;
     margin-right: 0px;
-    padding-left: 20px;
-    /* grid-space to left */
-    padding-right: 10px;
-    /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
+    padding-left: 20px; /* grid-space to left */
+    padding-right: 10px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
   }
-
-  [class*='col-'] {
+  [class*=col-] {
     width: auto;
     float: none;
     margin-left: 0px;
@@ -898,101 +800,74 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 0px;
-    padding-right: 10px;
-    /* column-space */
+    padding-right: 10px; /* column-space */
   }
-
   /* Mobile Layout */
-  [class*='mobile-col-'] {
+  [class*=mobile-col-] {
     float: left;
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
     margin-bottom: 10px;
     padding-left: 0px;
-    padding-right: 10px;
-    /* column-space */
+    padding-right: 10px; /* column-space */
     padding-bottom: 0px;
   }
-
   .mobile-col-1-1 {
     width: 100%;
   }
-
-  .mobile-col-2-3,
-  .mobile-col-8-12 {
+  .mobile-col-2-3, .mobile-col-8-12 {
     width: 66.66%;
   }
-
-  .mobile-col-1-2,
-  .mobile-col-6-12 {
+  .mobile-col-1-2, .mobile-col-6-12 {
     width: 50%;
   }
-
-  .mobile-col-1-3,
-  .mobile-col-4-12 {
+  .mobile-col-1-3, .mobile-col-4-12 {
     width: 33.33%;
   }
-
-  .mobile-col-1-4,
-  .mobile-col-3-12 {
+  .mobile-col-1-4, .mobile-col-3-12 {
     width: 25%;
   }
-
   .mobile-col-1-5 {
     width: 20%;
   }
-
-  .mobile-col-1-6,
-  .mobile-col-2-12 {
+  .mobile-col-1-6, .mobile-col-2-12 {
     width: 16.667%;
   }
-
   .mobile-col-1-7 {
     width: 14.28%;
   }
-
   .mobile-col-1-8 {
     width: 12.5%;
   }
-
   .mobile-col-1-9 {
     width: 11.1%;
   }
-
   .mobile-col-1-10 {
     width: 10%;
   }
-
   .mobile-col-1-11 {
     width: 9.09%;
   }
-
   .mobile-col-1-12 {
     width: 8.33%;
   }
-
   /* Layout Columns */
   .mobile-col-11-12 {
     width: 91.66%;
   }
-
   .mobile-col-10-12 {
     width: 83.333%;
   }
-
   .mobile-col-9-12 {
     width: 75%;
   }
-
   .mobile-col-5-12 {
     width: 41.66%;
   }
-
   .mobile-col-7-12 {
     width: 58.33%;
   }
-
   .hide-on-mobile {
     display: none !important;
     width: 0;
