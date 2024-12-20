@@ -1,53 +1,80 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-	<title> Tanya Brassie UI/UX Designer</title>
-	<link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
-	<meta name="description" content="Portfolio of Tanya Brassie, UI/UX Designer living in New York City.">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width">
+  <head>
+    <title>Tanya Brassie - Software Engineer</title>
+    <link
+      href="http://fonts.googleapis.com/css?family=Karla:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <meta
+      name="description"
+      content="Portfolio of Tanya Brassie, UI/UX Designer living in Philadelphia."
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width" />
 
-	<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6661312/741324/css/fonts.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cloud.typography.com/6661312/741324/css/fonts.css"
+    />
 
-	<link rel="icon" type="image/ico" href="http://www.tanyabrassie.com/favicon.ico"/>
-	<link rel="stylesheet" type="text/css" href="main.css" />
+    <link
+      rel="icon"
+      type="image/ico"
+      href="http://www.tanyabrassie.com/favicon.ico"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
 
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
 
+    <script type="text/javascript">
+      // Google stuff
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-46245222-1']);
+      _gaq.push(['_trackPageview']);
 
+      (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src =
+          ('https:' == document.location.protocol
+            ? 'https://ssl'
+            : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
 
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="js/jquery.mixitup.min.js"></script>
-	<script src="js/modernizr.custom.js"></script>
-
-	<script type="text/javascript">
-		// Google stuff
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-46245222-1']);
-		_gaq.push(['_trackPageview']);
-
-		(function() {
-	 	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	  	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  	})();
-
-	</script>
-
-</head>
-
-
-<body>
-	<nav class="navigation">
-		<a class="navigation__logo" href="#home"><img src="assets/images/general/tanyabrassielogo.svg"></a>
-		<ul class="navigation__list">
-			<li class="navigation__item"><a class="navigation__link" href="#work">See Work</a></li> &#5159;
- 			<li class="navigation__item"><a class="navigation__link" href="https://innerloop.press">Print Shop</a></li>&#5159;
-			<!-- <li class="navigation__item--icon"><a href="https://dribbble.com/tanyabrassie"><img src="assets/images/general/dribbble.svg"></a></li> -->
-			<li class="navigation__item--icon"><a href="https://www.linkedin.com/pub/tanya-brassie/32/b22/a24"><img src="assets/images/general/linkedin.svg"></a></li>
-		</ul>
-	</nav>
-	<section class="welcome"><a name="home">  </a>
+  <body>
+    <nav class="navigation">
+      <a class="navigation__logo" href="#home"
+        ><img src="assets/images/general/tanyabrassielogo.svg"
+      /></a>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#work">Work</a>
+        </li>
+        &#5159;
+        <li class="navigation__item">
+          <a class="navigation__link" href="https://innerloop.press">Prints</a>
+        </li>
+        &#5159;
+        <!-- <li class="navigation__item--icon"><a href="https://dribbble.com/tanyabrassie"><img src="assets/images/general/dribbble.svg"></a></li> -->
+        <li class="navigation__item--icon">
+          <a href="https://www.linkedin.com/pub/tanya-brassie/32/b22/a24"
+            ><img src="assets/images/general/linkedin.svg"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- <section class="welcome"><a name="home">  </a>
 
 		<div class="welcome__container">
 			<div class="welcome__background-container">
@@ -72,146 +99,161 @@
 		</script>
 
 
-	</section> <!-- end welcome group -->
+	</section> end welcome group -->
 
+    <section class="work">
+      <a name="work"> <header class="section-title">Work</header> </a>
 
-	<section class="work">
+      <div class="work__container">
+        <div class="grid grid-pad">
+          <div class="col-1-2 mobile-col-1-1">
+            <div class="work__item">
+              <a href="work/styling-priceline.html">
+                <img
+                  src="assets/images/pcln-styleguide/styleguide-logo.png"
+                  alt="img02"
+                  class="work__image"
+                />
+                <div class="work__title">Priceline.com Styleguide</div>
+              </a>
+            </div>
+          </div>
 
-		<a name="work"> 
-		<header class="section-title">Work</header> </a>
+          <div class="col-1-2 mobile-col-1-1">
+            <div class="work__item">
+              <a href="work/flights.html">
+                <img
+                  src="assets/images/flights/flights-icon-a.gif"
+                  alt="img02"
+                  class="work__image"
+                />
+                <div class="work__title">Priceline Flights Listings</div>
+              </a>
+            </div>
+          </div>
 
-			<div class="work__container">
+          <div class="col-1-2 mobile-col-1-1">
+            <div class="work__item">
+              <a href="work/handling-reservations.html">
+                <img
+                  src="assets/images/confirmation-page/confirmation-icon-a.png"
+                  alt="img02"
+                  class="work__image"
+                />
+                <div class="work__title">Priceline Post Booking Experience</div>
+              </a>
+            </div>
+          </div>
 
-						<div class="grid grid-pad">
-							<div class="col-1-2 mobile-col-1-1">
-								<div class="work__item">
+          <div class="col-1-2 mobile-col-1-1">
+            <div class="work__item">
+              <a href="work/making-icons.html">
+                <img
+                  src="assets/images/icons/commute-icon.png"
+                  alt="img03"
+                  class="work__image"
+                />
+                <div class="work__title">Mixed Bag of SVG Icons!</div>
+              </a>
+            </div>
+          </div>
 
-									<a href="work/styling-priceline.html">
-									<img src="assets/images/pcln-styleguide/styleguide-logo.png" alt="img02" class="work__image"/>
-									 <div class="work__title">Priceline.com Styleguide</div>
-									</a>	
+          <div class="col-1-2 mobile-col-1-1">
+            <div class="work__item">
+              <a href="work/paying-lawyers.html">
+                <img
+                  src="assets/images/lawpay/lawpay-icon.png"
+                  alt="img01"
+                  class="work__image"
+                />
+                <div class="work__title">Lawpay Site Re-design</div>
+              </a>
+            </div>
+          </div>
 
-								</div>
-							</div>
+          <div class="col-1-2 mobile-col-1-1">
+            <div class="work__item">
+              <a href="work/modernizing-dwell.html">
+                <img
+                  src="assets/images/dwell/dwell-logo.gif"
+                  alt="Dwell Magazine"
+                  class="work__image"
+                />
+                <div class="work__title">Dwell Magazine Re-Design</div>
+              </a>
+            </div>
+          </div>
 
-							<div class="col-1-2 mobile-col-1-1">
-								<div class="work__item">
-									
-								<a href="work/flights.html">
-									<img src="assets/images/flights/flights-icon-a.gif" alt="img02" class="work__image"/>
-									 <div class="work__title">Priceline Flights Listings</div>
-								</a>
+          <div class="col-1-2 mobile-col-1-1">
+            <div class="work__item">
+              <a href="work/squeezing-juice.html">
+                <img
+                  src="assets/images/pulp/pulp-icon-c.png"
+                  alt="img02"
+                  class="work__image"
+                />
+                <div class="work__title">Pulp Juice Bar Branding</div>
+              </a>
+            </div>
+          </div>
 
-								</div>
-							</div>
+          <div class="col-1-2 mobile-col-1-1">
+            <div class="work__item">
+              <a href="work/pcln-extras.html">
+                <img
+                  src="assets/images/pcln-extras/guts-may.png"
+                  alt="img02"
+                  class="work__image"
+                />
+                <div class="work__title">Priceline Extras</div>
+              </a>
+            </div>
+          </div>
 
+          <div class="col-1-2 mobile-col-1-1">
+            <div class="work__item">
+              <a href="work/archiving-history.html">
+                <img
+                  src="assets/images/mora/mora.gif"
+                  alt="img02"
+                  class="work__image"
+                />
+                <div class="work__title">Mora Digital Archive</div>
+              </a>
+            </div>
+          </div>
 
-							<div class="col-1-2 mobile-col-1-1">
-								<div class="work__item">
-									
-								<a href="work/handling-reservations.html">
-									<img src="assets/images/confirmation-page/confirmation-icon-a.png" alt="img02" class="work__image"/>
-									 <div class="work__title">Priceline Post Booking Experience</div>
-								</a>
+          <div class="col-1-2 mobile-col-1-1">
+            <div class="work__item">
+              <a href="work/promoting-civic-duties.html">
+                <img
+                  src="assets/images/posters/vote-logo.png"
+                  alt="img02"
+                  class="work__image"
+                />
+                <div class="work__title">Art Deco Vote Posters</div>
+              </a>
+            </div>
+          </div>
 
-								</div>
-							</div>
+          <div class="col-1-2 mobile-col-1-1">
+            <div class="work__item">
+              <a href="work/helping-robots.html">
+                <img
+                  src="assets/images/robot-help/robot-logo.png"
+                  alt="img02"
+                  class="work__image"
+                />
+                <div class="work__title">Robot Self-Help Booklet</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  end work container-->
+    </section>
+    <!-- end work-->
 
-							
-							<div class="col-1-2 mobile-col-1-1">
-								<div class="work__item">
-									<a href="work/making-icons.html">
-									<img src="assets/images/icons/commute-icon.png" alt="img03" class="work__image"/>
-									 <div class="work__title">Mixed Bag of SVG Icons!</div>
-								</a>	 
-
-								</div>
-							</div>	
-
-							<div class="col-1-2 mobile-col-1-1">
-								<div class="work__item">
-								
-								<a href="work/paying-lawyers.html">
-									<img src="assets/images/lawpay/lawpay-icon.png" alt="img01" class="work__image"/>
-									<div class="work__title">Lawpay Site Re-design</div>
-								</a>
-
-								</div>
-							</div>
-
-					
-							
-							<div class="col-1-2 mobile-col-1-1">
-								<div class="work__item">
-
-								<a href="work/modernizing-dwell.html">
-									<img src="assets/images/dwell/dwell-logo.gif" alt="Dwell Magazine" class="work__image"/>
-									 <div class="work__title">Dwell Magazine Re-Design</div>
-								</a>	
-
-								</div>
-							</div>
-
-
-							<div class="col-1-2 mobile-col-1-1">
-								<div class="work__item">
-									
-								<a href="work/squeezing-juice.html">
-									<img src="assets/images/pulp/pulp-icon-c.png" alt="img02" class="work__image"/>
-									 <div class="work__title">Pulp Juice Bar Branding</div>
-								</a>
-
-								</div>
-							</div>
-	
-							<div class="col-1-2 mobile-col-1-1">
-								<div class="work__item">
-									<a href="work/pcln-extras.html">
-										<img src="assets/images/pcln-extras/guts-may.png" alt="img02" class="work__image"/>
-										 <div class="work__title">Priceline Extras</div>
-									</a>	
-								</div>
-							</div>
-
-							<div class="col-1-2 mobile-col-1-1">
-								<div class="work__item">
-									<a href="work/archiving-history.html">
-										<img src="assets/images/mora/mora.gif" alt="img02" class="work__image"/>
-										 <div class="work__title">Mora Digital Archive</div>
-									</a>	 	
-								</div>
-							</div>
-
-							<div class="col-1-2 mobile-col-1-1">
-								<div class="work__item">
-									<a href="work/promoting-civic-duties.html">
-									 <img src="assets/images/posters/vote-logo.png" alt="img02" class="work__image"/>
-									 <div class="work__title">Art Deco Vote Posters</div>
-									</a>	 
-								</div>
-							</div>
-
-							<div class="col-1-2 mobile-col-1-1">
-								<div class="work__item">
-							<a href="work/helping-robots.html">
-								<img src="assets/images/robot-help/robot-logo.png" alt="img02" class="work__image"/>
-								 <div class="work__title">Robot Self-Help Booklet</div>
-							</a>	
-								</div>
-							</div>	
-
-						</div>
-
-							
-			</div> <!--  end work container-->
-			
-	</section> <!-- end work-->
-
-
-	<footer>
-		Copyright &#9400; 2015 Tanya Brassie
-	</footer>
-
-</body>
-
+    <footer>Copyright &#9400; 2015 Tanya Brassie</footer>
+  </body>
 </html>
