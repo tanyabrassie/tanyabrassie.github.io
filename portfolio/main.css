@@ -451,7 +451,8 @@ footer {
   padding-bottom: 20px;
 }
 
-.work__image--main, .image__caption {
+.work__image--main,
+.image__caption {
   width: 100%;
   min-width: 270px;
   max-width: 650px;
@@ -499,9 +500,11 @@ footer {
 }
 
 .work__image {
+  filter: blur(6px);
   transition: transform 0.3s;
 }
 .work__image:hover {
+  filter: blur(0px);
   transform: rotate(3deg);
 }
 .work__image__caption {
@@ -532,7 +535,8 @@ footer {
 .work__explanation__paragraph {
   padding: 5px 0 10px;
 }
-.work__explanation ol, .work__explanation ul {
+.work__explanation ol,
+.work__explanation ul {
   padding-left: 30px;
 }
 .work__explanation li {
@@ -575,7 +579,8 @@ footer {
   min-width: 300px;
 }
 
-.back-arrow, .next-arrow {
+.back-arrow,
+.next-arrow {
   font-size: 16px;
   display: inline-block;
   text-decoration: none;
@@ -583,12 +588,14 @@ footer {
   color: #333;
 }
 @media (min-width: 680px) {
-  .back-arrow, .next-arrow {
+  .back-arrow,
+  .next-arrow {
     position: fixed;
   }
 }
 
-.back-arrow:hover, .next-arrow:hover {
+.back-arrow:hover,
+.next-arrow:hover {
   color: #9d67f4;
 }
 
